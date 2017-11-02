@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Material Source</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Material Sources</value>
+    </caseValues>
+    <fields>
+        <label><!-- COD --></label>
+        <name>COD__c</name>
+    </fields>
+    <fields>
+        <label><!-- City code --></label>
+        <name>City_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Priority --></label>
+        <name>Delivery_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Code --></label>
+        <name>Material_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Type --></label>
+        <name>Packing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pref --></label>
+        <name>Pref__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Product Code --></label>
+        <name>SFDC_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Cat --></label>
+        <name>Tax_Cat__c</name>
+    </fields>
+    <fields>
+        <label><!-- shipping type --></label>
+        <name>shipping_type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Territory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Territories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+        <picklistValues>
+            <masterLabel>GHMC</masterLabel>
+            <translation><!-- GHMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kurnool</masterLabel>
+            <translation><!-- Kurnool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telengana State</masterLabel>
+            <translation><!-- Telengana State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tirupati</masterLabel>
+            <translation><!-- Tirupati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vijayawada</masterLabel>
+            <translation><!-- Vijayawada --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Postal Code --></label>
+        <name>Billing_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- Territories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_Master__c</name>
+        <relationshipLabel><!-- Territories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub-State --></label>
+        <name>Sub_State__c</name>
+        <picklistValues>
+            <masterLabel>Bangalore</masterLabel>
+            <translation><!-- Bangalore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bellary</masterLabel>
+            <translation><!-- Bellary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coastal</masterLabel>
+            <translation><!-- Coastal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHMC</masterLabel>
+            <translation><!-- GHMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hubli</masterLabel>
+            <translation><!-- Hubli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mangalore</masterLabel>
+            <translation><!-- Mangalore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mysore</masterLabel>
+            <translation><!-- Mysore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Karnataka</masterLabel>
+            <translation><!-- North Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rayalaseema</masterLabel>
+            <translation><!-- Rayalaseema --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Karnataka</masterLabel>
+            <translation><!-- South Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telengana State</masterLabel>
+            <translation><!-- Telengana State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TSO --></label>
+        <name>TSO__c</name>
+        <relationshipLabel><!-- Territories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory Code --></label>
+        <name>Territory_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <picklistValues>
+            <masterLabel>Adilabad</masterLabel>
+            <translation><!-- Adilabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adoni</masterLabel>
+            <translation><!-- Adoni --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anantpur 1</masterLabel>
+            <translation><!-- Anantpur 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anantpur 2</masterLabel>
+            <translation><!-- Anantpur 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chirala</masterLabel>
+            <translation><!-- Chirala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chittoor</masterLabel>
+            <translation><!-- Chittoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cudappah</masterLabel>
+            <translation><!-- Cudappah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delta</masterLabel>
+            <translation><!-- Delta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Godavari</masterLabel>
+            <translation><!-- East Godavari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gadwal</masterLabel>
+            <translation><!-- Gadwal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gudur</masterLabel>
+            <translation><!-- Gudur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guntur</masterLabel>
+            <translation><!-- Guntur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad East</masterLabel>
+            <translation><!-- Hyderabad East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad North</masterLabel>
+            <translation><!-- Hyderabad North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad South</masterLabel>
+            <translation><!-- Hyderabad South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad West</masterLabel>
+            <translation><!-- Hyderabad West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KGY</masterLabel>
+            <translation><!-- KGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karimnagar</masterLabel>
+            <translation><!-- Karimnagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Khammam</masterLabel>
+            <translation><!-- Khammam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kurnool</masterLabel>
+            <translation><!-- Kurnool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machlipatnam</masterLabel>
+            <translation><!-- Machlipatnam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madanappalle</masterLabel>
+            <translation><!-- Madanappalle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mahboobnagar</masterLabel>
+            <translation><!-- Mahboobnagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markapur</masterLabel>
+            <translation><!-- Markapur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medak East</masterLabel>
+            <translation><!-- Medak East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medak West</masterLabel>
+            <translation><!-- Medak West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagarkurnool</masterLabel>
+            <translation><!-- Nagarkurnool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nalgonda North</masterLabel>
+            <translation><!-- Nalgonda North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nalgonda South</masterLabel>
+            <translation><!-- Nalgonda South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nandyal</masterLabel>
+            <translation><!-- Nandyal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nellore</masterLabel>
+            <translation><!-- Nellore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nizamabad</masterLabel>
+            <translation><!-- Nizamabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongole</masterLabel>
+            <translation><!-- Ongole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palanadu</masterLabel>
+            <translation><!-- Palanadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prodattur</masterLabel>
+            <translation><!-- Prodattur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rangareddy</masterLabel>
+            <translation><!-- Rangareddy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tirupati</masterLabel>
+            <translation><!-- Tirupati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vijayawada</masterLabel>
+            <translation><!-- Vijayawada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vishakhapatnam</masterLabel>
+            <translation><!-- Vishakhapatnam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waranagal</masterLabel>
+            <translation><!-- Waranagal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Godavari</masterLabel>
+            <translation><!-- West Godavari --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+        <picklistValues>
+            <masterLabel>Zone 1</masterLabel>
+            <translation><!-- Zone 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone 2</masterLabel>
+            <translation><!-- Zone 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone 3</masterLabel>
+            <translation><!-- Zone 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone 4</masterLabel>
+            <translation><!-- Zone 4 --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>District Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Territory Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

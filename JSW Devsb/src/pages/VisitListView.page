@@ -1,0 +1,11 @@
+<apex:page showHeader="true" tabStyle="Visit__c">
+    <head>
+        <style>
+            h2 .title {
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <apex:includeScript value="//code.jquery.com/jquery-2.0.3.min.js"/>
+    <apex:enhancedList type="Visit__c" height="300" rowsPerPage="25" listId="00B2800000AlaFp" />
+</apex:page>

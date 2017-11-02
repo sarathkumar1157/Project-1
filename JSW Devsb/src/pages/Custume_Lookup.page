@@ -1,0 +1,153 @@
+<apex:page Controller="CustomLookup_ctrl" tabStyle="User" sidebar="false" id="pageId" showHeader="false">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/JavaScript" /> 
+   <style>
+    .outerdiv {
+        background-repeat: repeat-x;
+        background-position: left top;
+        background: white url(/img/alohaSkin/lookup_bg.png) repeat-x;
+        padding-left: 10px;
+        height: 100%;
+    }
+     
+    .innerdiv {
+        background-image: url(/img/sprites/master.png);
+        background-position: 0px -1202px;
+        width: 32px;
+        height: 32px;
+    }  
+    .requiredLoaderBG{
+        background-color: rgb(71,71,71);
+        opacity:0.7;
+        filter:alpha(opacity=70);
+       
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    </style>
+    <apex:form id="mainFormId">
+        <apex:actionFunction name="getacc" action="{!onCheck}" reRender="msgId,csvPhoneNumberId,csvPhoneNameId,plant1" oncomplete="fillIn('{!i}');" />
+        <input type="hidden" id="hid1" value="" name="hid1" />
+         <input type="hidden" id="hid2" value="" name="hid2" />
+          <input type="hidden" id="hid3" value="" name="hid3" />
+         <input type="hidden" id="hid4" value="" name="hid4" />
+          <input type="hidden" id="iId" value="{!i}" name="iId" />
+        <div class="outerdiv">
+            
+            <div class="innerdiv"></div>
+                <div style="float: left; width: 50px; margin-top: -20px; margin-left: 40px">
+                    <h1>Lookup</h1>
+                </div>
+                <apex:pageMessages id="msgId"/>                
+            <div class="pbBody">                   
+                <table class="list" border="0" id="tblData" cellspacing="0" cellpadding="0" style="border: #DDD 1px solid;width:22%;">
+                    <tr class="headerRow" >
+                        <th>
+                            &nbsp;
+                        </th>
+                        <th>
+                            <b>Name</b>
+                        </th>
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Search:</b>
+                        </td>
+                        <td>
+                            <apex:inputText value="{!searchByName}" onkeyup="onSearch();"/>                       
+                        </td> 
+                                                                                         
+                    </tr>
+                </table>
+            </div>
+            <div class="pbBody">
+                <h2 style="padding-bottom: 5px; padding-top: 5px;">Select the
+                    picklist values to add below.</h2>
+            </div>      
+            <apex:pageblock >
+                <apex:outputPanel id="tblId">
+                    <apex:pageBlockSection columns="1">
+                         <apex:pageBlockTable value="{!listOfLookupsElement}" var="e">
+                             <apex:column width="10%">
+                                
+                                 <input type="Button" value="select" onClick="getAccount('{!e.source}','{!e.accname}','{!e.pref}','{!e.cod}');" />
+                                 
+                                 
+                             </apex:column>
+                              
+                             
+                            <apex:column headerValue="Name" width="20%">
+                                 <apex:outputLabel value="{!e.accname}" />
+                                 
+                             </apex:column>
+                              <apex:column headerValue="Source" width="20%">
+                                
+                                  <apex:outputLabel value="{!e.source}" />
+               
+                             </apex:column>
+                              <apex:column headerValue="Pref" width="20%">
+                                
+                                  <apex:outputLabel value="{!e.pref}" />
+               
+                             </apex:column>
+                              <apex:column headerValue="COD" width="20%">
+                                
+                                  <apex:outputLabel value="{!e.cod}" />
+               
+                             </apex:column>
+                            
+                         </apex:pageBlockTable>
+                    </apex:pageBlockSection>
+                </apex:outputPanel>
+            </apex:pageblock>
+          
+            <apex:actionFunction name="onSearch"  action="{!onSearch}" rerender="tblId,csvPhoneNumberId,csvPhoneNameId,plant1" status="ajaxStatus"/>
+        </div>
+        <apex:inputHidden value="{!phoneNumberPassToTextBox}" id="csvPhoneNumberId"/>
+         
+           <apex:inputHidden value="{!plant}" id="plant1"/>
+       
+        <apex:inputHidden value="{!phoneNamePassToHdn}" id="csvPhoneNameId"/>
+        <script>
+            function fillIn(val){           
+                
+                var phoneNumbers = $('input[id$=csvPhoneNumberId]').val();            
+                var phoneName = $('input[id$=csvPhoneNameId]').val(); 
+                 var plant= $('input[id$=plant1]').val(); 
+              
+           
+                 window.parent.opener.document.getElementById('pageId:formId:oblId:j_id21:'+val+':pbseId:fid').value = phoneNumbers;
+                  window.parent.opener.document.getElementById('pageId:formId:oblId:j_id21:'+val+':pbseId:plant').value = plant;
+                 
+                  
+                window.top.close(); 
+             
+               
+  }
+              
+            
+             
+          
+           
+         function getAccount(val1,val2,val3,val4){
+           
+         document.getElementById("hid1").value=val1;
+         document.getElementById("hid2").value=val2;
+          document.getElementById("hid3").value=val3;
+         document.getElementById("hid4").value=val4;
+   
+         getacc();
+         }
+        
+    
+        </script>
+        <apex:actionstatus startStyleClass="requiredLoaderBG" id="ajaxStatus" />     
+    </apex:form>
+</apex:page>

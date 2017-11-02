@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Booking Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order booking Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Owner Email --></label>
+        <name>Account_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Order booking Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Address --></label>
+        <name>Delivery_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterm --></label>
+        <name>Incoterm__c</name>
+        <picklistValues>
+            <masterLabel>EX</masterLabel>
+            <translation><!-- EX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOR</masterLabel>
+            <translation><!-- FOR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_Packing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Concreel HD</masterLabel>
+            <translation><!-- Concreel HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPC</masterLabel>
+            <translation><!-- OPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Packing Type --></label>
+        <name>Packing_Type__c</name>
+        <picklistValues>
+            <masterLabel>1S LPP</masterLabel>
+            <translation><!-- 1S LPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2S LPP</masterLabel>
+            <translation><!-- 2S LPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDPE</masterLabel>
+            <translation><!-- HDPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JB</masterLabel>
+            <translation><!-- JB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOSE</masterLabel>
+            <translation><!-- LOOSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PP</masterLabel>
+            <translation><!-- PP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quantity in MT --></label>
+        <name>Quantity_in_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO Email --></label>
+        <name>SO_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party --></label>
+        <name>ShipToparty__c</name>
+        <relationshipLabel><!-- Order booking Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to location --></label>
+        <name>Ship_to_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process</masterLabel>
+            <translation><!-- Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Dealer Name --></label>
+        <name>Sub_Dealer_Name__c</name>
+        <relationshipLabel><!-- Order booking Information --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Order Booking Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Button --></label>
+        <name>New_Button</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order request Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order request Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Creation Date --></label>
+        <name>Creation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creation Time --></label>
+        <name>Creation_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery --></label>
+        <name>Delivery__c</name>
+        <picklistValues>
+            <masterLabel>Immediate</masterLabel>
+            <translation><!-- Immediate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Material Code --></label>
+        <name>Material_Code1__c</name>
+        <relationshipLabel><!-- Order request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Material Code Name --></label>
+        <name>Material_CodeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Code --></label>
+        <name>Material_Code__c</name>
+        <relationshipLabel><!-- Order request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Error --></label>
+        <name>Order_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Line --></label>
+        <name>Order_Request_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Name --></label>
+        <name>Order_Request_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request --></label>
+        <name>Order_Request__c</name>
+        <relationshipLabel><!-- Order request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Packing Type --></label>
+        <name>Packing_Type__c</name>
+        <picklistValues>
+            <masterLabel>1S LPP</masterLabel>
+            <translation><!-- 1S LPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2S LPP</masterLabel>
+            <translation><!-- 2S LPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDPE</masterLabel>
+            <translation><!-- HDPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOSE</masterLabel>
+            <translation><!-- LOOSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plant Master --></label>
+        <name>Plant_Master__c</name>
+        <relationshipLabel><!-- Order request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant / Depot --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Product Code --></label>
+        <name>SFDC_Product_Code__c</name>
+        <picklistValues>
+            <masterLabel>CLINKER</masterLabel>
+            <translation><!-- CLINKER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPC</masterLabel>
+            <translation><!-- OPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLAG</masterLabel>
+            <translation><!-- SLAG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SO Number --></label>
+        <name>SO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- So Item Number --></label>
+        <name>So_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>Status_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test --></label>
+        <name>Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- remove --></label>
+        <name>remove__c</name>
+    </fields>
+    <fields>
+        <label><!-- rowNO --></label>
+        <name>rowNO__c</name>
+    </fields>
+    <layouts>
+        <layout>Order Booking Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Line Item Record Lock</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Order Line Record Lock --></label>
+        <name>Order_Line_Record_Lock</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please Enter Price --></errorMessage>
+        <name>Price_Validation_for_nono_trade_customer</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Influencer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Influencers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Influencers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>a</masterLabel>
+            <translation><!-- a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>b</masterLabel>
+            <translation><!-- b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>c</masterLabel>
+            <translation><!-- c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category_new__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Brands --></label>
+        <name>Competitor_Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 1 --></label>
+        <name>Contact_Email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 2 --></label>
+        <name>Contact_Email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 3 --></label>
+        <name>Contact_Email_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 1 --></label>
+        <name>Contact_Person_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 2 --></label>
+        <name>Contact_Person_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 3 --></label>
+        <name>Contact_Person_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone 1 --></label>
+        <name>Contact_Phone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone 2 --></label>
+        <name>Contact_Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone 3 --></label>
+        <name>Contact_Phone_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role 1 --></label>
+        <name>Contact_Role_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role 2 --></label>
+        <name>Contact_Role_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role 3 --></label>
+        <name>Contact_Role_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- Influencers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inclination to JSW --></label>
+        <name>Inclination_to_JSW__c</name>
+        <picklistValues>
+            <masterLabel>Fully Inclined</masterLabel>
+            <translation><!-- Fully Inclined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Inclined</masterLabel>
+            <translation><!-- Not Inclined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Inclined</masterLabel>
+            <translation><!-- Partially Inclined --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maerket Rating --></label>
+        <name>Market_Rating__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of concerned SO --></label>
+        <name>Name_of_concerned_SO__c</name>
+        <relationshipLabel><!-- Influencers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No. of sites under influencer --></label>
+        <name>No_of_sites_under_influencer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Category --></label>
+        <name>Overall_Category_del__c</name>
+        <picklistValues>
+            <masterLabel>AA</masterLabel>
+            <translation><!-- AA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AB</masterLabel>
+            <translation><!-- AB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AC</masterLabel>
+            <translation><!-- AC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BA</masterLabel>
+            <translation><!-- BA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CC</masterLabel>
+            <translation><!-- CC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered with JSW ELP program? --></label>
+        <name>Registered_with_JSW_ELP_program__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Name --></label>
+        <name>Site_Name__c</name>
+        <relationshipLabel><!-- Influencers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Architects</masterLabel>
+            <translation><!-- Architects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Builder office</masterLabel>
+            <translation><!-- Builder office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractors</masterLabel>
+            <translation><!-- Contractors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineers</masterLabel>
+            <translation><!-- Engineers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masons</masterLabel>
+            <translation><!-- Masons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Structural Consultants</masterLabel>
+            <translation><!-- Structural Consultants --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Report --></label>
+        <name>Visit_Report__c</name>
+        <relationshipLabel><!-- Influencers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Volume potential in MT --></label>
+        <name>Volume_potential_in_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>Influencer Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Influencer Map --></label>
+            <section>Influencer Map</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter value for inclination --></errorMessage>
+        <name>Inclination_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter this value --></errorMessage>
+        <name>Sites_mandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

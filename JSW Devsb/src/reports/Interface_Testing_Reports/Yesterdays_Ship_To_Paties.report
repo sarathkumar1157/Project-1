@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Ship_To_Party__c.District__c</field>
+    </columns>
+    <columns>
+        <field>Ship_To_Party__c.Distribution_Channel__c</field>
+    </columns>
+    <columns>
+        <field>Ship_To_Party__c.Division__c</field>
+    </columns>
+    <columns>
+        <field>Ship_To_Party__c.Account_Group__c</field>
+    </columns>
+    <columns>
+        <field>Ship_To_Party__c.Account__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Yesterdays Ship To Paties</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Ship_To_Party__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

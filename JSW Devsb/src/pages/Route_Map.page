@@ -1,0 +1,146 @@
+<apex:page standardController="Day_Plan__c" extensions="RouteMapExtension" sidebar="false" showheader="false">
+    
+    <!-- Include in Google's Maps API via JavaScript static resource -->
+    <!--<apex:includeScript value="{!$Resource.googleMapsAPI}" /> -->
+    
+    <!-- Setup the map to take up the whole window -->     
+    <style>
+        html, body { height: 100%; }
+        .page-map, .ui-content, #map-canvas { width: 100%; height:100%; padding: 0; }
+        #map-canvas { height: min-height: 100%; }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+         function RemoteCall()
+         {
+             // Use Visualforce JavaScript Remoting to query for nearby warehouses
+             var strId = "{!$CurrentPage.parameters.id}";
+             //var strDate = "{!$CurrentPage.parameters.date}";
+             //alert("strId = " +strId );
+             //alert("Date =" +strDate);
+             Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.RouteMapExtension.getDetails}',strId,
+             function(result, event){
+                 //alert('event.status=' +event.status);
+                 if (event.status) {
+                     console.log(result);
+                     createMap(result);           
+                 } else if (event.type === 'exception') {
+                     //exception case code          
+                 } else {
+                                
+                 }
+              }, 
+              {escape: true}
+             );
+         }
+         function createMap(warehouses){
+            // Get the map div, and center the map at the proper geolocation
+            var currentPosition = new google.maps.LatLng((warehouses[0].Location__Latitude__s-0.01), (warehouses[0].Location__Longitude__s-0.01 ));
+            var mapDiv = document.getElementById('map-canvas');
+            var map = new google.maps.Map(mapDiv, {
+                center: currentPosition, 
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            
+            // Set a marker for the current location
+            /*
+            var positionMarker = new google.maps.Marker({
+                map: map,
+                position: currentPosition,
+                icon: 'http://maps.google.com/mapfiles/ms/micons/green.png'
+            });
+            */          
+            // Keep track of the map boundary that holds all markers
+            var mapBoundary = new google.maps.LatLngBounds();
+            mapBoundary.extend(currentPosition);
+            
+            // Set markers on the map from the @RemoteAction results
+            var warehouse;
+            var  path = [];
+            for(var i=0; i<warehouses.length;i++){
+                warehouse = warehouses[i];
+                console.log(warehouses[i]);
+                path.push(new google.maps.LatLng(warehouse.Location__Latitude__s, warehouse.Location__Longitude__s));
+                setupMarker();
+            }
+    
+            // Define a symbol using SVG path notation, with an opacity of 1.
+            var lineSymbol = {
+            path: 'M 0,-1 0,1',
+            strokeOpacity: 1,
+            scale: 4
+            };
+            
+            // Creates the polyline object
+            var polyline = new google.maps.Polyline({
+              map: map,
+              path: path,
+              strokeColor: '#0000FF',
+              strokeOpacity: 0,
+              icons: [{
+                     icon: lineSymbol,
+                     offset: '0',
+                     repeat: '20px'
+                    }],
+            strokeWeight: 3
+            });
+
+            // Resize map to neatly fit all of the markers
+            map.fitBounds(mapBoundary);
+
+           function setupMarker(){ 
+                var warehouseNavUrl;
+                var mydate = new Date(warehouse.ActivityDate);
+              
+                // Determine if we are in Salesforce1 and set navigation link appropriately
+                try{
+                    if(sforce.one){
+                        warehouseNavUrl = 
+                            'javascript:sforce.one.navigateToSObject(\'' + warehouse.Id + '\')';
+                    }
+                } catch(err) {
+                    console.log(err);
+                    warehouseNavUrl = '\\' + warehouse.Id;
+                }
+                //alert(warehouse.Account__c);
+               //alert(warehouse.ActivityDate);
+                var warehouseDetails = 
+                    'Name :' + warehouse.Name__c+ '</a><br/>' + 
+                    'Address :' + warehouse.Address__c+ '</a><br/>' + 
+                     'Activity Date:' + mydate.toDateString();
+               
+               // Create the callout that will pop up on the marker     
+               var infowindow = new google.maps.InfoWindow({ 
+                   content: warehouseDetails
+               });
+               
+               // Place the marker on the map   
+               var marker = new google.maps.Marker({
+                   map: map,
+                   position: new google.maps.LatLng( 
+                                   warehouse.Location__Latitude__s, 
+                                   warehouse.Location__Longitude__s)
+               });
+               mapBoundary.extend(marker.getPosition());
+               
+               // Add the action to open up the panel when its marker is clicked      
+               google.maps.event.addListener(marker, 'click', function(){
+                   infowindow.open(map, marker);
+               });
+           }
+        }
+        
+        // Fire the initialize function when the window loads
+        //google.maps.event.addDomListener(window, 'load', initialize);
+        //var mapDiv = document.getElementById('btn');
+        google.maps.event.addDomListener(window, 'load', RemoteCall);
+        
+    </script>
+    
+    <!--  All content is rendered by the Google Maps code -->
+    <!--  This minimal HTML justs provide a target for GMaps to write to -->
+    <body style="font-family: Arial; border: 0 none;">
+        <div id="map-canvas"></div>
+    </body>
+</apex:page>

@@ -1,0 +1,13 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account" extensions="FollowUp" docType="html-5.0">
+
+<apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                Date: <apex:input type="date" value="{!dat}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+    
+</apex:page>

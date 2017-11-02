@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LATF</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LATF</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area Manager --></label>
+        <name>Area_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- LATF --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <relationshipLabel><!-- LATF --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

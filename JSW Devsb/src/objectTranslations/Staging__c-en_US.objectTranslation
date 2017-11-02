@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Staging</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Staging</value>
+    </caseValues>
+    <fields>
+        <label><!-- APotential --></label>
+        <name>APotential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Sub Type --></label>
+        <name>Activity_Sub_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any image to be captured --></label>
+        <name>Any_image_to_be_captured__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Version --></label>
+        <name>App_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- BP --></label>
+        <name>BP__c</name>
+    </fields>
+    <fields>
+        <label><!-- BPotential --></label>
+        <name>BPotential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brands --></label>
+        <name>Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC --></label>
+        <name>CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHD --></label>
+        <name>CHD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check In --></label>
+        <name>Check_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out --></label>
+        <name>Check_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition of Godown --></label>
+        <name>Condition_of_Godown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Stage --></label>
+        <name>Construction_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Id --></label>
+        <name>Converted_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted --></label>
+        <name>Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Stock Ageing for CC --></label>
+        <name>Damage_Stock_Ageing_for_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Stock Ageing for CHD --></label>
+        <name>Damage_Stock_Ageing_for_CHD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Stock Ageing for OPC --></label>
+        <name>Damage_Stock_Ageing_for_OPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Stock Ageing for PSC --></label>
+        <name>Damage_Stock_Ageing_for_PSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damaged Cement (MT) for CC --></label>
+        <name>Damaged_Cement_MT_for_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damaged Cement (MT) for CHD --></label>
+        <name>Damaged_Cement_MT_for_CHD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damaged Cement (MT) for OPC --></label>
+        <name>Damaged_Cement_MT_for_OPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damaged Cement (MT) for PSC --></label>
+        <name>Damaged_Cement_MT_for_PSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Version --></label>
+        <name>Data_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Inspection --></label>
+        <name>Date_of_Inspection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of the Visit --></label>
+        <name>Details_of_the_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Master Id --></label>
+        <name>External_Master_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Visit Id --></label>
+        <name>External_Visit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- F.I-F.O movement --></label>
+        <name>F_I_F_O_movement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown Stock as on Month end (MT) PSC --></label>
+        <name>Godown_Stock_as_on_Month_end_MT_PSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown Stock as on Month end (MT) for CC --></label>
+        <name>Godown_Stock_as_on_Month_end_MT_for_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown Stock as on Month end(MT) for CHD --></label>
+        <name>Godown_Stock_as_on_Month_end_MT_for_CHD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown Stock as on Month end(MT) for OPC --></label>
+        <name>Godown_Stock_as_on_Month_end_MT_for_OPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown stock (MT) for CHD --></label>
+        <name>Godown_stock_MT_for_CHD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown stock (MT) for OPC --></label>
+        <name>Godown_stock_MT_for_OPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown stock (MT) for PSC --></label>
+        <name>Godown_stock_MT_for_PSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Godown stock (MT) for composite Cement --></label>
+        <name>Godown_stock_MT_for_composite_Cement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Good Stock Ageing for CC --></label>
+        <name>Good_Stock_Ageing_for_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Good Stock Ageing for CHD --></label>
+        <name>Good_Stock_Ageing_for_CHD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Good Stock Ageing for OPC --></label>
+        <name>Good_Stock_Ageing_for_OPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Good Stock Ageing for PSC --></label>
+        <name>Good_Stock_Ageing_for_PSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- If potential lead, share with Manager --></label>
+        <name>If_potential_lead_share_with_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSW Bag Visibility --></label>
+        <name>JSW_Bag_Visibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSW Shop Board Condition --></label>
+        <name>JSW_Shop_Board_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSW stock level (number of bags) --></label>
+        <name>JSW_stock_level_number_of_bags__c</name>
+    </fields>
+    <fields>
+        <label><!-- LATF Name --></label>
+        <name>LATF_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lastname --></label>
+        <name>Lastname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Info Master ID --></label>
+        <name>Market_Info_Master_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master --></label>
+        <name>Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPC --></label>
+        <name>OPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offline App CheckIn --></label>
+        <name>Offline_App_CheckIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSC --></label>
+        <name>PSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment collected in current visit --></label>
+        <name>Payment_collected_in_current_visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Payment Committed Date --></label>
+        <name>Pending_Payment_Committed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Date --></label>
+        <name>Planned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned --></label>
+        <name>Planned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Inspection --></label>
+        <name>Previous_Inspection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Visit --></label>
+        <name>Purpose_of_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSP --></label>
+        <name>RSP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOname --></label>
+        <name>SOname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seggregation of good &amp; damaged cement --></label>
+        <name>Seggregation_of_good_damaged_cement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site demo type --></label>
+        <name>Site_demo_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stacking pattern (As per ISP?) --></label>
+        <name>Stacking_pattern_As_per_ISP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Id --></label>
+        <name>Visit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit by --></label>
+        <name>Visit_by_TSO_LATF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visited Location --></label>
+        <name>Visited_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- WSP --></label>
+        <name>WSP__c</name>
+    </fields>
+    <fields>
+        <label><!-- account --></label>
+        <name>account__c</name>
+    </fields>
+    <fields>
+        <label><!-- approval --></label>
+        <name>approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- architect --></label>
+        <name>architect__c</name>
+    </fields>
+    <fields>
+        <label><!-- category --></label>
+        <name>category__c</name>
+    </fields>
+    <fields>
+        <label><!-- city --></label>
+        <name>city__c</name>
+    </fields>
+    <fields>
+        <label><!-- company --></label>
+        <name>company__c</name>
+    </fields>
+    <fields>
+        <label><!-- compbrands --></label>
+        <name>compbrands__c</name>
+    </fields>
+    <fields>
+        <label><!-- country --></label>
+        <name>country__c</name>
+    </fields>
+    <fields>
+        <label><!-- customeremail --></label>
+        <name>customeremail__c</name>
+    </fields>
+    <fields>
+        <label><!-- customername --></label>
+        <name>customername__c</name>
+    </fields>
+    <fields>
+        <label><!-- district --></label>
+        <name>district__c</name>
+    </fields>
+    <fields>
+        <label><!-- email1 --></label>
+        <name>email1__c</name>
+    </fields>
+    <fields>
+        <label><!-- email2 --></label>
+        <name>email2__c</name>
+    </fields>
+    <fields>
+        <label><!-- email3 --></label>
+        <name>email3__c</name>
+    </fields>
+    <fields>
+        <label><!-- email --></label>
+        <name>email__c</name>
+    </fields>
+    <fields>
+        <label><!-- enddt --></label>
+        <name>enddt__c</name>
+    </fields>
+    <fields>
+        <label><!-- engineer --></label>
+        <name>engineer__c</name>
+    </fields>
+    <fields>
+        <label><!-- firstname --></label>
+        <name>firstname__c</name>
+    </fields>
+    <fields>
+        <label><!-- inclination --></label>
+        <name>inclination__c</name>
+    </fields>
+    <fields>
+        <label><!-- influencerName --></label>
+        <name>influencerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- isRegistered --></label>
+        <name>isRegistered__c</name>
+    </fields>
+    <fields>
+        <label><!-- isfilled --></label>
+        <name>isfilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- leadStatus --></label>
+        <name>leadStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- lresponse --></label>
+        <name>lresponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- person1 --></label>
+        <name>person1__c</name>
+    </fields>
+    <fields>
+        <label><!-- person2 --></label>
+        <name>person2__c</name>
+    </fields>
+    <fields>
+        <label><!-- person3 --></label>
+        <name>person3__c</name>
+    </fields>
+    <fields>
+        <label><!-- phone1 --></label>
+        <name>phone1__c</name>
+    </fields>
+    <fields>
+        <label><!-- phone2 --></label>
+        <name>phone2__c</name>
+    </fields>
+    <fields>
+        <label><!-- phone3 --></label>
+        <name>phone3__c</name>
+    </fields>
+    <fields>
+        <label><!-- phone --></label>
+        <name>phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- postalcode --></label>
+        <name>postalcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- potential --></label>
+        <name>potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- projectSiteName --></label>
+        <name>projectSiteName__c</name>
+    </fields>
+    <fields>
+        <label><!-- role1 --></label>
+        <name>role1__c</name>
+    </fields>
+    <fields>
+        <label><!-- role2 --></label>
+        <name>role2__c</name>
+    </fields>
+    <fields>
+        <label><!-- role3 --></label>
+        <name>role3__c</name>
+    </fields>
+    <fields>
+        <label><!-- sitecount --></label>
+        <name>sitecount__c</name>
+    </fields>
+    <fields>
+        <label><!-- stage --></label>
+        <name>stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- startdt --></label>
+        <name>startdt__c</name>
+    </fields>
+    <fields>
+        <label><!-- state --></label>
+        <name>state__c</name>
+    </fields>
+    <fields>
+        <label><!-- stconsultant --></label>
+        <name>stconsultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- street --></label>
+        <name>street__c</name>
+    </fields>
+    <fields>
+        <label><!-- subdealers --></label>
+        <name>subdealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- subtype --></label>
+        <name>subtype__c</name>
+    </fields>
+    <fields>
+        <label><!-- typeOfInfluencer --></label>
+        <name>typeOfInfluencer__c</name>
+    </fields>
+    <fields>
+        <label><!-- type --></label>
+        <name>type__c</name>
+    </fields>
+    <fields>
+        <label><!-- userid --></label>
+        <name>userid__c</name>
+    </fields>
+    <fields>
+        <label><!-- volume --></label>
+        <name>volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- wholesale --></label>
+        <name>wholesale__c</name>
+    </fields>
+    <layouts>
+        <layout>Influencer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Site Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Staging Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Influencer --></label>
+        <name>Influencer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead --></label>
+        <name>Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Market Info --></label>
+        <name>Market_Info</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Project Site --></label>
+        <name>Project_Site</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Visit --></label>
+        <name>Visit</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Day Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Day Plan</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounts --></label>
+        <name>Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Areas Covered --></label>
+        <name>Areas_Covered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Partners --></label>
+        <name>Business_Partners__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depots --></label>
+        <name>Depots__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencers --></label>
+        <name>Influencers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads --></label>
+        <name>Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Plan --></label>
+        <name>Month_Plan__c</name>
+        <relationshipLabel><!-- Day Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of planned visits --></label>
+        <name>Number_of_planned_visits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of visits --></label>
+        <name>Number_of_visits__c</name>
+    </fields>
+    <fields>
+        <label><!-- PJP Status --></label>
+        <name>PJP_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Present --></label>
+        <name>Present__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed --></label>
+        <name>Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route Name --></label>
+        <name>Route_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sites --></label>
+        <name>Sites__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Day Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Week Plan --></label>
+        <name>Week_Plan__c</name>
+        <relationshipLabel><!-- Day Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Working Day --></label>
+        <name>Working_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Day Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Route Map --></label>
+            <section>Route Map</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

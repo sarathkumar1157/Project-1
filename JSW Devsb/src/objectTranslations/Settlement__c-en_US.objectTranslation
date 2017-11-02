@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Settlement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Settlements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Date --></label>
+        <name>Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval committe Remarks --></label>
+        <name>Approval_committe_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval committe --></label>
+        <name>Approval_committe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve --></label>
+        <name>Approve__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>Approved_By__c</name>
+        <relationshipLabel><!-- Settlements (Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Settlements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Close Complaint --></label>
+        <name>Close_Complaint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed By --></label>
+        <name>Closed_By__c</name>
+        <relationshipLabel><!-- Settlements (Closed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closure Date --></label>
+        <name>Closure_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closure Remarks --></label>
+        <name>Closure_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compensation Status --></label>
+        <name>Compensation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Value 1</masterLabel>
+            <translation><!-- Value 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 2</masterLabel>
+            <translation><!-- Value 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Component Type --></label>
+        <name>Component__c</name>
+        <picklistValues>
+            <masterLabel>Value1</masterLabel>
+            <translation><!-- Value1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value2</masterLabel>
+            <translation><!-- Value2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investigation --></label>
+        <name>Investigation__c</name>
+        <relationshipLabel><!-- Settlements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Rate(Rs/MT) --></label>
+        <name>Invoice_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed By --></label>
+        <name>Proposed_By__c</name>
+        <relationshipLabel><!-- Settlements (Proposed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed Date --></label>
+        <name>Proposed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity(MT) --></label>
+        <name>Quantity_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settlement Status --></label>
+        <name>Settlement_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State Name --></label>
+        <name>State_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- committe Member --></label>
+        <name>committe_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- is the Supply within 60 days from mfg --></label>
+        <name>is_the_Supply_within_60_days_from_mfg__c</name>
+    </fields>
+    <layouts>
+        <layout>Commercial Closure</layout>
+        <sections>
+            <label><!-- Commercial Closure --></label>
+            <section>Commercial Closure</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Complaint Closure</layout>
+        <sections>
+            <label><!-- Complaint Closure --></label>
+            <section>Complaint Closure</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Settlement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Commercial Closure --></label>
+        <name>Commercial_Closure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Complaint Closure --></label>
+        <name>Complaint_Closure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Settlement --></label>
+        <name>Settlement</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

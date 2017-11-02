@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue Comments</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issue Comments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Issue Tracker Owner Email --></label>
+        <name>Issue_Tracker_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Tracker --></label>
+        <name>Issue_overview__c</name>
+        <relationshipLabel><!-- Issue Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No of Days issue oppened --></label>
+        <name>No_of_Days_issue_oppened__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

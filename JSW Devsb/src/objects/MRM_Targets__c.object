@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Depot_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Depot Actuals</label>
+        <summarizedField>District_Actuals__c.Depot_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Depot_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Depot Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Actuals</label>
+        <summarizedField>District_Actuals__c.Direct_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>District Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>District</label>
+        <referenceTo>Districts__c</referenceTo>
+        <relationshipName>District_Actuals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Depot_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Depot Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Direct_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Direct Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_NSR_Qty_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month NSR Qty Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_NSR_Value_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month NSR Value Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Non_Trade_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Non Trade Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Rail_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Rail Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Road_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Road Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Month_Trade_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Month Trade Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MH_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>District_Code__c  +&apos;:&apos;+ TEXT(Product__c) +&apos;:&apos;+ TEXT(Month__c) +&apos;:&apos;+ Year__c +&apos;:&apos;+ Plant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MH Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MH_Unique_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>District__r.Name +&apos;:&apos;+ TEXT(Product__c) +&apos;:&apos;+ TEXT(Month__c) +&apos;:&apos;+ Year__c +&apos;:&apos;+ Plant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MH Unique Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Month</label>
+        <picklist>
+            <picklistValues>
+                <fullName>January</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>February</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>March</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>April</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>May</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>June</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>July</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>August</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>September</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>October</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>November</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>December</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NSR_Overall_QTY_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>NSR Overall QTY Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NSR_Overall_Value_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>NSR Overall Value Actuals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NSR_QTY__c</fullName>
+        <externalId>false</externalId>
+        <label>NSR QTY</label>
+        <summarizedField>District_Actuals__c.NSR_Qty_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NSR_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>NSR Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NSR_Total_Basic_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>NSR Total Basic Price</label>
+        <summarizedField>District_Actuals__c.NSR_Total_Basic_Price_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Non_Trade_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Non Trade Actuals</label>
+        <summarizedField>District_Actuals__c.Non_Trade_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Non_Trade_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Non Trade Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Plant__c</fullName>
+        <externalId>false</externalId>
+        <label>Plant</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <picklist>
+            <picklistValues>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CHD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGBS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Institutional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rail_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Rail Actuals</label>
+        <summarizedField>District_Actuals__c.District_Rail_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Rail_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Rail Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Road_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Road Actuals</label>
+        <summarizedField>District_Actuals__c.District_Road_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Road_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Road Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Office</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <referenceTo>District__c</referenceTo>
+        <relationshipLabel>MRM Targets</relationshipLabel>
+        <relationshipName>MRM_Targets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Trade_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Actuals</label>
+        <summarizedField>District_Actuals__c.Trade_Actuals__c</summarizedField>
+        <summaryForeignKey>District_Actuals__c.District_Actuals__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Trade_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Trade Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Code_Last_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sales_Office__c +&apos;:&apos;+ TEXT(Product__c) +&apos;:&apos;+  
+CASE(TEXT(Month__c), 
+&quot;January&quot;, &quot;December&quot;, 
+&quot;February&quot;, &quot;January&quot;,
+&quot;March&quot;,&quot;February&quot;,
+&quot;April&quot;,&quot;March&quot;,
+&quot;May&quot;,&quot;April&quot;,
+&quot;June&quot;,&quot;May&quot;,
+&quot;July&quot;,&quot;June&quot;,
+&quot;August&quot;,&quot;July&quot;,
+&quot;September&quot;,&quot;August&quot;,
+&quot;October&quot;,&quot;September&quot;,
+&quot;November&quot;,&quot;October&quot;,
+&quot;December&quot;,&quot;November&quot;,
+&quot;none&quot; )+&apos;:&apos;+ IF(TEXT(Month__c)=&apos;January&apos;,TEXT(VALUE(Year__c)-1),Year__c) +&apos;:&apos;+ Plant__c</formula>
+        <label>Unique Code Last Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Code_Next_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sales_Office__c +&apos;:&apos;+ TEXT(Product__c) +&apos;:&apos;+  
+CASE(TEXT(Month__c), 
+&quot;January&quot;, &quot;February&quot;, 
+&quot;February&quot;, &quot;March&quot;,
+&quot;March&quot;,&quot;April&quot;,
+&quot;April&quot;,&quot;May&quot;,
+&quot;May&quot;,&quot;June&quot;,
+&quot;June&quot;,&quot;July&quot;,
+&quot;July&quot;,&quot;August&quot;,
+&quot;August&quot;,&quot;September&quot;,
+&quot;September&quot;,&quot;October&quot;,
+&quot;October&quot;,&quot;November&quot;,
+&quot;November&quot;,&quot;December&quot;,
+&quot;December&quot;,&quot;January&quot;,
+&quot;none&quot; )+&apos;:&apos;+ IF(TEXT(Month__c)=&apos;December&apos;,TEXT(VALUE(Year__c)+1),Year__c) +&apos;:&apos;+ Plant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unique Code Next Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sales_Office__c +&apos;:&apos;+ TEXT(Product__c) +&apos;:&apos;+ TEXT(Month__c) +&apos;:&apos;+ Year__c +&apos;:&apos;+  Plant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unique Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MRM Target</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>MRM-{0000000000}</displayFormat>
+        <label>MRM Targets Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>MRM Targets</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

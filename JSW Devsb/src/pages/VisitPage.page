@@ -1,0 +1,32 @@
+<apex:page controller="visitedcontroller" tabStyle="Visit__c" standardStylesheets="true" sidebar="false">
+<head>
+<link href="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.css')}" rel='stylesheet' />
+<link href="{!URLFOR($Resource.Bootstrap, 'font-awesome.min.css')}" rel='stylesheet' />
+<script src="{!URLFOR($Resource.jquery4Cal, 'jquery.min.js')}"></script>
+<script src="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.js')}"></script>
+</head>
+<apex:form >
+<apex:sectionHeader title="Visit Edit" subtitle="New Visit" help="https://help.salesforce.com/articleView?id=co_edit.htm&siteLang=en_US&type=0"/>
+<apex:pageblock title="Visit Edit">
+<apex:pageblockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Cancel" action="{!cancel}" immediate="true"/>
+</apex:pageblockButtons>
+<apex:pageMessages />
+    <apex:pageBlockSection title="Information" collapsible="false" columns="1">
+     <apex:inputfield value="{!vst.Account__c}"/>
+     <apex:outputField value="{!vst.Owner.name}" label="Owner"/>
+     <apex:inputField value="{!vst.Lead__c}"/>
+     <apex:inputField value="{!vst.Start__c}" required="true"/>
+     <apex:inputField value="{!vst.End__c}" required="true"/>
+     <!--<apex:inputField value="{!vst.Planned_Date__c}" required="true"/>-->
+     <apex:inputField value="{!vst.Business_Partner__c}"/>
+     <apex:inputField value="{!vst.Event__c}"/>
+     <apex:inputField value="{!vst.Territory__c}"/>
+     <apex:inputField value="{!vst.Project_Site__c}"/>   
+     
+    </apex:pageBlockSection>
+    
+</apex:pageblock>
+</apex:form>
+</apex:page>

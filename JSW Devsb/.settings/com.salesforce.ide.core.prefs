@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+endpointApiVersion=36.0
+endpointEnvironment=Sandbox
+endpointServer=login.salesforce.com
+httpsProtocol=true
+ideVersion=36.0
+keependpoint=false
+metadataFormatVersion=36.0
+namespacePrefix=
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE-7110266632658464932
+readTimeout=400
+username=bodhtree.admin@jsw.in.jswdevsb

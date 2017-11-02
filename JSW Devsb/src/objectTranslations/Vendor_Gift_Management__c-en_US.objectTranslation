@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vendor Gift Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vendors Gift Tracking</value>
+    </caseValues>
+    <fields>
+        <label><!-- Delivered At --></label>
+        <name>Delivered_At__c</name>
+        <picklistValues>
+            <masterLabel>Dealer</masterLabel>
+            <translation><!-- Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>District HQ</masterLabel>
+            <translation><!-- District HQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HO</masterLabel>
+            <translation><!-- HO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State HQ</masterLabel>
+            <translation><!-- State HQ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivered Date --></label>
+        <name>Delivered_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift Name --></label>
+        <name>Gift_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift Stock --></label>
+        <name>Gift_Stock__c</name>
+        <relationshipLabel><!-- Vendors Gift Tracking --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gift --></label>
+        <name>Gift_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift --></label>
+        <name>Gift__c</name>
+        <relationshipLabel><!-- Vendors Gift Tracking --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ordered Date --></label>
+        <name>Ordered_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Order --></label>
+        <name>Purpose_of_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Delivered by Vendor --></label>
+        <name>Quantity_Delivered_by_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Vendors Gift Tracking --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Name --></label>
+        <name>Vendor_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Vendor Gift Tracking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

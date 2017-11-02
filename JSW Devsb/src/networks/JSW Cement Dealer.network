@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <branding>
+        <primaryColor>#0040EB</primaryColor>
+        <primaryComplementColor>#FFFFFF</primaryComplementColor>
+        <quaternaryColor>#FFFFFF</quaternaryColor>
+        <quaternaryComplementColor>#222222</quaternaryComplementColor>
+        <secondaryColor>#F5EDFE</secondaryColor>
+        <tertiaryColor>#2A61F3</tertiaryColor>
+        <tertiaryComplementColor>#FFFFFF</tertiaryComplementColor>
+        <zeronaryColor>#1D4ED3</zeronaryColor>
+        <zeronaryComplementColor>#FFFFFF</zeronaryComplementColor>
+    </branding>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <emailSenderAddress>kaleshaik@bodhtree.com</emailSenderAddress>
+    <emailSenderName>JSW Cement Dealer</emailSenderName>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <networkMemberGroups>
+        <profile>Admin</profile>
+        <profile>JSW Customer</profile>
+    </networkMemberGroups>
+    <picassoSite>JSW_Cement_Dealer1</picassoSite>
+    <selfRegistration>false</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>JSW_Cement_Dealer</site>
+    <status>Live</status>
+    <tabs>
+        <customTab>Order__c</customTab>
+        <customTab>Invoice__c</customTab>
+        <customTab>Order_Booking_Information__c</customTab>
+        <defaultTab>Account</defaultTab>
+        <standardTab>Account</standardTab>
+        <standardTab>report</standardTab>
+        <standardTab>Dashboard</standardTab>
+    </tabs>
+    <urlPathPrefix>customer</urlPathPrefix>
+    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+</Network>

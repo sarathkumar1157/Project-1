@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PIB SO Targets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PIB SO Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active Dealers Last 3 months E&amp;I --></label>
+        <name>Active_Dealers_Last_3_months_E_I__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Dealers Last 3 months exclude --></label>
+        <name>Active_Dealers_Last_3_months_exclude__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHD 15 Day Actuals --></label>
+        <name>CHD_15_Day_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHD Actuals --></label>
+        <name>CHD_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHD Target --></label>
+        <name>CHD_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Actuals --></label>
+        <name>Collection_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections Target --></label>
+        <name>Collections_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Redressal --></label>
+        <name>Complaint_Redressal__c</name>
+    </fields>
+    <fields>
+        <label><!-- ELP Points Target --></label>
+        <name>ELP_Points_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Code --></label>
+        <name>Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLP Registrations Target --></label>
+        <name>MLP_Registrations_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager(ASM) --></label>
+        <name>Manager_ASM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Employee ID --></label>
+        <name>Manager_Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Actuals --></label>
+        <name>NSR_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Dealer Additions Target --></label>
+        <name>Net_Dealer_Additions_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Dealers Appointed this month --></label>
+        <name>New_Dealers_Appointed_this_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- No fo MLP Registrations --></label>
+        <name>No_fo_MLP_Registrations__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Active Dealers Target --></label>
+        <name>No_of_Active_Dealers_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Influencer Meets --></label>
+        <name>No_of_Influencer_Meets__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Leads Converted --></label>
+        <name>No_of_Leads_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Project Site Meets --></label>
+        <name>No_of_Project_Site_Meets__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Site Demos --></label>
+        <name>No_of_Site_Demos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Trade Actuals --></label>
+        <name>Non_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Target --></label>
+        <name>Overall_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIB ASM Targets --></label>
+        <name>PIB_ASM_Targets__c</name>
+        <relationshipLabel><!-- PIB SO Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PSC 15 Day Actuals --></label>
+        <name>PSC_15_Day_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSC Actuals --></label>
+        <name>PSC_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSC Target --></label>
+        <name>PSC_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality of Meets --></label>
+        <name>Quality_of_Meets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Owner --></label>
+        <name>Record_Owner__c</name>
+        <relationshipLabel><!-- PIB SO Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total 15 Day Actuals --></label>
+        <name>Total_15_Day_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals --></label>
+        <name>Total_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Actuals --></label>
+        <name>Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade/NT Target --></label>
+        <name>Trade_NT_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15 Day Target --></label>
+        <name>X15_Day_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

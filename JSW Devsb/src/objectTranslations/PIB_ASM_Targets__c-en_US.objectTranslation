@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PIB ASM Targets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PIB ASM Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- CHD 15 Day Actuals --></label>
+        <name>CHD_15_Day_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHD Actuals --></label>
+        <name>CHD_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- CHD Target --></label>
+        <name>CHD_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Actuals --></label>
+        <name>Collection_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- ELP Target --></label>
+        <name>ELP_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Code --></label>
+        <name>Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLP Target --></label>
+        <name>MLP_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Volume Target --></label>
+        <name>Monthly_Volume_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Actuals --></label>
+        <name>NSR_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Target --></label>
+        <name>NSR_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- No fo MLP Registrations --></label>
+        <name>No_fo_MLP_Registrations__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSC 15 Day Actuals --></label>
+        <name>PSC_15_Day_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSC Actuals --></label>
+        <name>PSC_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSC Target --></label>
+        <name>PSC_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total 15 Day Actuals --></label>
+        <name>Total_15_Day_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals --></label>
+        <name>Total_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15 Day Target --></label>
+        <name>X15_Day_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

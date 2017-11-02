@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MonthlySalesSummarySNAP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MonthlySalesSummariesSNAP</value>
+    </caseValues>
+    <fields>
+        <label><!-- DistChannel --></label>
+        <name>DistChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- InterfaceDateTime --></label>
+        <name>InterfaceDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductGroup --></label>
+        <name>ProductGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalesDistrict --></label>
+        <name>SalesDistrict__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

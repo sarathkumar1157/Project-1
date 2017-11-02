@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue Tracker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issue Tracker</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>AssignedTo__c</name>
+        <relationshipLabel><!-- Issue Tracker (Assigned To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <picklistValues>
+            <masterLabel>Developer Sandbox</masterLabel>
+            <translation><!-- Developer Sandbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue Description --></label>
+        <name>Issue_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Opened On --></label>
+        <name>Issue_Opened_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Status --></label>
+        <name>Issue_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Testing</masterLabel>
+            <translation><!-- In Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With Customer</masterLabel>
+            <translation><!-- With Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With Developer</masterLabel>
+            <translation><!-- With Developer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Module --></label>
+        <name>Module__c</name>
+        <picklistValues>
+            <masterLabel>Accounts</masterLabel>
+            <translation><!-- Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approval Process</masterLabel>
+            <translation><!-- Approval Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Partners</masterLabel>
+            <translation><!-- Business Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Ledger</masterLabel>
+            <translation><!-- Customer Ledger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Portal</masterLabel>
+            <translation><!-- Dealer Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home page</masterLabel>
+            <translation><!-- Home page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoices</masterLabel>
+            <translation><!-- Invoices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads</masterLabel>
+            <translation><!-- Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Info</masterLabel>
+            <translation><!-- Market Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly Targets</masterLabel>
+            <translation><!-- Monthly Targets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Request</masterLabel>
+            <translation><!-- Order Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orders</masterLabel>
+            <translation><!-- Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PJP</masterLabel>
+            <translation><!-- PJP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report &amp; Dashboards</masterLabel>
+            <translation><!-- Report &amp; Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Summary</masterLabel>
+            <translation><!-- Sales Summary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship To Party</masterLabel>
+            <translation><!-- Ship To Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visit</masterLabel>
+            <translation><!-- Visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nature Of Request --></label>
+        <name>Nature_Of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Bug</masterLabel>
+            <translation><!-- Bug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR</masterLabel>
+            <translation><!-- CR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement</masterLabel>
+            <translation><!-- Enhancement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reported By --></label>
+        <name>Reported_By__c</name>
+        <relationshipLabel><!-- Issue Tracker (Reported By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Screenshot If Applicable --></label>
+        <name>Screenshot_If_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>Target_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Of Device --></label>
+        <name>Type_Of_Device__c</name>
+        <picklistValues>
+            <masterLabel>Desktop/Laptop</masterLabel>
+            <translation><!-- Desktop/Laptop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet</masterLabel>
+            <translation><!-- Tablet --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Issue Tracker Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Issue Tracker Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Detail Page --></label>
+        <name>Detail_Page</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select a value --></errorMessage>
+        <name>Issue_Status_mandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

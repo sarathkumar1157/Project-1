@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Kerala TSO 5</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Kerala TSO 5</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Kerala_ASM_5</parentRole>
+</Role>

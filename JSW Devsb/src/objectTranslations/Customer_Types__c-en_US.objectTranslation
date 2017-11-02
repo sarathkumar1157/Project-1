@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Types</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account assignment Group --></label>
+        <name>Account_assignment_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Documents --></label>
+        <name>Billing_Documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIN DETAILS --></label>
+        <name>CIN_DETAILS__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code Data --></label>
+        <name>Company_Code_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>Company_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Ctrl Area --></label>
+        <name>Credit_Ctrl_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust Stas.Grp. --></label>
+        <name>Cust_Stas_Grp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group --></label>
+        <name>Customer_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Pricing  Proc --></label>
+        <name>Customer_Pricing_Proc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Plant --></label>
+        <name>Delivery_Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Priority --></label>
+        <name>Delivery_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterms1 --></label>
+        <name>Incoterms1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterms2 --></label>
+        <name>Incoterms2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name1 --></label>
+        <name>Name1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name2 --></label>
+        <name>Name2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment terms --></label>
+        <name>Payment_terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Group --></label>
+        <name>Pricing_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Code --></label>
+        <name>SAP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Data --></label>
+        <name>Sales_Area_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District --></label>
+        <name>Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Group --></label>
+        <name>Sales_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Condition --></label>
+        <name>Shipping_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms of Payments --></label>
+        <name>Terms_of_Payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- YS --></label>
+        <name>YS__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer Type Layout</layout>
+        <sections>
+            <label><!-- Account Management --></label>
+            <section>Account Management</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Function --></label>
+            <section>Partner Function</section>
+        </sections>
+        <sections>
+            <label><!-- Sales --></label>
+            <section>Sales</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MMC Layout</layout>
+        <sections>
+            <label><!-- Account Management --></label>
+            <section>Account Management</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Function --></label>
+            <section>Partner Function</section>
+        </sections>
+        <sections>
+            <label><!-- Sales --></label>
+            <section>Sales</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Promoter Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sub Dealer Layout</layout>
+        <sections>
+            <label><!-- Account Management --></label>
+            <section>Account Management</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales --></label>
+            <section>Sales</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping --></label>
+            <section>Shipping</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Middle Man Communication --></label>
+        <name>Middle_Man_Communication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Promoters --></label>
+        <name>Sales_Promoters</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sub Dealer --></label>
+        <name>Sub_Dealer</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Company Code Default Value is 3000 --></errorMessage>
+        <name>Company_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAP Code Should contain 10 Alphanumeric Values Starting with &quot;AP&quot; --></errorMessage>
+        <name>SAP_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Org Default Value is 3000 --></errorMessage>
+        <name>Sales_Org</name>
+    </validationRules>
+</CustomObjectTranslation>

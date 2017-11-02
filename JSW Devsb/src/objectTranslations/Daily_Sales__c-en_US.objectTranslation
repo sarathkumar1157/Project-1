@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Summary</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Sales Summary --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actuals in QTY(MT) --></label>
+        <name>Actuals_in_QTY_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Formula --></label>
+        <name>Code_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Date --></label>
+        <name>Commercial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Distrcit --></label>
+        <name>Sales_Distrcit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District Description --></label>
+        <name>Sales_District_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Emplyee Code --></label>
+        <name>Sales_Emplyee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office Description --></label>
+        <name>Sales_Office_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Code --></label>
+        <name>Territory_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type  of Customer --></label>
+        <name>Type_of_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>Sales Summary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

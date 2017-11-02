@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plant Master</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plant Masters</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- Plant Masters --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Depot Customer --></label>
+        <name>Depot_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Code --></label>
+        <name>Plant_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Name --></label>
+        <name>Plant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District Code --></label>
+        <name>Sales_District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District Name --></label>
+        <name>Sales_District_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Name --></label>
+        <name>State_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

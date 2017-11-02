@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conversion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conversions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account/Dealer/Customer --></label>
+        <name>Account_Dealer_Customer__c</name>
+        <relationshipLabel><!-- Conversions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales officer --></label>
+        <name>Assignee__c</name>
+        <relationshipLabel><!-- Conversions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conversion Owner --></label>
+        <name>Conversion_Owner__c</name>
+        <picklistValues>
+            <masterLabel>LATF</masterLabel>
+            <translation><!-- LATF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSO</masterLabel>
+            <translation><!-- TSO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Contact Number --></label>
+        <name>Customer_Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Communication --></label>
+        <name>Date_of_Communication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencer --></label>
+        <name>Influencer__c</name>
+        <relationshipLabel><!-- Conversions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LATF --></label>
+        <name>LATF__c</name>
+        <relationshipLabel><!-- Conversions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity in MT --></label>
+        <name>Quantity_in_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>Site__c</name>
+        <relationshipLabel><!-- Conversions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Conversion --></label>
+        <name>Type_of_Conversion__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repeat_Order</masterLabel>
+            <translation><!-- Repeat_Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Product --></label>
+        <name>Type_of_Product__c</name>
+        <picklistValues>
+            <masterLabel>Concreel HD</masterLabel>
+            <translation><!-- Concreel HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBS</masterLabel>
+            <translation><!-- GBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Report --></label>
+        <name>Visit_Report__c</name>
+        <relationshipLabel><!-- Conversions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Conversion Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Order__c.Sold_To_Party__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.SO_STO_Date_Formula__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.SO_STO_No__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.PO_No__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.Material__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.Order_Qty__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.Net_Price__c</field>
+    </columns>
+    <columns>
+        <field>Order__c.Plant__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Yesterday&apos;s Sales Orders  Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Order__c@Order__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Order__c.SO_STO_Date_Formula__c</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

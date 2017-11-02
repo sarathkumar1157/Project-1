@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Month_Plan__c$Name</field>
+    </columns>
+    <columns>
+        <field>Month_Plan__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Month_Plan__c$Owner</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Month_Plan__c$RecordType</column>
+            <operator>notEqual</operator>
+            <value>Month_Plan__c.Template</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PJP Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Month_Plan__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Month_Plan__c$LastModifiedDate</dateColumn>
+        <endDate>2017-02-17</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-02-16</startDate>
+    </timeFrameFilter>
+</Report>

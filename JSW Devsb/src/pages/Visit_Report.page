@@ -1,0 +1,12 @@
+<apex:page controller="VisitReportController" sidebar="false" showHeader="false">
+    <apex:pageBlock >
+        <apex:pageblockTable value="{!rwplist}" var="rwp">
+            <apex:column value="{!rwp.name}" headerValue="Name"/>
+            <apex:column value="{!rwp.role}" headerValue="Role"/>
+            
+            <apex:column value="{!rwp.perdaytrg}" headerValue="Target"/>
+            <apex:column value="{!rwp.totalvst}" headerValue="Planned"/>
+            <apex:column value="{!rwp.vstact}" headerValue="Actual"/>
+        </apex:pageblockTable>
+    </apex:pageBlock>
+</apex:page>

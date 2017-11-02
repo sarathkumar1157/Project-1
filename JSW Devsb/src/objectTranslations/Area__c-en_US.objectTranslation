@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Area</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Areas</value>
+    </caseValues>
+    <fields>
+        <label><!-- BillingPostalCode --></label>
+        <name>BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State/Province --></label>
+        <name>Billing_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- Areas --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Adilabad</masterLabel>
+            <translation><!-- Adilabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad</masterLabel>
+            <translation><!-- Hyderabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kamareddy</masterLabel>
+            <translation><!-- Kamareddy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karimnagar</masterLabel>
+            <translation><!-- Karimnagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medak</masterLabel>
+            <translation><!-- Medak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nalgonda</masterLabel>
+            <translation><!-- Nalgonda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nirmal</masterLabel>
+            <translation><!-- Nirmal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siddipet</masterLabel>
+            <translation><!-- Siddipet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State/Province --></label>
+        <name>Shipping_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Purpose --></label>
+        <name>Visit_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Complaints</masterLabel>
+            <translation><!-- Complaints --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter Meet</masterLabel>
+            <translation><!-- Counter Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage Assessment</masterLabel>
+            <translation><!-- Damage Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Review</masterLabel>
+            <translation><!-- Head Office Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office review</masterLabel>
+            <translation><!-- Office review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Collection</masterLabel>
+            <translation><!-- Payment Collection --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Area Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

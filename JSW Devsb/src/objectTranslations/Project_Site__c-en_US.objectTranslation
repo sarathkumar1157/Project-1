@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sites</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Sites</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Project Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Architect --></label>
+        <name>Architect__c</name>
+        <relationshipLabel><!-- Project Sites (Architect) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Builder --></label>
+        <name>Builder__c</name>
+        <relationshipLabel><!-- Project Sites (Builder) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Brands --></label>
+        <name>Competitor_Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Stage --></label>
+        <name>Construction_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Construction in progress</masterLabel>
+            <translation><!-- Construction in progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nearing completion</masterLabel>
+            <translation><!-- Nearing completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-construction stage</masterLabel>
+            <translation><!-- Pre-construction stage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 1 --></label>
+        <name>Contact_Email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cntact Email 2 --></label>
+        <name>Contact_Email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email 3 --></label>
+        <name>Contact_Email_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 1 --></label>
+        <name>Contact_Person_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 2 --></label>
+        <name>Contact_Person_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 3 --></label>
+        <name>Contact_Person_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone 1 --></label>
+        <name>Contact_Phone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone 2 --></label>
+        <name>Contact_Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone 3 --></label>
+        <name>Contact_Phone_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role 1 --></label>
+        <name>Contact_Role_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role 2 --></label>
+        <name>Contact_Role_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role 3 --></label>
+        <name>Contact_Role_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted --></label>
+        <name>Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Email --></label>
+        <name>Customer_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- Project Sites (District) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Customer Name --></label>
+        <name>End_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engineer --></label>
+        <name>Engineer__c</name>
+        <relationshipLabel><!-- Project Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- JSW Cement Approval --></label>
+        <name>JSW_Cement_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSW Supply Details --></label>
+        <name>JSW_Supply_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Concerned SO --></label>
+        <name>Name_of_Concerned_SO__c</name>
+        <relationshipLabel><!-- Project Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Quantity Required in MT --></label>
+        <name>Product_Quantity_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Concreel HD</masterLabel>
+            <translation><!-- Concreel HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBS</masterLabel>
+            <translation><!-- GBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Construction End Date --></label>
+        <name>Project_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Start Date --></label>
+        <name>Project_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Status --></label>
+        <name>Site_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Active</masterLabel>
+            <translation><!-- In Active --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Sub-Type --></label>
+        <name>Site_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Builder/Contractor Site</masterLabel>
+            <translation><!-- Builder/Contractor Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Govt/Institutional Site</masterLabel>
+            <translation><!-- Govt/Institutional Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Structural Consultant --></label>
+        <name>Structural_Consultant__c</name>
+        <relationshipLabel><!-- Project Sites (Structural Consultant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Project Sites (Territory) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Site Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>IHB Sites</masterLabel>
+            <translation><!-- IHB Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Sites</masterLabel>
+            <translation><!-- Project Sites --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Report --></label>
+        <name>Visit_Report__c</name>
+        <relationshipLabel><!-- Project Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Volume Potential in MT --></label>
+        <name>Volume_Potential_in_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Site Layout</layout>
+        <sections>
+            <label><!-- Additional Contact Information --></label>
+            <section>Additional Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Project Site Map --></label>
+            <section>Project Site Map</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

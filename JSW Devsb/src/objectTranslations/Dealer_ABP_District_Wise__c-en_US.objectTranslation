@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dealer ABP-District Wise</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dealer ABP-District Wise</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Annual Target --></label>
+        <name>Account_Annual_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Current Market Share --></label>
+        <name>Account_Current_Market_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Current Sales --></label>
+        <name>Account_Current_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Expected Market Share --></label>
+        <name>Account_Expected_Market_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Expected Sales --></label>
+        <name>Account_Expected_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Potential --></label>
+        <name>Account_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Dealer ABP-District Wise --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annual Business Plan No --></label>
+        <name>Annual_Business_Plan_No__c</name>
+        <relationshipLabel><!-- Dealer ABP-District Wise --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

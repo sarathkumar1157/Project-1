@@ -1,0 +1,73 @@
+<apex:page standardController="Targets__c" extensions="targetClass" docType="html-5.0">
+    <apex:form >
+    <style>
+    .ct{text-align:center;}
+    .tbody{text-align:center;}
+    </style>
+    <apex:pagemessages ></apex:pagemessages>
+      <apex:pageBlock >
+          <apex:pageblockSection title="Target">
+              <apex:inputField value="{!tgtrec.OwnerId}"/>
+              <apex:inputField value="{!tgtrec.Territory__c}"/>
+              <apex:inputField value="{!tgtrec.Month__c}"/>
+              <apex:inputField value="{!tgtrec.Year__c}"/>
+              <apex:inputField value="{!tgtrec.Product_Group__c}"/>
+          </apex:pageblockSection>
+          <apex:variable value="{!1}" var="rowIndex"/>
+          <apex:pageBlockSection title="Target Information" id="pbs">
+          <apex:variable value="{!1}" var="rowIndex"/>
+              <apex:pageblockTable value="{!tgtchdrec}" var="tc" styleClass="tbody">
+              
+              <apex:column headerValue="NO." headerClass="ct">
+              <apex:outputText value="{!FLOOR(rowIndex)}"/>
+              <!--<apex:variable var="rowNum" value="{!rowIndex + 1}"/>-->
+                </apex:column>
+                  <apex:column headerValue="Type" headerClass="ct">
+                      <apex:inputField value="{!tc.Type__c}">
+                      </apex:inputField>
+                  </apex:column>
+                  <apex:column headerValue="Nature" headerClass="ct">
+                  <apex:inputField value="{!tc.Nature__c}">
+                     <apex:actionSupport event="onchange" reRender="pbs"/>
+                  </apex:inputfield>
+                  </apex:column>
+                  <apex:column headerValue="Customer" headerClass="ct">
+                  <apex:inputField value="{!tc.Customer_Name__c}" list="{!acnames}" rendered="{!if(tc.Nature__c=='New',false,true)}">
+                   <!--<apex:actionSupport event="onchange" rerender="pbs" action="{!myActionInControllerEdit}"  >
+                      <apex:param name="lookupindex" value="{!rowIndex}"/>
+                   </apex:actionSupport>-->
+                   </apex:inputfield>
+                  </apex:column>
+                  <apex:column headerValue="Sales Promoter" headerClass="ct">
+                  <apex:inputField value="{!tc.Sales_Promoter__c}"/>
+                  </apex:column>
+                  <!--<apex:column headerValue="Territory">
+                  <apex:inputField value="{!tc.Territory__c}" rendered="{!if(tc.Nature__c=='New',true,false)}"/>
+                  <apex:outputField value="{!tc.Territory__c}" rendered="{!if(tc.Nature__c=='New',false,true)}"/>
+                  </apex:column>-->
+                  <apex:column headerValue="Target" headerClass="ct">
+                  <apex:inputField value="{!tc.Target__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="No. of New Customers" headerClass="ct">
+                  <apex:inputField value="{!tc.No_of_Dealers__c}" rendered="{!if(tc.Nature__c=='New',true,false)}"/>
+                  </apex:column>
+                  <apex:column headerValue="Delete Row" headerClass="ct">
+                    <apex:commandButton value="Delete" reRender="pbs" onclick="if(!confirm('Are you sure?')){return false};" action="{!deleterow}">
+                      <apex:param name="rowIndex1" value="{!rowIndex}"/>
+                    </apex:commandButton>
+                    <apex:variable var="rowIndex" value="{!rowIndex+1}"/>
+                  </apex:column>
+              </apex:pageblockTable>
+              
+          </apex:pageBlockSection>
+          
+              <apex:commandButton action="{!addrow}" value="Addrow" reRender="pbs">
+              
+              </apex:commandButton>
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!editSave}" value="Save"/>
+              <apex:commandButton action="{!submit}" value="Submit"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

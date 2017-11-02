@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gifts Dispatch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gifts Dispatch</value>
+    </caseValues>
+    <fields>
+        <label><!-- Dispatch Date --></label>
+        <name>Dispatch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatch Type --></label>
+        <name>Dispatch_Type__c</name>
+        <picklistValues>
+            <masterLabel>Distrcit HQ to Dealer</masterLabel>
+            <translation><!-- Distrcit HQ to Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HO to State HQ</masterLabel>
+            <translation><!-- HO to State HQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State HQ to Distrcit HQ</masterLabel>
+            <translation><!-- State HQ to Distrcit HQ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gift Stock --></label>
+        <name>Gift_Stock__c</name>
+        <relationshipLabel><!-- Gifts Dispatch --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gift --></label>
+        <name>Gift_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift --></label>
+        <name>Gift__c</name>
+        <relationshipLabel><!-- Gifts Dispatch --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pictures --></label>
+        <name>Pictures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Dispatch --></label>
+        <name>Purpose_of_Dispatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Dispatched --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received --></label>
+        <name>Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Gifts Dispatch --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tracking No --></label>
+        <name>Tracking_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Receipt Number --></label>
+        <name>Vendor_Receipt_Number__c</name>
+        <relationshipLabel><!-- Gifts Dispatch --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Gifts Dispatch Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

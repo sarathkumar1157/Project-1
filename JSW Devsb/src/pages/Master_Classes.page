@@ -1,0 +1,87 @@
+<apex:page controller="batchCalls" docType="HTML-5.0">
+  <apex:form >
+      <apex:pageBlock Title="Required Info">
+          <apex:pageBlockSection id="main">
+              <apex:selectList value="{!classnames}" label="Batch Name" multiselect="false" size="1">
+                  <apex:selectOption itemValue="None" itemLabel="None"/>
+                  <apex:selectOption itemValue="PDClass" itemLabel="PD Class"/>
+                  <apex:selectOption itemValue="OtherClass" itemLabel="Other Class"/>
+                  <apex:selectOption itemValue="PRFTClass" itemLabel="PRFT Class"/>
+                  <apex:selectOption itemValue="CFClass" itemLabel="CF Class"/>
+                  <apex:selectOption itemValue="CIClass" itemLabel="Customer Incentive Class"/>
+                  <apex:selectOption itemValue="AdhocClass" itemLabel="Adhoc Incentive Class"/>
+                  <apex:selectOption itemValue="IDClass" itemLabel="Invoice Discount Class"/>
+                  <apex:selectOption itemValue="DistrictActualsClass" itemLabel="Distrit Actuals"/>
+                  <apex:selectOption itemValue="DistrictNSRClass" itemLabel="Distrit NSR Actuals"/>
+                  <apex:selectOption itemValue="StateActualsClass" itemLabel="State Actuals"/>
+                  <apex:selectOption itemValue="StateNSRClass" itemLabel="State NSR Actuals"/>
+                  <apex:selectOption itemValue="MHClass" itemLabel="MaharashtraActuals"/>
+                  <apex:selectOption itemValue="DistTargets" itemLabel="District Targets Class"/>
+                  <apex:selectOption itemValue="CustTargets" itemLabel="Customer Targets Class"/>
+                  <apex:selectOption itemvalue="Staging" itemlabel="Staging Conversion"/>
+                  <apex:actionSupport event="onchange" action="{!defaultvals}" reRender="plnt,main"/>
+              </apex:selectList>
+              <apex:inputCheckbox label="To Be Processed" value="{!tobeprocessed}" rendered="{!if(OR(classnames='PDClass',classnames='OtherClass',classnames='CIClass',classnames='AdhocClass',classnames='PRFTClass',classnames='CFClass'),true,false)}"/>
+              <apex:input type="date" value="{!fromdate}" label="From Date"/>
+              <apex:input type="date" value="{!todate}" label="To Date"/>
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+      <apex:pageBlock title="Additional Filters">
+          <apex:pageBlockSection id="plnt">
+              <apex:pageblockSection >
+                  <apex:selectList value="{!prod}" label="Product Group" multiselect="false" size="1">
+                      <apex:selectOption itemValue="None" itemLabel="None"/>
+                      <apex:selectOption itemValue="PSC" itemLabel="PSC"/>
+                      <apex:selectOption itemValue="CHD" itemLabel="CHD"/>
+                      <apex:selectOption itemValue="GGBS" itemLabel="GGBS"/>
+                  </apex:selectList>
+              </apex:pageblockSection>
+              <apex:pageblockSection rendered="{!if(OR(classnames='PDClass',classnames='OtherClass',classnames='CIClass',classnames='AdhocClass'),true,false)}">
+                  <apex:selectList value="{!dc}" label="Distribution Channel" multiselect="false" size="1">
+                      <apex:selectOption itemValue="None" itemLabel="None"/>
+                      <apex:selectOption itemValue="10" itemLabel="10"/>
+                      <apex:selectOption itemValue="20" itemLabel="20"/>
+                      <apex:selectOption itemValue="50" itemLabel="50"/>
+                  </apex:selectList>
+              </apex:pageblockSection>
+              <apex:pageBlockSection rendered="{!if(OR(classnames='DistrictActualsClass',classnames='DistrictNSRClass'),true,false)}">
+                  <apex:inputText value="{!salesofccode}" label="Sales Office Code"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(classnames='MHClass',true,false)}">
+                  <apex:inputText value="{!shptodist}" label="Ship to District Name"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(OR(classnames='StateActualsClass',classnames='StateNSRClass'),true,false)}">
+                  <apex:inputText value="{!statcode}" label="State Code"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(classnames='PDClass',true,false)}">
+                  <apex:inputText value="{!salesdistrict}" label="Sales District"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(classnames='CIClass',true,false)}">
+                  <apex:inputText value="{!soldcode}" label="Sold To Code"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(OR(classnames='PRFTClass',classnames='CFClass'),true,false)}">
+                  <apex:inputText value="{!plant}" label="Plant"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(classnames='PRFTClass',true,false)}">
+                  <apex:inputText value="{!plantshrt}" label="Plant Short Form"/>
+              </apex:pageBlockSection>
+              <apex:pageBlockSection rendered="{!if(classnames='CFClass',true,false)}">
+                  <apex:inputText value="{!sloc}" label="Storage Location"/>
+              </apex:pageBlockSection>
+          </apex:pageBlockSection>
+          <apex:pageBlockButtons location="bottom">
+              <apex:commandLink action="{!runbatch}" target="_blank">
+                  <apex:commandButton value="Run"/>
+              </apex:commandLink>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+      <apex:pageBlock >
+          <apex:pageBlockSection >
+              <apex:selectlist value="{!convertparam}">
+                  <apex:selectOption itemvalue="None" itemlabel="none"/>
+                  <apex:selectOption itemvalue="Staging" itemlabel="Staging Conversion"/>
+              </apex:selectlist>
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

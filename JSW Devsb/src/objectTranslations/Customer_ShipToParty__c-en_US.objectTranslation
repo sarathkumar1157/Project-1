@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer&amp;ShipToParty</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CustomersShipToPartys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- CustomersShipToPartys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party Nmae --></label>
+        <name>Ship_To_Party_Nmae__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party --></label>
+        <name>Ship_To_Party__c</name>
+        <relationshipLabel><!-- CustomersShipToPartys --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

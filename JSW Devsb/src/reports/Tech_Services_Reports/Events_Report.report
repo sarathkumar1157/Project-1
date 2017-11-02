@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Event__c.State_Province__c</field>
+    </columns>
+    <columns>
+        <field>Event__c.Districts__c</field>
+    </columns>
+    <columns>
+        <field>Event__c.District__c</field>
+    </columns>
+    <columns>
+        <field>Event__c.Type_of_Meet__c</field>
+    </columns>
+    <columns>
+        <field>Event__c.No_Of_Invitees_for_Each_Meet__c</field>
+    </columns>
+    <columns>
+        <field>Event__c.Budget__c</field>
+    </columns>
+    <columns>
+        <field>Event__c.Event__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Events Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Event__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Event__c.Event__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

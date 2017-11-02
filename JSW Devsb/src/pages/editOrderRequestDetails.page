@@ -1,0 +1,434 @@
+<apex:page standardController="Order_Request__c" extensions="editOrderRequestDetails" id="pageId" showheader="false" standardStylesheets="true">
+<head>
+<style>
+span.lookupInput a {
+    border-top:0px solid #a9a9a9 !important;
+    border-right:0px solid #a9a9a9 !important;
+    border-bottom:0px solid #a9a9a9!important;
+    border-left:0px solid #cc0000 !important;
+}
+.mandiCust {
+    border-top:1px solid #ccc !important;
+    border-right:1px solid #ccc !important;
+    border-bottom:1px solid #ccc !important;
+    border-left:3px solid #cc0000 !important;
+   
+}
+label {
+    font-size: 13px !important;
+    white-space:nowrap !important;
+}
+.custLokkup {
+    display:inline !important;
+    width: 90% !important;
+}
+.padTB10 {
+    padding:5px 0 10px 0;
+}
+label {
+    margin-top: 10px !important;
+}
+.custBtn {
+    color: #fff !important;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+    padding:6px 18px !important;
+    font-size:15px !important;
+}
+.custBtn1 {
+    color: #fff !important;
+    background-color:#5bc0de !important;
+    border-color:#46b8da !important;
+    padding:6px 18px !important;
+    font-size:15px !important;
+}
+.custBtn2 {
+    color: #fff !important;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+    padding:3px 9px !important;
+    font-size:11px !important;
+}
+.custBtn3 {
+    color: #fff !important;
+    background-color:#5bc0de !important;
+    border-color:#46b8da !important;
+    padding:3px 9px !important;
+    font-size:11px !important;
+}
+body button, body .x-btn, body .btn, body .btnDisabled, body .btnCancel, body .menuButton .menuButtonButton {
+    background:transparent;
+}
+</style>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<apex:form id="formId">
+  <apex:pageMessages ></apex:pageMessages>
+  <apex:actionFunction name="getMaterial" action="{!materialDetails}" reRender="plant">
+    <apex:param name="rowId1" value=""/>
+  </apex:actionFunction>
+  <apex:inputHidden value="{!orderRequest.Distribution_Channel__c}"/>
+  <apex:inputHidden value="{!orderRequest.Division__c}"/>
+  <div style="display:none;">
+    <apex:inputField value="{!orderRequest.Month_Of_Date__c}" />
+  </div>
+  <div class="panel panel-default" style="margin:15px;">
+    <div class="panel-heading"><b>Order Request Details</b></div>
+    <div class="panel-body">
+       <center>
+          <apex:commandButton styleClass="custBtn" action="{!forSave}" value="Save"/>
+          <apex:commandButton styleClass="custBtn1" action="{!cancel}" value="Cancel"/>
+        </center>
+        <br/>
+   
+    
+        <div class="row">
+          <label class="control-label col-sm-2">Customer Code/Depot Code</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Account__c}" styleClass="form-control custLokkup mandiCust">
+              <apex:actionSupport event="onchange" action="{!accountDetails}"  />
+            </apex:inputField>
+                
+          </div>
+          <label class="control-label col-sm-2">Name</label>
+          <div class="col-sm-4">
+            <label class="control-label">{!$User.FirstName}</label>
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Distribution Channel</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Distribution_Channel_Description__c}" styleClass="form-control" />
+          </div>
+          <label class="control-label col-sm-2">Division</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Division_Description__c}" styleClass="form-control" />
+          </div>
+        </div>
+        <div class="row">
+          <label class="control-label col-sm-2">Order Type</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Order_Type1__c}" styleClass="form-control custLokkup mandiCust">
+              <apex:actionSupport event="onchange" action="{!showOrHideContracts}"/></apex:inputField>
+          </div>
+          <label class="control-label col-sm-2">Inco Terms</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Inco_Terms__c}" id="eco" styleClass="form-control">
+              <apex:actionSupport event="onchange" action="{!showOrHide}"/>
+            </apex:inputField>
+          </div>
+        </div>
+       
+         <apex:outputPanel rendered="{!contract='Contracts'}">
+          
+          <div class="row">
+          <label class="control-label col-sm-2">Contracts</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Contracts__c}"  styleClass="form-control custLokkup">
+              <apex:actionSupport event="onchange" action="{!getContractsDetails}"/></apex:inputField>
+         
+            
+          </div>
+         
+        </div>
+        </apex:outputPanel>
+        
+        
+        
+        
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Sales Org</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Sales_Org__c}" id="saleO" styleClass="form-control" />
+          </div>
+          <label class="control-label col-sm-2">Credit Available</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Credit_Available__c}" styleClass="form-control" />
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Credit Outstanding</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Credit_Outstanding__c}" styleClass="form-control" />
+          </div>
+          <label class="control-label col-sm-2">Credit Overdue</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Credit_Overdue__c}" styleClass="form-control" />
+          </div>
+        </div>
+        
+        <div class="row padTB10">
+         <apex:outputPanel rendered="{!eco1 !='exd'}">
+          <label class="control-label col-sm-2">Ship To Party</label>
+          <div class="col-sm-4">
+            <apex:inputField id="st" value="{!orderRequest.Ship_To_Party__c}"  styleClass="mandiCust form-control  custLokkup">
+              <apex:actionSupport event="onchange" action="{!showOrHide}"/>
+            </apex:inputField>
+            </div>
+            </apex:outputPanel>
+          
+          <label class="control-label col-sm-2">Customer Sales District</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Sales_District__c}" id="salD" styleClass="form-control" />
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Ship To Sales District</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.SalesDistrictShipto__c}" id="ShipsalD" styleClass="form-control" />
+          </div>
+          <label class="control-label col-sm-2">Shipment Address</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Shipment_Address__c}" id="shipAd" styleClass="form-control" />
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Customer Address</label>
+          <div class="col-sm-4">
+            <apex:outputfield value="{!orderRequest.Customer_Address__c}" id="CustAd" styleClass="form-control" />
+          </div>
+          <label class="control-label col-sm-2">Po Number</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Po_Number__c}" styleClass="form-control" />
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Sales Promotor</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Sales_Promotor__c}" styleClass="form-control custLokkup" />
+          </div>
+          <label class="control-label col-sm-2">Tax Type</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Tax_Type__c}" id="vat" styleClass="form-control" />
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">Sub Dealer</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Sub_Dealer__c}" styleClass="form-control custLokkup" />
+          </div>
+          <label class="control-label col-sm-2">Shipment Type</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Shipment_Type__c}" id="ship" styleClass="mandiCust form-control custLokkup" />
+          </div>
+        </div>
+        <div class="row padTB10">
+          <label class="control-label col-sm-2">MMC</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.MMCName__c}" styleClass="form-control custLokkup" />
+          </div>
+          <label class="control-label col-sm-2">INC</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.INC__c}" styleClass="form-control custLokkup" />
+          </div>
+        </div>
+        <div class="row padTB10">
+         <label class="control-label col-sm-2">Ship To Code</label>
+          <div class="col-sm-4">
+             <apex:outputfield value="{!orderRequest.Ship_to_Code__c}" styleClass="form-control custLokkup" />
+          </div>
+          <label class="control-label col-sm-2">Address1</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Address1__c}" styleClass="form-control" />
+          </div>
+         
+        </div>
+        <div class="row padTB10">
+         <label class="control-label col-sm-2">Address 2</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Address2__c}" styleClass="form-control" />
+          </div>
+          <label class="control-label col-sm-2">Address 3</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Address3__c}" styleClass="form-control" />
+          </div>
+        
+        </div>
+        
+        
+        <div class="row padTB10">
+            <label class="control-label col-sm-2">Address 4</label>
+          <div class="col-sm-4">
+            <apex:inputField value="{!orderRequest.Address4__c}" styleClass="form-control" />
+          </div>
+         
+        </div>
+    
+    </div>
+  </div>
+  <div class="panel panel-default" style="margin:15px;" id="oblId">
+    <div class="panel-heading"><b>Order Bookimg Line Items</b>
+      <div class="pull-right"> 
+        <!-- <apex:commandButton styleClass="custBtn2" action="{!addMoreItems}" value="Add More" reRender="oblId,row"/>
+      <apex:commandButton styleClass="custBtn3" value="Remove" action="{!blockDeletion}" reRender="oblId"/> --> 
+      </div>
+    </div>
+    <div class="panel-body">
+      <apex:variable value="{!0}" var="rowNum"/>
+      <apex:repeat value="{!ListOrdBook}" var="ordb">
+        <div class="panel panel-default" id="pbseId">
+          <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+          <div class="panel-heading"><b>Line Item</b></div>
+          <div class="panel-body">
+            <form>
+              <div class="row padTB10">
+                <label class="control-label col-sm-2">Delivery</label>
+                <div class="col-sm-4">
+                  <apex:inputField value="{!ordb.Delivery__c}" styleClass="form-control" />
+                </div>
+                <label class="control-label col-sm-2">Quantity</label>
+                <div class="col-sm-4">
+                  <apex:inputField value="{!ordb.Quantity__c}" styleClass="form-control mandiCust" />
+                </div>
+              </div>
+              <div class="row padTB10">
+                <label class="control-label col-sm-2">Material Code</label>
+                <div class="col-sm-4">
+                  <apex:inputField value="{!ordb.Material_Code1__c}" id="fid" styleClass="mandiCust form-control custLokkup" >
+                    <input type="hidden" value="{!rowNum}"  name="row" id="row"/>
+                    <apex:actionSupport event="onchange" action="{!materialDetails}" reRender="plant" >
+                      <apex:param assignTo="{!rowNum}" value="{!rowNum}" name="rowNum"/>
+                    </apex:actionSupport>
+                  </apex:inputField>
+                </div>
+                <label class="control-label col-sm-2">Plant / Depot</label>
+                <div class="col-sm-4">
+                  <apex:inputField value="{!ordb.Plant_Master__c}" id="plant" styleClass="mandiCust form-control custLokkup" />
+                </div>
+              </div>
+              <apex:outputPanel rendered="{!nonTrade =='20'}">
+                <div class="row padTB10" >
+                  <label class="control-label col-sm-2">Price</label>
+                  <div class="col-sm-4">
+                    <apex:inputField styleClass="form-control mandiCust" value="{!ordb.Price__c}" />
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+              </apex:outputPanel>
+            </form>
+          </div>
+        </div>
+      </apex:repeat>
+    </div>
+  </div>
+</apex:form>
+
+<!-- 
+  
+  <apex:pageBlock title="Order Request Details" id="pbId">
+    <apex:pageBlockButtons location="top">
+      <apex:commandButton action="{!forSave}" value="Save"/>
+      <apex:commandButton action="{!cancel}" value="Cancel"/>
+    </apex:pageBlockButtons>
+    
+    
+    <apex:pageBlockSection id="pbsId">
+      <apex:inputField value="{!orderRequest.Account__c}">
+        <apex:actionSupport event="onchange" action="{!accountDetails}" />
+      </apex:inputField>
+      
+      
+      <span style="right:283px;position:absolute;float:right;"> <span style="font-weight:bold;color:#4a4f60;font-size:11px;margin:0 20px 0 0;">Name</span>{!$User.FirstName} </span>
+      <apex:outputfield value="{!orderRequest.Distribution_Channel_Description__c}"/>
+      <apex:outputfield value="{!orderRequest.Division_Description__c}"/>
+      <apex:inputField value="{!orderRequest.Order_Type1__c}" styleClass="mandiCust"></apex:inputField>
+      <apex:inputField value="{!orderRequest.Inco_Terms__c}" id="eco">
+        <apex:actionSupport event="onchange" action="{!showOrHide}"/>
+      </apex:inputField>
+      
+      
+      <apex:outputfield value="{!orderRequest.Sales_Org__c}" id="saleO"/>
+      <apex:outputfield value="{!orderRequest.Credit_Available__c}" />
+      <apex:outputfield value="{!orderRequest.Credit_Outstanding__c}" />
+      <apex:outputfield value="{!orderRequest.Credit_Overdue__c}" />
+      <apex:outputfield value="{!orderRequest.Ship_to_Code__c}" rendered="{!eco1=='exd'}"/>
+      <apex:inputField id="st" value="{!orderRequest.Ship_To_Party__c}" rendered="{!eco1 !='exd'}" styleClass="mandiCust">
+        <apex:actionSupport event="onchange" action="{!showOrHide}"/>
+      </apex:inputField>
+      
+      
+      
+      <apex:outputfield value="{!orderRequest.Sales_District__c}" id="salD"/>
+      <apex:outputfield value="{!orderRequest.SalesDistrictShipto__c}" id="ShipsalD"/>
+      <apex:outputfield value="{!orderRequest.Shipment_Address__c}" id="shipAd"/>
+      <apex:outputfield value="{!orderRequest.Customer_Address__c}" id="CustAd"/>
+      <apex:inputField value="{!orderRequest.Po_Number__c}"/>
+      <apex:inputField value="{!orderRequest.Sales_Promotor__c}"/>
+      
+      
+      <apex:inputField value="{!orderRequest.Tax_Type__c}" id="vat"/>
+      <apex:inputField value="{!orderRequest.Sub_Dealer__c}"/>
+      <apex:inputField value="{!orderRequest.Shipment_Type__c}" id="ship"/>
+      <apex:inputField value="{!orderRequest.MMCName__c}"/>
+      <apex:inputField value="{!orderRequest.INC__c}"/>
+      <apex:inputField value="{!orderRequest.Address1__c}"/>
+      
+      
+      <apex:inputField value="{!orderRequest.Address2__c}"/>
+      <apex:inputField value="{!orderRequest.Address3__c}"/>
+      <apex:inputField value="{!orderRequest.Address4__c}"/>
+      </apex:pageBlockSection>
+      </apex:pageBlock>
+      
+      <apex:pageBlock id="oblId">
+        <apex:pageBlockButtons location="top">
+          
+        </apex:pageBlockButtons>
+        <apex:variable value="{!0}" var="rowNum"/>
+        <apex:repeat value="{!ListOrdBook}" var="ordb">
+          <apex:pageBlockSection title="Order Bookimg Line Item" id="pbseId">
+            <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+            
+           
+            <apex:inputField value="{!ordb.Delivery__c}"/>
+            <apex:inputField value="{!ordb.Quantity__c}"/>
+            
+            <apex:inputField value="{!ordb.Material_Code1__c}" id="fid" >
+              <input type="hidden" value="{!rowNum}"  name="row" id="row"/>
+              <apex:actionSupport event="onchange" action="{!materialDetails}" reRender="plant" >
+                <apex:param assignTo="{!rowNum}" value="{!rowNum}" name="rowNum"/>
+              </apex:actionSupport>
+            </apex:inputField>
+            <apex:inputField styleClass="mandiCust" value="{!ordb.Price__c}" rendered="{!nonTrade =='20'}"/>
+            <apex:inputField value="{!ordb.Plant__c}" id="plant"/>
+          </apex:pageBlockSection>
+        </apex:repeat>
+      </apex:pageBlock>
+      -->
+
+<script>
+  /*  function openLookupPopup(val){ 
+     var i=val-1;
+      // var objectName = $('select[id$=selectedObjectId]').val();
+      // var fieldName = $('select[id$=selectfield]').val();
+       var saleDistct=document.getElementById('pageId:formId:pbId:pbsId:salD').value;
+      var tax=document.getElementById('pageId:formId:pbId:pbsId:vat').value;
+      var shipType=document.getElementById('pageId:formId:pbId:pbsId:ship').value;
+      var productCode=document.getElementById('pageId:formId:oblId:j_id21:'+i+':pbseId:pc').value;
+       var packingType=document.getElementById('pageId:formId:oblId:j_id21:'+i+':pbseId:pt').value;
+       
+   
+     var url="/apex/Custume_Lookup?saleDistct="+saleDistct+"&taxType="+tax+"&shipmentType="+shipType+"&packingType="+packingType+"&productCode="+productCode+"&i="+i;
+               newWin=window.open(url, 'Popup','height=400,width=650,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no');
+               if (window.focus){
+                    newWin.focus();
+               }
+            
+        
+                        
+        return false;
+    } */
+    
+    function getMaterial(rowId)
+    {
+   
+      getMaterial(rowId);
+    }
+    
+    </script>
+</apex:page>

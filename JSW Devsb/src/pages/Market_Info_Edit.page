@@ -1,0 +1,18 @@
+<apex:page standardController="Marketing_Info__c" sidebar="false" recordSetVar="minf">
+
+ <apex:includeScript value="/lightning/lightning.out.js" />
+ <apex:includeLightning />
+<div class="table-responsive">
+ <div id="lightning" />
+</div>
+    <script>
+        $Lightning.use("c:MarketInfoEditApp", function() {
+          $Lightning.createComponent("c:MarketInfoEdit",
+          { label : "" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+</apex:page>

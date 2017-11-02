@@ -1,0 +1,15 @@
+<apex:page controller="loadingSpinnerCtrl">
+    <apex:form id="form">
+        <apex:commandButton action="{!spin}" value="Show Spinner" rerender="form" status="status" />
+        <apex:actionStatus id="status">
+            <apex:facet name="start">
+            <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: black;">
+                &nbsp;
+            </div>
+            <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 30% 50%">
+                <img src="/img/loading32.gif" />
+            </div>
+            </apex:facet>
+        </apex:actionStatus>
+    </apex:form>
+</apex:page>

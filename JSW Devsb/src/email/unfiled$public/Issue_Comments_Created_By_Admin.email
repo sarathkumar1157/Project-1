@@ -1,0 +1,7 @@
+Hi, 
+
+Issue comments created by {!Issue_Comments__c.CreatedBy}. 
+
+Please find the below link for Issue Comments. 
+
+{!Issue_Comments__c.Link}

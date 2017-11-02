@@ -1,0 +1,33 @@
+<apex:page standardController="Monthly_Dealer_Target__c">
+    <head>
+        <style>
+        
+        .slds-scope .slds-form-element__label {
+            display: inline-block;
+            color: rgb(84, 105, 141);
+            font-size: .75rem;
+            line-height: 1.5;
+            margin-right: .75rem;
+            margin-bottom: .25rem;
+            
+        }
+        </style>
+    </head>
+
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+    <div class="table-responsive">
+         <div id="lightning" />
+    </div>
+   <script>
+   var myUserContext = "{!$User.UITheme}";
+        $Lightning.use("c:MonthTarget", function() {
+          $Lightning.createComponent("c:MonthlyTargetView",
+          { UserContext: myUserContext },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+</apex:page>

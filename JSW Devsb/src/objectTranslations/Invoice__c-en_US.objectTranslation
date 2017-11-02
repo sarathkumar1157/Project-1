@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account State --></label>
+        <name>Account_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Discount --></label>
+        <name>Additional_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adhoc Incentive Value --></label>
+        <name>Adhoc_Incentive_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- BED Total --></label>
+        <name>BED_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic Price Per MT --></label>
+        <name>Basic_Price_Per_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Number --></label>
+        <name>Batch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Party State --></label>
+        <name>Bill_To_Party_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Doc Type --></label>
+        <name>Billing_Doc_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Brand_Short_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- CGST Value --></label>
+        <name>CGST_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- CGST % --></label>
+        <name>CGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- CST --></label>
+        <name>CSTT__c</name>
+    </fields>
+    <fields>
+        <label><!-- %CST --></label>
+        <name>CST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Invoice --></label>
+        <name>Cancelled_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Invoive formula --></label>
+        <name>Cancelled_Invoive_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Date --></label>
+        <name>Commercial_Invoice_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Date SAP --></label>
+        <name>Commercial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Number --></label>
+        <name>Commercial_Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust.Grp1 from Master --></label>
+        <name>Cust_Grp1_from_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust.Grup --></label>
+        <name>Cust_Grup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust.Grup.Desc --></label>
+        <name>Cust_Grup_desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer GSTN Number --></label>
+        <name>Customer_GSTN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group 1 --></label>
+        <name>Customer_Group_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group 2 --></label>
+        <name>Customer_Group_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group 3 --></label>
+        <name>Customer_Group_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group 4 --></label>
+        <name>Customer_Group_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Incentive Value --></label>
+        <name>Customer_Incentive_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Special Dscount --></label>
+        <name>Customer_Special_Dscount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Targets Query --></label>
+        <name>Dealer_Targets_Query__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>Delivery_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date SAP --></label>
+        <name>Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Number --></label>
+        <name>Delivery_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery --></label>
+        <name>Delivery__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Depot Invoice --></label>
+        <name>Depot_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel Desc --></label>
+        <name>Distribution_Channel_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70</masterLabel>
+            <translation><!-- 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80</masterLabel>
+            <translation><!-- 80 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- District Actuals Process --></label>
+        <name>District_Actuals_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Inv Process --></label>
+        <name>District_Inv_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division Description --></label>
+        <name>Division_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51</masterLabel>
+            <translation><!-- 51 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>53</masterLabel>
+            <translation><!-- 53 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54</masterLabel>
+            <translation><!-- 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>99</masterLabel>
+            <translation><!-- 99 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excise Invoice Date --></label>
+        <name>Excise_Invoice_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excise Invoice Date SAP --></label>
+        <name>Excise_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excise Invoice Number --></label>
+        <name>Excise_Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIrst Date of Month --></label>
+        <name>FIrst_Date_of_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight --></label>
+        <name>Freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Date --></label>
+        <name>Future_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGST Value --></label>
+        <name>IGST_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGST % --></label>
+        <name>IGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inco Terms --></label>
+        <name>Inco_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institutional --></label>
+        <name>Institutional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Owner Check --></label>
+        <name>Invoice_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Discount Value --></label>
+        <name>Invoice_Discount_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice NSR Processed --></label>
+        <name>Invoice_NSR_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Processed --></label>
+        <name>Invoice_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- LR Number --></label>
+        <name>LR_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Sale MTD --></label>
+        <name>Last_Month_Sale_MTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- MH Actuals Processed --></label>
+        <name>MH_Actuals_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC Code --></label>
+        <name>MMC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC Name --></label>
+        <name>MMC_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC Value --></label>
+        <name>MMC_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC --></label>
+        <name>MMC__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRP Value Per Bag --></label>
+        <name>MRP_Value_Per_Bag__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRP Value Per Bag --></label>
+        <name>MRP_Value_Per_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Man Commission --></label>
+        <name>Middle_Man_Communication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Of Comertiol Date --></label>
+        <name>Month_Of_Comertiol_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month of Commercial Invoice Date --></label>
+        <name>Month_of_Commercial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR C&amp;F Discount --></label>
+        <name>NSR_C_F_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR C&amp;F Value --></label>
+        <name>NSR_C_F_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Other Discount --></label>
+        <name>NSR_Other_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Other Value --></label>
+        <name>NSR_Other_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PD Value --></label>
+        <name>NSR_PD_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PD --></label>
+        <name>NSR_PD__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PRFT Dump Discount --></label>
+        <name>NSR_PRFT_Dump_Discout__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PRFT Value --></label>
+        <name>NSR_PRFT_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Packing Cost --></label>
+        <name>NSR_Packing_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Rake Discount --></label>
+        <name>NSR_Rake_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Value --></label>
+        <name>NSR_T_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Targets Processed --></label>
+        <name>NSR_Targets_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Total Basic Price --></label>
+        <name>NSR_Total_Basic_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Created Date --></label>
+        <name>New_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ODN Number --></label>
+        <name>ODN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Invoice Number --></label>
+        <name>Original_Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original invoice formula --></label>
+        <name>Original_invoice_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAcking Cost --></label>
+        <name>PAcking_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack Type --></label>
+        <name>Pack_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms Decsription --></label>
+        <name>Payment_Terms_Decsription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Master --></label>
+        <name>Plant_Master__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant Name --></label>
+        <name>Plant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Short Form --></label>
+        <name>Plant_Short_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Po Text --></label>
+        <name>Po_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Products__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty in MT --></label>
+        <name>Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate/MT --></label>
+        <name>Rate_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Office --></label>
+        <name>Regional_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Invoice --></label>
+        <name>Road_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGST Value --></label>
+        <name>SGST_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGST % --></label>
+        <name>SGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLOC --></label>
+        <name>SLOC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Order Number --></label>
+        <name>SO_PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District Description --></label>
+        <name>Sales_District_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District --></label>
+        <name>Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Employee Name --></label>
+        <name>Sales_Employee_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Employee --></label>
+        <name>Sales_Employee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Group Description --></label>
+        <name>Sales_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office Code --></label>
+        <name>Sales_Office_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office Description --></label>
+        <name>Sales_Office_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office Sap code --></label>
+        <name>Sales_Office_Sap_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Date --></label>
+        <name>Sales_Order_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Date SAP --></label>
+        <name>Sales_Order_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Orders --></label>
+        <name>Sales_Orders__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter Name --></label>
+        <name>Sales_Promoter_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter --></label>
+        <name>Sales_Promoter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Destination --></label>
+        <name>Ship_To_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To District --></label>
+        <name>Ship_To_District_L__c</name>
+        <relationshipLabel><!-- Invoices (Ship To District) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To District --></label>
+        <name>Ship_To_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party --></label>
+        <name>Ship_To_Party__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to Code --></label>
+        <name>Ship_to_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Amount --></label>
+        <name>Shipment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Type --></label>
+        <name>Shipping_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Code --></label>
+        <name>Sold_To_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold to Name --></label>
+        <name>Sold_to_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight Debit --></label>
+        <name>Sreight_Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Name --></label>
+        <name>State1__c</name>
+    </fields>
+    <fields>
+        <label><!-- StateNSR Targets Proccessed --></label>
+        <name>StateNSR_Targets_Proccessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Actuals Process --></label>
+        <name>State_Actuals_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Dealer Code --></label>
+        <name>Sub_Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Dealer Name --></label>
+        <name>Sub_Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- TGT Process --></label>
+        <name>TGT_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Dist Code --></label>
+        <name>Territory_Dist_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Dist --></label>
+        <name>Territory_Dist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory State --></label>
+        <name>Territory_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Test Date --></label>
+        <name>Test_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Adhoc Discount --></label>
+        <name>Total_Adhoc_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Basic Price --></label>
+        <name>Total_Basic_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total MRP Value --></label>
+        <name>Total_MRP_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total tax --></label>
+        <name>Total_tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total value --></label>
+        <name>Total_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transporter Code --></label>
+        <name>Transporter_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transporter Name --></label>
+        <name>Transporter_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Number --></label>
+        <name>Truck_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- UGST Value --></label>
+        <name>UGST_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- UGST % --></label>
+        <name>UGST__c</name>
+    </fields>
+    <fields>
+        <label><!-- UOM --></label>
+        <name>UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Inv Processed --></label>
+        <name>User_Inv_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Value --></label>
+        <name>VAT_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- %VAT --></label>
+        <name>VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State --></label>
+        <name>ship_To_State__c</name>
+    </fields>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label><!-- Business Partners --></label>
+            <section>Business Partners</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Details --></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

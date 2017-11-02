@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NSR</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NSR</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- NSR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cash Discount/MT --></label>
+        <name>Cash_Discount_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code Desc --></label>
+        <name>Company_Code_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>Company_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Desc --></label>
+        <name>Customer_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group 1 --></label>
+        <name>Customer_group_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group 2 --></label>
+        <name>Customer_group_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group 3 --></label>
+        <name>Customer_group_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group 4 --></label>
+        <name>Customer_group_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group 5 --></label>
+        <name>Customer_group_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group Desc --></label>
+        <name>Customer_group_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer group --></label>
+        <name>Customer_group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer grp 1 Desc --></label>
+        <name>Customer_grp_1_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer grp 2 Desc --></label>
+        <name>Customer_grp_2_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer grp 3 Desc --></label>
+        <name>Customer_grp_3_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer grp 4 Desc --></label>
+        <name>Customer_grp_4_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer grp 5 Desc --></label>
+        <name>Customer_grp_5_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution channel Desc --></label>
+        <name>Distribution_channel_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution channel --></label>
+        <name>Distribution_channel__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division Desc --></label>
+        <name>Division_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Services/MT --></label>
+        <name>External_Services_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- GRP Profit Center --></label>
+        <name>GRP_Profit_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Group Desc --></label>
+        <name>Material_Group_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Group --></label>
+        <name>Material_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- O/WFreight Revenue/MT --></label>
+        <name>O_WFreight_Revenue_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- OutgoingFreight/MT --></label>
+        <name>OutgoingFreight_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Costs/MT --></label>
+        <name>Packing_Costs_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period/year Desc --></label>
+        <name>Period_year_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period/year --></label>
+        <name>Period_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Desc --></label>
+        <name>Plant_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductGroups Desc --></label>
+        <name>ProductGroups_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductGroups --></label>
+        <name>ProductGroups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Desc --></label>
+        <name>Product_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Qty --></label>
+        <name>Region_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue/MT --></label>
+        <name>Revenue_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Commission/MT --></label>
+        <name>Sales_Commission_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Deduction/MT --></label>
+        <name>Sales_Deduction_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org Desc --></label>
+        <name>Sales_Org_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales district Desc --></label>
+        <name>Sales_district_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales district --></label>
+        <name>Sales_district__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Region NSR/MT --></label>
+        <name>Total_Region_NSR_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit of Measure --></label>
+        <name>Unit_of_Measure__c</name>
+    </fields>
+    <layouts>
+        <layout>Nsr Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

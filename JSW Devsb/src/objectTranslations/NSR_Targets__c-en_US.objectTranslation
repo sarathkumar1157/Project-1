@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NSR Targets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NSR Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Group --></label>
+        <name>Customer_Group__c</name>
+        <picklistValues>
+            <masterLabel>Institutional</masterLabel>
+            <translation><!-- Institutional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade &amp; Non-Trade</masterLabel>
+            <translation><!-- Trade &amp; Non-Trade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- NSR Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NSR Target --></label>
+        <name>NSR_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- NSR Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <relationshipLabel><!-- NSR Targets --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>NSR Targets Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

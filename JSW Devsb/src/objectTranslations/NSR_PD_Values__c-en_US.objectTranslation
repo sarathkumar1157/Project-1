@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NSR PD Values</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NSR PD Values</value>
+    </caseValues>
+    <fields>
+        <label><!-- Code Formula --></label>
+        <name>Code_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- NSR PD Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Date --></label>
+        <name>From_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD Value --></label>
+        <name>PD_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_L__c</name>
+        <relationshipLabel><!-- NSR PD Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Be Processed --></label>
+        <name>To_Be_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Date --></label>
+        <name>To_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- distribution Channel --></label>
+        <name>distribution_Channel__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

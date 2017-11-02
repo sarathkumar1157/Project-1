@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Delivery</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Delivery</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Delivery --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch --></label>
+        <name>Batch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill of Lading --></label>
+        <name>Bill_of_Lading__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bun --></label>
+        <name>Bun__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLM Creation DT --></label>
+        <name>CLM_Creation_DT__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLM Number --></label>
+        <name>CLM_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLM Time --></label>
+        <name>CLM_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out --></label>
+        <name>Check_Out_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out Time --></label>
+        <name>Check_Out_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out --></label>
+        <name>Check_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Qty --></label>
+        <name>Delivered_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Creation Date --></label>
+        <name>Delivery_Creation_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Creation Date --></label>
+        <name>Delivery_Creation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Creation Time --></label>
+        <name>Delivery_Creation_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery No --></label>
+        <name>Delivery_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel Name --></label>
+        <name>Distribution_Channel_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division Name --></label>
+        <name>Division_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Driver Name --></label>
+        <name>Driver_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driver Number --></label>
+        <name>Driver_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excise Invoice No --></label>
+        <name>Excise_Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Entry Date --></label>
+        <name>Gate_Entry_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Entry Date --></label>
+        <name>Gate_Entry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Entry Dt Time --></label>
+        <name>Gate_Entry_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Out --></label>
+        <name>Gate_Out_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Out Time --></label>
+        <name>Gate_Out_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Out --></label>
+        <name>Gate_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Wt Date --></label>
+        <name>Gross_Wt_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Wt Date --></label>
+        <name>Gross_Wt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross meassure time --></label>
+        <name>Gross_meassure_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross weight Measure --></label>
+        <name>Gross_weight_Measure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Excise Doc No --></label>
+        <name>Internal_Excise_Doc_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Creation --></label>
+        <name>Invoice_Creation_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Creation Time --></label>
+        <name>Invoice_Creation_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Creation --></label>
+        <name>Invoice_Creation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Means of Trans.ID --></label>
+        <name>Means_of_Trans_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Bags --></label>
+        <name>Number_of_Bags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Booking --></label>
+        <name>Order_Booking__c</name>
+        <relationshipLabel><!-- Delivery --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Packing Out --></label>
+        <name>Packing_Out_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Out Time --></label>
+        <name>Packing_Out_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Out --></label>
+        <name>Packing_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receiving Plant --></label>
+        <name>Receiving_Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- SH City Code --></label>
+        <name>SH_City_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SH Sales District --></label>
+        <name>SH_Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- SH State --></label>
+        <name>SH_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Doc Date --></label>
+        <name>Sale_Doc_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Doc Date --></label>
+        <name>Sale_Doc_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Doc Time --></label>
+        <name>Sale_Doc_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Order Number --></label>
+        <name>Sale_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Doc --></label>
+        <name>Sales_Doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Orders --></label>
+        <name>Sales_Orders__c</name>
+        <relationshipLabel><!-- Delivery --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party --></label>
+        <name>Ship_To_Party__c</name>
+        <relationshipLabel><!-- Delivery --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to Code --></label>
+        <name>Ship_to_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to party Name --></label>
+        <name>Ship_to_party_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Code --></label>
+        <name>Sold_To_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Party Name --></label>
+        <name>Sold_To_Party_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tare Weight Date --></label>
+        <name>Tare_Weight_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tare Weight Time --></label>
+        <name>Tare_Weight_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tare Weight --></label>
+        <name>Tare_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tare Weight Date --></label>
+        <name>Tare_Weightt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Number --></label>
+        <name>Truck_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck Stage --></label>
+        <name>Truck_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yard Entry Time --></label>
+        <name>Yard_Entry_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yard Entry --></label>
+        <name>Yard_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yard Number --></label>
+        <name>Yard_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Delivery Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Loading Status --></label>
+            <section>Loading Status</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Details --></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

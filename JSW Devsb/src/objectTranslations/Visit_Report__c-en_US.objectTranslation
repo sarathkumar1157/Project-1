@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DCR</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DCR</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- DCR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Any Schemes Running --></label>
+        <name>Any_Schemes_Running__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Any image to be captured --></label>
+        <name>Any_image_to_be_captured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branding Activities --></label>
+        <name>Branding_Activities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Brief Details Of Call --></label>
+        <name>Brief_Details_Of_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Remarks --></label>
+        <name>Commercial_Comments__c</name>
+        <picklistValues>
+            <masterLabel>Material not available at counter</masterLabel>
+            <translation><!-- Material not available at counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material not supplied on time</masterLabel>
+            <translation><!-- Material not supplied on time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price sensitive customer</masterLabel>
+            <translation><!-- Price sensitive customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate  to be quoted &amp; supply source identified</masterLabel>
+            <translation><!-- Rate  to be quoted &amp; supply source identified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Brands --></label>
+        <name>Competitor_Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Price --></label>
+        <name>Competitor_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit worthiness --></label>
+        <name>Credit_worthiness__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Average Monthly Volume --></label>
+        <name>Current_Average_Monthly_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer/influencer Email ID --></label>
+        <name>Customer_influencer_Email_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer/influencer  Mobile No --></label>
+        <name>Customer_influencer_Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Activity --></label>
+        <name>Date_of_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Communication --></label>
+        <name>Date_of_Communication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer / Customer SAP Code --></label>
+        <name>Dealer_Customer_SAP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due date committed --></label>
+        <name>Due_date_committed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Volume Committment to JSW --></label>
+        <name>Expected_Volume_Committment_to_JSW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencer Name --></label>
+        <name>Influencer_Name__c</name>
+        <relationshipLabel><!-- DCR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Issues faced/ service requests --></label>
+        <name>Issues_faced_service_requests__c</name>
+        <picklistValues>
+            <masterLabel>Branding Requirements</masterLabel>
+            <translation><!-- Branding Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Followup for appointing non JSW dealers;</masterLabel>
+            <translation><!-- Followup for appointing non JSW dealers; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Techinical isues to be resolved</masterLabel>
+            <translation><!-- Techinical isues to be resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meets to be conducted</masterLabel>
+            <translation><!-- meets to be conducted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- JSW Bag Visibility --></label>
+        <name>JSW_Bag_Visibility__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- JSW Shop Board Condition --></label>
+        <name>JSW_Shop_Board__c</name>
+        <picklistValues>
+            <masterLabel>Absent</masterLabel>
+            <translation><!-- Absent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Condition</masterLabel>
+            <translation><!-- Bad Condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good_Condition</masterLabel>
+            <translation><!-- Good_Condition --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- JSW Supply Details (MT) from System or Dealer --></help>
+        <label><!-- JSW Supply Details (MT) --></label>
+        <name>JSW_Supply_Details_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSW share of wallet --></label>
+        <name>JSW_share_of_wallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- DCR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location of TSO --></label>
+        <name>Location_of_TSO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month/Year --></label>
+        <name>Month_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Concerned Marketing Officer --></label>
+        <name>Name_of_Concerned_Marketing_Officer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of  Customer/ Influencer --></label>
+        <name>Name_of_Customer_Influencer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Dealer/ Retailer to whom Details Communicated --></help>
+        <label><!-- Name of Dealer/ Retailer --></label>
+        <name>Name_of_Dealer_Retailer_to_whom_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of  TS person --></label>
+        <name>Name_of_TS_person__c</name>
+    </fields>
+    <fields>
+        <label><!-- POP material – comments --></label>
+        <name>POP_material_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partners --></label>
+        <name>Partners__c</name>
+        <relationshipLabel><!-- DCR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Collected by SO --></label>
+        <name>Payment_Collected_by_SO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Payment Amount Committed --></label>
+        <name>Pending_Payment_Amount_Committed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Place/Address --></label>
+        <name>Place_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price - WSP, RS --></label>
+        <name>Price_WSP_RS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price – bill price --></label>
+        <name>Price_bill_price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Concreel</masterLabel>
+            <translation><!-- Concreel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Site --></label>
+        <name>Project_Site__c</name>
+        <relationshipLabel><!-- DCR (Project Site) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Visit --></label>
+        <name>Purpose_of_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reputation in mkt --></label>
+        <name>Reputation_in_mkt__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Responsibility --></label>
+        <name>Responsibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- S.No --></label>
+        <name>S_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>Site__c</name>
+        <relationshipLabel><!-- DCR (Site) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock level – JSW --></label>
+        <name>Stock_level_JSW_product_wise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock level --></label>
+        <name>Stock_level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Comments --></label>
+        <name>Technical_Comments__c</name>
+        <picklistValues>
+            <masterLabel>Canopy activity</masterLabel>
+            <translation><!-- Canopy activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cover block distribution</masterLabel>
+            <translation><!-- Cover block distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product &amp; service briefing</masterLabel>
+            <translation><!-- Product &amp; service briefing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product demonstration</masterLabel>
+            <translation><!-- Product demonstration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>slab casting attending</masterLabel>
+            <translation><!-- slab casting attending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Timeline --></label>
+        <name>Timeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top 3 Brands Visibility --></label>
+        <name>Top_3_Brands_Visibility__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Top 3 visible brands --></label>
+        <name>Top_3_visible_brands__c</name>
+        <picklistValues>
+            <masterLabel>ACC</masterLabel>
+            <translation><!-- ACC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambuja</masterLabel>
+            <translation><!-- Ambuja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bharti Cements</masterLabel>
+            <translation><!-- Bharti Cements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birla Shakti</masterLabel>
+            <translation><!-- Birla Shakti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chettinad</masterLabel>
+            <translation><!-- Chettinad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dalmia</masterLabel>
+            <translation><!-- Dalmia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICL</masterLabel>
+            <translation><!-- ICL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JP</masterLabel>
+            <translation><!-- JP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KCP</masterLabel>
+            <translation><!-- KCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kesoram</masterLabel>
+            <translation><!-- Kesoram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maha Cements</masterLabel>
+            <translation><!-- Maha Cements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orient</masterLabel>
+            <translation><!-- Orient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penna</masterLabel>
+            <translation><!-- Penna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priya</masterLabel>
+            <translation><!-- Priya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ramco</masterLabel>
+            <translation><!-- Ramco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ultratech</masterLabel>
+            <translation><!-- Ultratech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zuari</masterLabel>
+            <translation><!-- Zuari --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Includes all Brands --></help>
+        <label><!-- Total potential --></label>
+        <name>Total_potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total product qty required (MT) --></label>
+        <name>Total_product_qty_required_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total project duration (Months) --></label>
+        <name>Total_project_duration_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Activity --></label>
+        <name>Type_of_Activity__c</name>
+        <picklistValues>
+            <masterLabel>Cement Sample Collection/delivery</masterLabel>
+            <translation><!-- Cement Sample Collection/delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Partner visit</masterLabel>
+            <translation><!-- Channel Partner visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor Meet</masterLabel>
+            <translation><!-- Contractor Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter meet</masterLabel>
+            <translation><!-- Counter meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage Assesment</masterLabel>
+            <translation><!-- Damage Assesment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Staff Training</masterLabel>
+            <translation><!-- Dealer Staff Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engg College Lecture</masterLabel>
+            <translation><!-- Engg College Lecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineers Meet</masterLabel>
+            <translation><!-- Engineers Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GGBS Conclave</masterLabel>
+            <translation><!-- GGBS Conclave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Transfer for Meet</masterLabel>
+            <translation><!-- Gift Transfer for Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Godown visit</masterLabel>
+            <translation><!-- Godown visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Govt Off Meet</masterLabel>
+            <translation><!-- Govt Off Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Office Review</masterLabel>
+            <translation><!-- Head Office Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHB Meet</masterLabel>
+            <translation><!-- IHB Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer-Architect</masterLabel>
+            <translation><!-- Influencer-Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer-Contractor</masterLabel>
+            <translation><!-- Influencer-Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer-Engineer</masterLabel>
+            <translation><!-- Influencer-Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer-Mason</masterLabel>
+            <translation><!-- Influencer-Mason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JSW Ext Training</masterLabel>
+            <translation><!-- JSW Ext Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JSW Int Training</masterLabel>
+            <translation><!-- JSW Int Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab Based Activity</masterLabel>
+            <translation><!-- Lab Based Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leave</masterLabel>
+            <translation><!-- Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mason Meet</masterLabel>
+            <translation><!-- Mason Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mason Training Program</masterLabel>
+            <translation><!-- Mason Training Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mega Mason Meet</masterLabel>
+            <translation><!-- Mega Mason Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mix Design Program</masterLabel>
+            <translation><!-- Mix Design Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NDT Testing</masterLabel>
+            <translation><!-- NDT Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Review</masterLabel>
+            <translation><!-- Office Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plant Visit</masterLabel>
+            <translation><!-- Plant Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Site Meet</masterLabel>
+            <translation><!-- Project Site Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIte Mix Design Demo</masterLabel>
+            <translation><!-- SIte Mix Design Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Plaster Demo</masterLabel>
+            <translation><!-- Site Plaster Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Testing</masterLabel>
+            <translation><!-- Site Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Visit</masterLabel>
+            <translation><!-- Site Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab Casting</masterLabel>
+            <translation><!-- Slab Casting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Cement Testing</masterLabel>
+            <translation><!-- Third Party Cement Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Concrete Testing</masterLabel>
+            <translation><!-- Third Party Concrete Testing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Conversion --></label>
+        <name>Type_of_Conversion__c</name>
+        <picklistValues>
+            <masterLabel>New conversion</masterLabel>
+            <translation><!-- New conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repeat order</masterLabel>
+            <translation><!-- Repeat order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Customer/ Influencer --></label>
+        <name>Type_of_Customer_Influencer__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation><!-- Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eng</masterLabel>
+            <translation><!-- Eng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mason</masterLabel>
+            <translation><!-- Mason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others ( descriptive)</masterLabel>
+            <translation><!-- Others ( descriptive) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Structural consultant</masterLabel>
+            <translation><!-- Structural consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing house</masterLabel>
+            <translation><!-- Testing house --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Material --></label>
+        <name>Type_of_Material__c</name>
+        <picklistValues>
+            <masterLabel>PPC/OPC</masterLabel>
+            <translation><!-- PPC/OPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Type --></label>
+        <name>Visit_Type__c</name>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unplanned</masterLabel>
+            <translation><!-- Unplanned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit --></label>
+        <name>Visit__c</name>
+        <relationshipLabel><!-- DCR --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- WS vs Retail(%) --></label>
+        <name>WS_vs_Retail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wayforward to address these --></label>
+        <name>Wayforward_to_address_these__c</name>
+    </fields>
+    <layouts>
+        <layout>Daily Call Report</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dealer Layout</layout>
+        <sections>
+            <label><!-- Branding Related --></label>
+            <section>Branding Related</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Supply Chain Related --></label>
+            <section>Supply Chain Related</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>INST Layout</layout>
+        <sections>
+            <label><!-- Collection Information --></label>
+            <section>Collection Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Influencers</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Sites</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TSO General Visit</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Visit Report Layout</layout>
+        <sections>
+            <label><!-- Action Items --></label>
+            <section>Action Items</section>
+        </sections>
+        <sections>
+            <label><!-- Branding Related --></label>
+            <section>Branding Related</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Related --></label>
+            <section>Finance Related</section>
+        </sections>
+        <sections>
+            <label><!-- Market Data --></label>
+            <section>Market Data</section>
+        </sections>
+        <sections>
+            <label><!-- Supply Chain Related --></label>
+            <section>Supply Chain Related</section>
+        </sections>
+        <sections>
+            <label><!-- Volume --></label>
+            <section>Volume</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Daily Call Report --></label>
+        <name>Daily_Call_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dealer --></label>
+        <name>Dealer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technical Services Visit Report --></label>
+        <name>Influencers</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead --></label>
+        <name>Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NT INST --></label>
+        <name>NT_INST</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Project Sites --></label>
+        <name>Project_Sites</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Visit_Report_Button --></label>
+        <name>New_Visit_Report_Button</name>
+    </webLinks>
+</CustomObjectTranslation>

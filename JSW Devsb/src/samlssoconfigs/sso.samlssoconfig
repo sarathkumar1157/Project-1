@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>http://sso.jsw.in/sxp/ILANTUS/saml20</issuer>
+    <loginUrl>https://sso.jsw.in:80/sxp/customer/sso</loginUrl>
+    <name>sso</name>
+    <oauthTokenEndpoint>https://jswcements--JSWdevsb.cs57.my.salesforce.com/services/oauth2/token?so=00D0k000000Ctwb</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <salesforceLoginUrl>https://jswcements--JSWdevsb.cs57.my.salesforce.com?so=00D0k000000Ctwb</salesforceLoginUrl>
+    <samlEntityId>https://jswcements--JSWdevsb.cs57.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIICyjCCAbKgAwIBAgIEUd5j0zANBgkqhkiG9w0BAQUFADAnMRAwDgYDVQQKEwdJTEFOVFVTMRMwEQYDVQQDEwpzeHBkZWZhdWx0MB4XDTEzMDcxMTA3NTA0M1oXDTIzMDcwOTA3NTA0M1owJzEQMA4GA1UEChMHSUxBTlRVUzETMBEGA1UEAxMKc3hwZGVmYXVsdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAINGsuexPtMAIfLxfbIMUMAtuLRaKrh5unjYhacRJsxlQBGi2Ke9T10P+zkP4tfrmvXZkq5R5Cs4Fwo2d6AKpNzIgfQyGHo/WlPvQB6Uy/dyr97bC3Q8wBJW6NE1gJ1DqCmsgU4HzCjYtwQerPjsQXvUKJ/vtAKXGZhPDlhSqndFvNbAo2WuyBgGBM+w0I5n1OFxF4OmOO5Q6IhHLI1UMwmVfxnlMpEU08Plapa+yfulxxaDh56yFdUtPRAsT2aPN43E5biF32dIwMPcym5L6dQhr6zTBBY4hKQdokuPHWHU3y6MBTkYjsMtRFCVhONQU1Gr99SQuXGIrZDBfIsdx68CAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAUQ1ig6JMohVGzi6mswL72k8uZxYwUV2IQ5uhBuEp2gyRxSplDKWvO1i7wsvlki8lpRUQc/lx/lyrgxSgv0a/Dv5JSVHk6M2mvEn6KvFZZVNz2xEKzDrZ2EXj8eNey2eInMKc5fNHlJCKKXZurQl08Kj8S8WPAN6DEEH3871FGaGWh/dltsm0cp20Kcym+IDcl0Ju69QmnLRBTQa0EzR0sXKoO02FUGyHqU/Ce6y9k1hjeEqCflPnNAe6ZzhU+vKwal4sYqoxCuy16rP5GABXM+7PpT8zTfpSSaKxWirHtISZJ8BcWDZLTTZv80eB0q7C5w6eKc5CDumDw/O5aaScTA==</validationCert>
+</SamlSsoConfig>

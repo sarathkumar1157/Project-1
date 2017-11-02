@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Invoice__c.Qty__c</field>
+    </columns>
+    <columns>
+        <field>Invoice__c.Sold_To_Code__c</field>
+    </columns>
+    <description>STO DISPATCH</description>
+    <filter>
+        <criteriaItems>
+            <column>Invoice__c.Distribution_Channel__c</column>
+            <operator>equals</operator>
+            <value>30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Invoice__c.Sold_To_Code__c</column>
+            <operator>notEqual</operator>
+            <value>JSWC3130,JSWC3140,JSWC3199</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Invoice__c.Plant__c</column>
+            <operator>equals</operator>
+            <value>3001</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Invoice__c.Commercial_Invoice_Date_Formula__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Invoice__c.ship_To_State__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Invoice__c.Sold_to_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DEPO DISPATCH</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntity$Invoice__c@Invoice__c.Sales_Orders__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Invoice__c.Commercial_Invoice_Date_Formula__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

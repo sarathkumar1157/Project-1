@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PJP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PJP</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Information Count --></label>
+        <name>Market_Information_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Name --></label>
+        <name>Month_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Reading Count --></label>
+        <name>Price_Reading_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted for Approval --></label>
+        <name>Submitted_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No of Visits Check-In (Planned) --></label>
+        <name>Total_No_of_Visits_Check_In_Planned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No of Visits (Planned) --></label>
+        <name>Total_No_of_Visits_Planned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total no of Visits (Unplanned) --></label>
+        <name>Total_no_of_Visits_Unplanned__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserRole --></label>
+        <name>UserRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- PJP --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Month Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- PJP --></label>
+        <name>PJP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Template --></label>
+        <name>Template</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

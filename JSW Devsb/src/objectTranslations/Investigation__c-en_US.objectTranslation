@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Investigation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Investigations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Acceptance Remarks --></label>
+        <name>Acceptance_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Details --></label>
+        <name>Batch_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Investigations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compensation Value --></label>
+        <name>Compensation_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compensation --></label>
+        <name>Compensation__c</name>
+        <picklistValues>
+            <masterLabel>IN_MT</masterLabel>
+            <translation><!-- IN_MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN_RS</masterLabel>
+            <translation><!-- IN_RS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complaint Type --></label>
+        <name>Complaint_Type__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Visual (Product)</masterLabel>
+            <translation><!-- Non-Visual (Product) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visual (Product)</masterLabel>
+            <translation><!-- Visual (Product) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conclusion --></label>
+        <name>Conclusion__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Supply --></label>
+        <name>Date_of_Supply__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Use --></label>
+        <name>Date_of_Use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer/Sub-Dealer --></label>
+        <name>Dealer_Sub_Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Det.Invest.By --></label>
+        <name>Det_Invest_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detail Investigation By --></label>
+        <name>Detail_Investigation_By__c</name>
+        <relationshipLabel><!-- Investigations (Detail Investigation By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Detail Investigation --></label>
+        <name>Detail_Investigation__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Investigation By --></label>
+        <name>First_Investigation_By__c</name>
+        <relationshipLabel><!-- Investigations (First Investigation By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gate Pass Date --></label>
+        <name>Gate_Pass_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gate Pass No --></label>
+        <name>Gate_Pass_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grade --></label>
+        <name>Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice No --></label>
+        <name>Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT --></label>
+        <name>MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Bags --></label>
+        <name>No_Of_Bags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Defect --></label>
+        <name>Primary_Defect__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cracks</masterLabel>
+            <translation><!-- Cracks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cut &amp; Torn bags</masterLabel>
+            <translation><!-- Cut &amp; Torn bags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Efflorescence</masterLabel>
+            <translation><!-- Efflorescence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fitness</masterLabel>
+            <translation><!-- Fitness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign Material in GGBS/Cement</masterLabel>
+            <translation><!-- Foreign Material in GGBS/Cement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign Material with PSC</masterLabel>
+            <translation><!-- Foreign Material with PSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formulation of Granules/Lumps</masterLabel>
+            <translation><!-- Formulation of Granules/Lumps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Bag Weights</masterLabel>
+            <translation><!-- Low Bag Weights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixing of GGBS in Cement Bags</masterLabel>
+            <translation><!-- Mixing of GGBS in Cement Bags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others (Application)</masterLabel>
+            <translation><!-- Others (Application) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others (Commercial)</masterLabel>
+            <translation><!-- Others (Commercial) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others (Logistics)</masterLabel>
+            <translation><!-- Others (Logistics) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others (Non-visual)</masterLabel>
+            <translation><!-- Others (Non-visual) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others (Visual)</masterLabel>
+            <translation><!-- Others (Visual) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Not Meeting BIS Specifications</masterLabel>
+            <translation><!-- Product Not Meeting BIS Specifications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setting Time</masterLabel>
+            <translation><!-- Setting Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strength</masterLabel>
+            <translation><!-- Strength --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply of GGBS instead of PSC in Bags</masterLabel>
+            <translation><!-- Supply of GGBS instead of PSC in Bags --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weak Mortar Joints</masterLabel>
+            <translation><!-- Weak Mortar Joints --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority Type --></label>
+        <name>Priority_Type__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RR/CDN Date --></label>
+        <name>RR_CDN_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RR/CDN No --></label>
+        <name>RR_CDN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rake No --></label>
+        <name>Rake_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Acceptance --></label>
+        <name>Reason_for_Acceptance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supply Plant --></label>
+        <name>Supply_Plant__c</name>
+        <picklistValues>
+            <masterLabel>Dolvi</masterLabel>
+            <translation><!-- Dolvi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nandyal</masterLabel>
+            <translation><!-- Nandyal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vijayanagar</masterLabel>
+            <translation><!-- Vijayanagar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transport Type --></label>
+        <name>Transport_Type__c</name>
+        <picklistValues>
+            <masterLabel>Air</masterLabel>
+            <translation><!-- Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Road</masterLabel>
+            <translation><!-- Road --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Comments --></label>
+        <name>Visit_Comments__c</name>
+    </fields>
+    <layouts>
+        <layout>Detail Investigation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Investigation --></label>
+            <section>Detail Investigation</section>
+        </sections>
+        <sections>
+            <label><!-- First Investigation --></label>
+            <section>First Investigation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>First Investigation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- First Investigation --></label>
+            <section>First Investigation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Investigation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Investigation --></label>
+            <section>Detail Investigation</section>
+        </sections>
+        <sections>
+            <label><!-- First Investigation --></label>
+            <section>First Investigation</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Additional Investigation --></label>
+        <name>Additional_Investigation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Detailed Investigation --></label>
+        <name>Detailed_Investigation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- First Investigation --></label>
+        <name>First_Investigation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Quality Investigation --></label>
+        <name>Quality_Investigation</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gift Stock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gifts Stock</value>
+    </caseValues>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- Gifts Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gift --></label>
+        <name>Gift__c</name>
+        <relationshipLabel><!-- Gifts Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gifts Available --></label>
+        <name>Gifts_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gifts Dispatched --></label>
+        <name>Gifts_Dispatched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gifts in Stock --></label>
+        <name>Gifts_in_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <relationshipLabel><!-- Gifts Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendors Gifts --></label>
+        <name>Vendors_Gifts__c</name>
+    </fields>
+    <layouts>
+        <layout>Gift Stock Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select either State or District --></errorMessage>
+        <name>State_District_Selection</name>
+    </validationRules>
+</CustomObjectTranslation>

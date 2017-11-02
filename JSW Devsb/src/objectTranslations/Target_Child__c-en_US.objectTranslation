@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Target Child</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Target Child</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+        <relationshipLabel><!-- Target Child --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature --></label>
+        <name>Nature__c</name>
+        <picklistValues>
+            <masterLabel>Existing</masterLabel>
+            <translation><!-- Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No. of New Customers --></label>
+        <name>No_of_Dealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter --></label>
+        <name>Sales_Promoter__c</name>
+        <relationshipLabel><!-- Target Child --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Start Date --></label>
+        <name>Target_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Targets --></label>
+        <name>Targets__c</name>
+        <relationshipLabel><!-- Target Child --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Target Child --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institution</masterLabel>
+            <translation><!-- Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Trade</masterLabel>
+            <translation><!-- Non Trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade</masterLabel>
+            <translation><!-- Trade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Code --></label>
+        <name>Unique_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

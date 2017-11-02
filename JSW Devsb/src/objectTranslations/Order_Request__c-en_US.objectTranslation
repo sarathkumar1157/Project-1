@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code/Depot Code --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address1 --></label>
+        <name>Address1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address2 --></label>
+        <name>Address2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address3 --></label>
+        <name>Address3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address4 --></label>
+        <name>Address4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alt Tax Class --></label>
+        <name>Alt_Tax_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number --></label>
+        <name>Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract No --></label>
+        <name>Contract_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracts --></label>
+        <name>Contracts__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Time --></label>
+        <name>Created_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Available --></label>
+        <name>Credit_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Outstanding --></label>
+        <name>Credit_Outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Overdue --></label>
+        <name>Credit_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address --></label>
+        <name>Customer_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Nmae__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- INC Name --></label>
+        <name>INC_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- INC --></label>
+        <name>INC__c</name>
+        <relationshipLabel><!-- Order Requests (INC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inco Terms --></label>
+        <name>Inco_Terms__c</name>
+        <picklistValues>
+            <masterLabel>EXD</masterLabel>
+            <translation><!-- EXD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW</masterLabel>
+            <translation><!-- EXW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FO2</masterLabel>
+            <translation><!-- FO2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOR</masterLabel>
+            <translation><!-- FOR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MMC Code --></label>
+        <name>MMCCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC --></label>
+        <name>MMCName__c</name>
+        <relationshipLabel><!-- Order Requests (MMC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Month Of Date --></label>
+        <name>Month_Of_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Header --></label>
+        <name>Order_Request_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Type --></label>
+        <name>Order_Type1__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Type Name --></label>
+        <name>Order_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Type --></label>
+        <name>Order_Type__c</name>
+        <picklistValues>
+            <masterLabel>YCL</masterLabel>
+            <translation><!-- YCL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YCOR</masterLabel>
+            <translation><!-- YCOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YEXC</masterLabel>
+            <translation><!-- YEXC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YFCL</masterLabel>
+            <translation><!-- YFCL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGB</masterLabel>
+            <translation><!-- YGB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YGBS</masterLabel>
+            <translation><!-- YGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YNFR</masterLabel>
+            <translation><!-- YNFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YNT</masterLabel>
+            <translation><!-- YNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YORD</masterLabel>
+            <translation><!-- YORD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YORF</masterLabel>
+            <translation><!-- YORF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YQC</masterLabel>
+            <translation><!-- YQC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YSEZ</masterLabel>
+            <translation><!-- YSEZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YUB</masterLabel>
+            <translation><!-- YUB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Error --></label>
+        <name>Oreder_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Master --></label>
+        <name>Plant_Master__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Po Number --></label>
+        <name>Po_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ship To Sales District --></label>
+        <name>SalesDistrictShipto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Sales District --></label>
+        <name>Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Employee --></label>
+        <name>Sales_Employee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter Name --></label>
+        <name>Sales_Promoter_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promotor --></label>
+        <name>Sales_Promotor__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sap No --></label>
+        <name>Sap_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>Satus_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party code --></label>
+        <name>Ship_To_Party_Nmae__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party --></label>
+        <name>Ship_To_Party__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to Code --></label>
+        <name>Ship_to_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Address --></label>
+        <name>Shipment_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Type --></label>
+        <name>Shipment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Y1-Truck</masterLabel>
+            <translation><!-- Y1-Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y2-Bulker</masterLabel>
+            <translation><!-- Y2-Bulker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y3-Loose</masterLabel>
+            <translation><!-- Y3-Loose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y4-Rail</masterLabel>
+            <translation><!-- Y4-Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y5-Eight Wheel Truck</masterLabel>
+            <translation><!-- Y5-Eight Wheel Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y6-Octrai</masterLabel>
+            <translation><!-- Y6-Octrai --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- So Number --></label>
+        <name>So_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubDealer Name --></label>
+        <name>SubDealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Dealer --></label>
+        <name>Sub_Dealer__c</name>
+        <relationshipLabel><!-- Order Requests (Sub Dealer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Type --></label>
+        <name>Tax_Type__c</name>
+        <picklistValues>
+            <masterLabel>CST</masterLabel>
+            <translation><!-- CST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT</masterLabel>
+            <translation><!-- VAT --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Order Booking Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SO Number Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Master --></label>
+        <name>Master</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Record Lock --></label>
+        <name>Record_Lock</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Clone1 --></label>
+        <name>Clone1</name>
+    </webLinks>
+</CustomObjectTranslation>

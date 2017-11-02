@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NSR Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NSR Target</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- NSR Target --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- C&amp;F Value --></label>
+        <name>C_F_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Invoice --></label>
+        <name>Cancelled_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Date --></label>
+        <name>Commercial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Number --></label>
+        <name>Commercial_Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust Grp1 from Master --></label>
+        <name>Cust_Grp1_from_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Value --></label>
+        <name>Discount_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel Description --></label>
+        <name>Distribution_Channel_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Text --></label>
+        <name>District_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- NSR Target --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division Description --></label>
+        <name>Division_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMP ID --></label>
+        <name>EMP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frieght --></label>
+        <name>Frieght__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC --></label>
+        <name>MMC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Man Commission --></label>
+        <name>Middle_Man_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR/T --></label>
+        <name>NSR_T__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Targets Processed --></label>
+        <name>NSR_Targets_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Value --></label>
+        <name>NSR_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD+SPL+ADDL --></label>
+        <name>PD_SPL_ADDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRFT Dump Value --></label>
+        <name>PRFT_Dump_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Cost --></label>
+        <name>Packing_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Name --></label>
+        <name>Plant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Short Form --></label>
+        <name>Plant_Short_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Value --></label>
+        <name>Portal_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate(MT) --></label>
+        <name>Rate_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to District --></label>
+        <name>Ship_to_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to State --></label>
+        <name>Ship_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Location --></label>
+        <name>Storage_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Code --></label>
+        <name>Territory_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toatl Value --></label>
+        <name>Toatl_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Basic Price --></label>
+        <name>Total_Basic_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>District Targets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>District Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code DT --></label>
+        <name>Code_DT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Actual --></label>
+        <name>District_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Actuals --></label>
+        <name>District_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Non Trade Actuals --></label>
+        <name>District_Non_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Pro Rata Acheivement --></label>
+        <name>District_Pro_Rata_Acheivement__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Pro-Rata Asking Rate --></label>
+        <name>District_Pro_Rata_Asking_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>District_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Trade Actuals --></label>
+        <name>District_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- District Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- GGBS Actuals --></label>
+        <name>GGBS_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institutional Actuals --></label>
+        <name>Institutional_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- MTD Target --></label>
+        <name>MTD_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Days MTD --></label>
+        <name>No_of_Days_MTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Days in a Month --></label>
+        <name>No_of_Days_in_a_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- District SEZ Actuals --></label>
+        <name>SEZ_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <relationshipLabel><!-- District Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub-State --></label>
+        <name>Sub_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Start Date --></label>
+        <name>Target_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Targets --></label>
+        <name>Targets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Percentage --></label>
+        <name>Trade_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Target --></label>
+        <name>Type_of_Target__c</name>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional</masterLabel>
+            <translation><!-- Institutional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade&amp;NT</masterLabel>
+            <translation><!-- Trade&amp;NT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>District Targets Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Trade Performance --></label>
+            <section>Trade Performance</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

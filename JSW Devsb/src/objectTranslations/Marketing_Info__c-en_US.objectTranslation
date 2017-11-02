@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Price Reading</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Price Reading</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BP Max --></label>
+        <name>BP_Max__c</name>
+    </fields>
+    <fields>
+        <label><!-- BP --></label>
+        <name>BP_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branding Activities --></label>
+        <name>Branding_Activities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Partner --></label>
+        <name>Business_Partner__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Average Monthly Volume in MT --></label>
+        <name>Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencer --></label>
+        <name>Influencer__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Price Per Bag --></label>
+        <name>Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Market Information --></label>
+        <name>Market_Information__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Schemes Running --></label>
+        <name>Picklist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSP Max --></label>
+        <name>RSP_Max__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSP Min --></label>
+        <name>RSP_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSP --></label>
+        <name>RSP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Sites --></label>
+        <name>Sites__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stock Available --></label>
+        <name>Stock_Available2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Visit Report --></label>
+        <name>Visit_Report__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Visit --></label>
+        <name>Visit__c</name>
+        <relationshipLabel><!-- Price Reading --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- WSP Max --></label>
+        <name>WSP_Max__c</name>
+    </fields>
+    <fields>
+        <label><!-- WSP Min --></label>
+        <name>WSP_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- WSP --></label>
+        <name>WSP__c</name>
+    </fields>
+    <layouts>
+        <layout>Marketing Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

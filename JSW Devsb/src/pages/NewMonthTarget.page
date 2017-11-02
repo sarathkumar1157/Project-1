@@ -1,0 +1,20 @@
+<apex:page standardController="Monthly_Dealer_Target__c">
+
+ <apex:includeScript value="/lightning/lightning.out.js" />
+ <apex:includeLightning />
+
+ <div id="lightning" />
+
+    <script>
+    var myUserContext = "{!$User.UITheme}";
+
+        $Lightning.use("c:Monthtarget", function() {
+          $Lightning.createComponent("c:MonthlyPlanning",
+          { UserContext: myUserContext },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+</apex:page>

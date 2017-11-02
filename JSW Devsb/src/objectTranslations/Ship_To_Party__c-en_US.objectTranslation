@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ship To Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ship To Party</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Ship To Party --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City Code --></label>
+        <name>City_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- City Name --></label>
+        <name>City_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code Data --></label>
+        <name>Company_Code_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>Company_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person 1 --></label>
+        <name>Contact_Person_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Person 2 --></label>
+        <name>Contract_Person_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust Stas.Grp. --></label>
+        <name>Cust_Stas_Grp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Grp --></label>
+        <name>Customer_Grp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_No_Bussiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Pricing  Proc --></label>
+        <name>Customer_Pricing_Proc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Plant --></label>
+        <name>Delivery_Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Priority --></label>
+        <name>Delivery_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name1 --></label>
+        <name>Name1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name2 --></label>
+        <name>Name2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name3 --></label>
+        <name>Name3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name4 --></label>
+        <name>Name4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment terms --></label>
+        <name>Payment_terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Group --></label>
+        <name>Pricing_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recon Account --></label>
+        <name>Recon_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Code --></label>
+        <name>SAP_Code_Shipping__c</name>
+    </fields>
+    <fields>
+        <label><!-- STATE TEXT --></label>
+        <name>STATE_TEXT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area Data --></label>
+        <name>Sales_Area_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District --></label>
+        <name>Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District text --></label>
+        <name>Sales_District_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Group --></label>
+        <name>Sales_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Group text --></label>
+        <name>Sales_Group_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office text --></label>
+        <name>Sales_Office_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Condition --></label>
+        <name>Shipping_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold to Code --></label>
+        <name>Sold_to_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street3 --></label>
+        <name>Street3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street 1 --></label>
+        <name>Street_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax number --></label>
+        <name>Tax_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Teliphone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <layouts>
+        <layout>Ship To Party Layout</layout>
+        <sections>
+            <label><!-- Address Tab --></label>
+            <section>Address Tab</section>
+        </sections>
+        <sections>
+            <label><!-- Control Tab --></label>
+            <section>Control Tab</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Company Code Default value is 3000 --></errorMessage>
+        <name>Company_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAP Code Should contain 10 Alphanumeric Values Starting with &quot;AP&quot; --></errorMessage>
+        <name>SAP_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Org Default value is 3000 --></errorMessage>
+        <name>Sales_Org</name>
+    </validationRules>
+</CustomObjectTranslation>

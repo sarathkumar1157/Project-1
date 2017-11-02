@@ -1,0 +1,396 @@
+<apex:page standardController="Month_Plan__c" extensions="createPJP" sidebar="false" showHeader="false">
+<head>
+<link href="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.css')}" rel='stylesheet' />
+<link href="{!URLFOR($Resource.Bootstrap, 'font-awesome.min.css')}" rel='stylesheet' />
+<script src="{!URLFOR($Resource.jquery4Cal, 'jquery.min.js')}"></script>
+<script src="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.js')}"></script>
+<style>
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+#wrap {
+    /*  width: 1024px; */
+                margin: 0 auto;
+    font-size: 14px;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+.leftPanel {
+    display: inline-block;
+}
+#external-events {
+    display: inline-block;
+    vertical-align: top;
+    width:100%;
+    padding: 0;
+    text-align: left;
+    border-radius:5px 5px 0 0;
+}
+.dataWidgets {
+    background: #14558E;
+    box-shadow: 1px 1px 1px #000672;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.dataWidgets1 {
+    background: #14558E;
+    box-shadow: 1px 1px 1px #000672;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.heading {
+    margin-top: 0;
+    padding-top: 1em;
+    background-color: #15528e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 6px;
+    height:30px;
+    border-radius: 5px 5px 0 0;
+}
+.filterResults .heading table td {
+    color: #fff !important;
+    font-size: 12px;
+    vertical-align: top;
+    text-align: center;
+}
+/*Added */
+   .filterPanel {
+    min-height:430px;
+    background-color: #ededed;
+    border: none;
+    border-radius: 5px;
+}
+label {
+    width: 80px;
+    display: inline-block;
+}
+.external-event-row { /* try to mimick the look of a real event */
+    margin: 0;
+    padding: 10px 4px;
+    font-size: .85em;
+    cursor: pointer;
+}
+.external-event-row:nth-child(odd) {
+    background: #EDEDED;
+}
+.external-event-row:nth-child(even) {
+    background: #D7D7D7;
+}
+#external-events p {
+    margin: 1.5em 0;
+    font-size: 11px;
+    color: #666;
+}
+#external-events p input {
+    margin: 0;
+    vertical-align: middle;
+}
+#calendar {
+    display: inline-block;
+    vertical-align: top;
+    width: 719px;
+}
+.acctName {
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+.aphabeticFilter {
+    width: 100%;
+    overflow-wrap: break-word;
+    padding: 10px 0;
+}
+.aphabeticFilter a {
+    text-decoration: none;
+    color: #2B608B;
+    margin: 2px;
+    font-size: 12px;
+}
+.filterBody {
+    padding: 5px;
+}
+.resultContainer {
+    min-height: 300px;/*overflow-x: hidden;
+                overflow-y: auto;*/
+}
+.noResults {
+    text-align:center;
+    padding: 5px;
+}
+.contentCls {
+    width: 45px;
+    text-align: center;
+}
+.Dealer {
+    background: #8DBE3D;
+}
+.Customer {
+    background: #4FC7E9;
+}
+.Prospect {
+    background: #EBC13D;
+}
+.LeadStyle {
+    background: #4FC7E9;
+}
+.Inline {
+    display:none;
+}
+.pageTitle {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #000080;
+}
+.mapIt {
+    float: right;
+    display: inline;
+    background-color: #fbfbfb;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #474747;
+    color: #185ea3;
+    font-weight: bold;
+    font-size: 16px;
+    width: 275px;
+    text-align: center;
+    cursor:pointer;
+}
+.hover-end {
+    padding:0;
+    margin:0;
+    font-size:75%;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    opacity:.8
+}
+.fc-event-time {
+    display : none
+}
+.fc-event-title {
+    padding: 0 1px;
+    white-space: nowrap;
+}
+#calendar {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.fc-sun {
+    width:14%;
+}
+.fc-mon {
+    width:14%;
+}
+.fc-tue {
+    width:14%;
+}
+.fc-wed {
+    width:14%;
+}
+.fc-thu {
+    width:14%;
+}
+.fc-fri {
+    width:14%;
+}
+.fc-sat {
+    width:14%;
+}
+.fc-grid th {
+    white-space:normal;
+}
+.fc-last {
+    width:80%;
+}
+.fc-event-container {
+    width:auto !important;
+    left:0px !important;
+}
+.btn-primary {
+    color: #fff !important;
+    background: #337ab7 !important;
+    border-color: #2e6da4 !important;
+}
+.btn-success {
+    color: #fff !important;
+    background: #449d44 !important;
+    border-color: #398439 !important;
+}
+.btn-danger {
+    color: #fff !important;
+    background: #d9534f !important;
+    border-color: #d9534f !important;
+}
+.btn-warning {
+    color: #fff !important;
+    background: #f0ad4e !important;
+    border-color: #eea236 !important;
+}
+.btn-danger {
+    color: #fff !important;
+    background: #d9534f !important;
+    border-color: #d9534f !important;
+    padding:5px 0 !important;
+    width:100% !important;
+}
+.rightnav a {
+    padding:5px 15px;
+    margin:8px 0 0 8px;
+}
+.rightnav a {
+    line-height:20px;
+}
+.h2, h2 {
+    font-size: 20px;
+}
+.bPageBlock .pbButton .btn {
+    color: #fff !important;
+    background: #5bc0de !important;
+    border-color: #46b8da !important;
+    padding:5px 15px !important;
+}
+body .bRelatedList .pbTitle h3 {
+    display:none;
+}
+#button {
+    margin-right:0;
+    padding:0 !important;
+}
+.filterFld select {
+    width:98%;
+    margin: 4px;
+}
+.form-control {
+    width: 98%;
+    margin: 0 0 0 5px;
+}
+.filterFld .btn {
+    width: 97%;
+    margin: 0px 5px 0 5px;
+    border: none;
+    box-shadow: 1px 1px 3px #9C9C9C;
+    line-height: 25px;
+    font-size: 15px;
+}
+.EnterMonth {
+    width:auto !important;
+    
+}
+#Plan {
+   width:auto !important;
+    
+}
+ @media only screen and (max-width:767px) {
+.navbar-brand {
+    float: left;
+    height: 50px;
+    font-size:14px;
+    font-weight:bold;
+    line-height: 20px;
+    padding:15px 0;
+}
+.dataWidgets1 {
+    background: #14558E;
+    box-shadow: 1px 1px 1px #000672;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin:15px 0 5px 0;
+}
+}
+</style>
+</head>
+<apex:form >
+<div class="container">
+  <apex:include pageName="CSS_Daily_Visit_Plan"/>
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pull-left"><a class="navbar-brand" href="javascript:void(0);">Create New Month Plan</a> </div>
+          <div class="rightnav pull-right" id="button">
+           <apex:commandLink action="{!pjptab}" styleClass="btn btn-primary">PJP Tab</apex:commandLink>
+           </div>
+        </div>
+      </nav>
+      <br/>
+      <br/>
+      <br/>
+ 
+  <div id="wrapper">
+    <div id="Plan">
+      <div class="EnterMonth">
+        <div class="text-center">
+          <h4><apex:outputText value="Please Enter Month for your PJP"></apex:outputText></h4>
+          <br/>
+          <br/>
+          <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-4">
+          <apex:selectList id="chooseMonth" value="{!month}" size="1" label="Please enter Month for your PJP:" title="Please enter Month for your PJP:" styleClass="form-control">
+            <apex:selectOption itemValue="January" itemLabel="January"/>
+            <apex:selectOption itemValue="February" itemLabel="February"/>
+            <apex:selectOption itemValue="March" itemLabel="March"/>
+            <apex:selectOption itemValue="April" itemLabel="April"/>
+            <apex:selectOption itemValue="May" itemLabel="May"/>
+            <apex:selectOption itemValue="June" itemLabel="June"/>
+            <apex:selectOption itemValue="July" itemLabel="July"/>
+            <apex:selectOption itemValue="August" itemLabel="August"/>
+            <apex:selectOption itemValue="September" itemLabel="September"/>
+            <apex:selectOption itemValue="October" itemLabel="October"/>
+            <apex:selectOption itemValue="November" itemLabel="November"/>
+            <apex:selectOption itemValue="December" itemLabel="December"/>
+          </apex:selectList>
+          </div>
+          <div class="col-sm-2">
+          <apex:selectList id="chooseYear" value="{!year}" size="1" styleClass="form-control">
+            <apex:selectOption itemValue="2017" itemLabel="2017"/>
+            <apex:selectOption itemValue="2018" itemLabel="2018"/>
+            <apex:selectOption itemValue="2019" itemLabel="2019"/>
+            <apex:selectOption itemValue="2020" itemLabel="2020"/>
+          </apex:selectlist>
+          </div>
+          <div class="col-sm-3"></div>
+          </div>
+        </div>
+        <br/>
+      </div>
+      <div class="center">
+        <apex:commandButton value="Create PJP" styleClass="btn btn-success" action="{!createRecs}" style="padding:10px;" />
+      </div>
+      <apex:messages styleClass="info"> </apex:messages>
+      <apex:outputlink rendered="{!errflag}" value="/{!mnp1.id}">Month Plan</apex:outputlink>
+    </div>
+  </div>
+  </div>
+</apex:form>
+</apex:page>

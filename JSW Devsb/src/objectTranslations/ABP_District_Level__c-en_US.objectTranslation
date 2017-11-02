@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Annual Bussiness Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Annual Bussiness Plan</value>
+    </caseValues>
+    <fields>
+        <label><!-- Annual Business Plan No --></label>
+        <name>Annual_Business_Plan_No_Branding__c</name>
+        <relationshipLabel><!-- Annual Bussiness Plan (Annual Business Plan No) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annual Business Plan No --></label>
+        <name>Annual_Business_Plan_No__c</name>
+        <relationshipLabel><!-- Annual Bussiness Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- April Actual --></label>
+        <name>April_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- April NSR --></label>
+        <name>April_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- April NSR --></label>
+        <name>April_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- April Target --></label>
+        <name>April_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- August Actual --></label>
+        <name>August_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- August NSR --></label>
+        <name>August_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- August NSR --></label>
+        <name>August_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- August Target --></label>
+        <name>August_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Actuals --></label>
+        <name>Average_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Target --></label>
+        <name>Average_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birth Day Gifts --></label>
+        <name>Birth_Day_Gifts__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY Avg Volumes --></label>
+        <name>CY_Avg_Volumes__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY NSR --></label>
+        <name>CY_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caps --></label>
+        <name>Caps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Certificate/Get together --></label>
+        <name>Dealer_Certificate_Get_together__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Kit per Quarter --></label>
+        <name>Dealer_Kit_per_Quarter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dealer Shop Paintings ( Sq.ft)Including shutter ) --></help>
+        <label><!-- Dealer Shop Paintings --></label>
+        <name>Dealer_Shop_Paintings__c</name>
+    </fields>
+    <fields>
+        <label><!-- December Actual --></label>
+        <name>December_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- December NSR --></label>
+        <name>December_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- December NSR --></label>
+        <name>December_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- December Target --></label>
+        <name>December_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deepawali Gifts --></label>
+        <name>Deepawali_Gifts__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_Branding__c</name>
+        <relationshipLabel><!-- Annual Bussiness Plan (District) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- District Current Market Share --></label>
+        <name>District_Current_Market_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Current Potential --></label>
+        <name>District_Current_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Expected Market Share --></label>
+        <name>District_Expected_Market_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Expected Potential --></label>
+        <name>District_Expected_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- Annual Bussiness Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Existing Sales --></label>
+        <name>Existing_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- February Actual --></label>
+        <name>February_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- February NSR --></label>
+        <name>February_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- February NSR --></label>
+        <name>February_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- February Target --></label>
+        <name>February_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hoardings --></label>
+        <name>Hoardings__c</name>
+    </fields>
+    <fields>
+        <label><!-- January Actual --></label>
+        <name>January_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- January NSR --></label>
+        <name>January_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- January NSR --></label>
+        <name>January_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- January Target --></label>
+        <name>January_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- July Actual --></label>
+        <name>July_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- July NSR --></label>
+        <name>July_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- July NSR --></label>
+        <name>July_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- July Target --></label>
+        <name>July_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- June Actual --></label>
+        <name>June_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- June NSR --></label>
+        <name>June_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- June NSR --></label>
+        <name>June_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- June Target --></label>
+        <name>June_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- March Actual --></label>
+        <name>March_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- March NSR --></label>
+        <name>March_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- March NSR --></label>
+        <name>March_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- March Target --></label>
+        <name>March_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Actual --></label>
+        <name>May_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- May NSR --></label>
+        <name>May_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- May NSR --></label>
+        <name>May_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Target --></label>
+        <name>May_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medians --></label>
+        <name>Medians__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Gain In Weighted Average NSR --></label>
+        <name>Net_Gain_In_Weighted_Average_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Gain In Weighted Average NSR --></label>
+        <name>Net_Gain_In_Weighted_Average_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Year Calenders --></label>
+        <name>New_Year_Calenders__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Year Dairies --></label>
+        <name>New_Year_Dairies__c</name>
+    </fields>
+    <fields>
+        <label><!-- November Actual --></label>
+        <name>November_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- November NSR --></label>
+        <name>November_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- November NSR --></label>
+        <name>November_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- November Target --></label>
+        <name>November_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- October Actual --></label>
+        <name>October_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- October NSR --></label>
+        <name>October_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- October NSR --></label>
+        <name>October_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- October Target --></label>
+        <name>October_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- ABP-District Level --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Projected FY17  Monthly Volumes --></label>
+        <name>Projected_FY17_Monthly_Volumes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected NSR --></label>
+        <name>Projected_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- September Actual --></label>
+        <name>September_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- September NSR --></label>
+        <name>September_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- September NSR --></label>
+        <name>September_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- September Target --></label>
+        <name>September_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub  dealer Certificate --></label>
+        <name>Sub_dealer_Certificate__c</name>
+    </fields>
+    <fields>
+        <label><!-- T Shirts --></label>
+        <name>T_Shirts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actual --></label>
+        <name>Total_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Target --></label>
+        <name>Total_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Umbrella --></label>
+        <name>Umbrella__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wall Paintings  and High rise (Sq.ft ) --></label>
+        <name>Wall_Paintings_and_High_rise_Sq_ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted Average NSR --></label>
+        <name>Weighted_Average_NSR_PY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted Average NSR --></label>
+        <name>Weighted_Average_NSR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>ABP-District Level Layout</layout>
+        <sections>
+            <label><!-- Current Year Targets --></label>
+            <section>Current Year Targets</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Previous Year Actuals --></label>
+            <section>Previous Year Actuals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Branding pageLayout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Trade</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Branding ABP --></label>
+        <name>Branding_ABP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non-Trade ABP --></label>
+        <name>Non_Trade_ABP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trade ABP --></label>
+        <name>Trade_ABP</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

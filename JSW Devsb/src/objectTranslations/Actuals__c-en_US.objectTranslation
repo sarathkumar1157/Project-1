@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actuals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actuals --></label>
+        <name>Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature --></label>
+        <name>Nature__c</name>
+        <picklistValues>
+            <masterLabel>Existing</masterLabel>
+            <translation><!-- Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter --></label>
+        <name>Sales_Promoter__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Start Date --></label>
+        <name>Target_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institution</masterLabel>
+            <translation><!-- Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Trade</masterLabel>
+            <translation><!-- Non Trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade</masterLabel>
+            <translation><!-- Trade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

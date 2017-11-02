@@ -1,0 +1,281 @@
+<apex:page standardController="Week_Plan__c" extensions="WeekPlanController" sidebar="false" showHeader="false">
+            <head>
+            <link rel='stylesheet' href="{!URLFOR($Resource.fullcalendar, '/cupertino/jquery-ui.min.css')}" />
+            <link href="{!URLFOR($Resource.fullcalendar, 'fullcalendar.css')}" rel='stylesheet' />
+            <link href="{!URLFOR($Resource.fullcalendar, 'fullcalendar.print.css')}" rel='stylesheet' media='print' />
+            <link href="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.css')}" rel='stylesheet' />
+            <script src="{!URLFOR($Resource.jquery4Cal, 'jquery.min.js')}"></script>
+            <script src="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.js')}"></script>
+            <script src="{!URLFOR($Resource.jquery4Cal, 'jquery-ui.custom.min.js')}"></script>
+            <script src="{!URLFOR($Resource.fullcalendar, 'fullcalendar.min.js')}"></script>
+            <script>
+            var jsonArr = [];
+            $(document).ready(function() {
+                EventJSON();
+                initializeFullCal();
+            });
+            var date = new Date();
+                var d, m, y, sHours, sMinute, eHours, eMinute;
+            function calcTime(mDate, city, offset) {
+            
+                // create Date object for current location
+                var d = new Date(mDate);
+            
+                // convert to msec
+                // add local time zone offset
+                // get UTC time in msec
+                var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            
+                // create new Date object for different city
+                // using supplied offset
+                var nd = new Date(utc + (3600000*offset));
+            
+                // return time as a string
+                return nd;
+            }
+            function EventJSON(){
+                <apex:repeat value="{!dailyVstList}" var="v">
+                    //var StartDate = calcTime("{!v.Planned_Date__c}", 'Los_Angeles', '-6');
+                    var StartDate = new Date("{!v.Planned_Date__c}");
+                    d = StartDate.getDate();
+                    m = StartDate.getMonth();
+                    y = StartDate.getFullYear();
+                    console.log('@@'+d+'@@'+m+'@@'+y);
+                    if({!v.Visited__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            allDay: true,
+                            url: '/{!v.Account__c}{!v.Lead__c}{!v.Area__c}{!v.Event__c}{!v.Customer_Type__c}',
+                            color: '#6CBF4A'
+                        });
+                    } else if({!v.Past__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Account__c}{!v.Lead__c}{!v.Area__c}{!v.Event__c}{!v.Customer_Type__c}',
+                            allDay: true,
+                            color: '#F1948A'
+                        });
+                    } else if({!!v.Past__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Account__c}{!v.Lead__c}{!v.Area__c}{!v.Event__c}{!v.Customer_Type__c}',
+                            allDay: true,
+                            color: '#ffd700'
+                        });
+                    }
+                    else {
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Account__c}{!v.Lead__c}{!v.Area__c}{!v.Event__c}{!v.Customer_Type__c}',
+                            allDay: true
+                        });
+                    }
+                                    
+                </apex:repeat>
+                
+            }
+            
+            function initializeFullCal(){
+                var currentDate = new Date("{!wplan.Start_Date__c}");
+                /* initialize the calendar -----------------------------------------------------------------*/
+                $('#calendar').fullCalendar({
+                    theme: true,
+                    minTime: '09:00am',
+                    maxTime: '8:00pm',
+                    month: m,
+                    defaultView: 'basicWeek',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,basicWeek,basicDay'
+                    },
+                    events: jsonArr
+                });
+                
+                $('#calendar').fullCalendar('gotoDate', currentDate);
+                
+            }
+            
+        </script>
+        <apex:include pageName="CSS_Daily_Visit_Plan"/>
+            <style>
+            #wrap {
+                width: 1024px;
+                margin: 0 auto;
+                font-size: 14px;
+                font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+            }
+            #external-events {
+                display: inline-block;
+                vertical-align: top;
+                width: 300px;
+                padding: 0;
+                text-align: left;
+                border-radius:5px 5px 0 0;
+            }
+            .heading {
+                margin-top: 0;
+                padding-top: 1em;
+                background-color: #15528e;
+                color: #fff;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 6px;
+                height: 21px;
+                border-radius: 5px 5px 0 0;
+            }
+            /*Added */
+                        .external-event-row { /* try to mimick the look of a real event */
+                margin: 0;
+                padding: 10px 4px;
+                font-size: .85em;
+                cursor: pointer;
+            }
+            .external-event-row:nth-child(odd) {
+                background: #EDEDED;
+            }
+            .external-event-row:nth-child(even) {
+                background: #D7D7D7;
+            }
+            #external-events p {
+                margin: 1.5em 0;
+                font-size: 11px;
+                color: #666;
+            }
+            #external-events p input {
+                margin: 0;
+                vertical-align: middle;
+            }
+            #calendar {
+                display: inline-block;
+                vertical-align: top;
+                width: 719px;
+            }
+            .pageTitle {
+                font-size: 20px;
+                padding-bottom: 20px;
+                color: #000080;
+            }
+            .mapIt {
+                float: right;
+                display: inline;
+                background-color: #fbfbfb;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px #474747;
+                color: #185ea3;
+                font-weight: bold;
+                font-size: 16px;
+                width: 275px;
+                text-align: center;
+                cursor:pointer;
+            }
+            #calendar {
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+            }
+            .fc-sun {
+                width:14%;
+            }
+            .fc-mon {
+                width:14%;
+            }
+            .fc-tue {
+                width:14%;
+            }
+            .fc-wed {
+                width:16%;
+            }
+            .fc-thu {
+                width:14%;
+            }
+            .fc-fri {
+                width:14%;
+            }
+            .fc-sat {
+                width:14%;
+            }
+            .fc-grid th {
+                white-space:normal;
+            }
+            .btn-primary {
+                color: #fff !important;
+                background: #337ab7 !important;
+                border-color: #2e6da4 !important;
+            }
+            .btn-success {
+                color: #fff !important;
+                background: #449d44 !important;
+                border-color: #398439 !important;
+            }
+            .btn-danger {
+                color: #fff !important;
+                background: #d9534f !important;
+                border-color: #d9534f !important;
+            }
+            .btn-warning {
+            color: #fff !important;
+            background: #f0ad4e !important;
+            border-color: #eea236 !important;
+            }
+            .rightnav a {
+                padding:5px 15px;
+                margin:8px 0 0 8px;
+            }
+            .rightnav a {
+                line-height:20px;
+            }
+            .h2, h2 {
+                font-size: 20px;
+            }
+            .bPageBlock .pbButton .btn {
+            color: #fff !important;
+            background: #5bc0de !important;
+            border-color: #46b8da !important;
+            padding:5px 15px !important;
+            }
+            .fc-border-separate tbody tr.fc-first td, .fc-border-separate tbody tr.fc-first th  {
+   
+    height:200px !important;
+  
+}
+.fc-view {
+    height: 300px !important;
+    border-bottom:#ddd 1px solid !important;
+}
+            </style>
+       </head>
+
+
+  <div class="container">
+    <apex:form >
+      <apex:include pageName="CSS_Daily_Visit_Plan"/>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pull-left"><a class="navbar-brand" href="#">Week Plan</a> </div>
+          <div class="rightnav pull-right">
+          <apex:commandLink action="{!directApprove}" styleClass="btn btn-warning" rendered="{!wplan.Status__c == 'Submitted'}">Approve</apex:commandLink>
+          <apex:commandLink action="{!directReject}" styleClass="btn btn-danger" rendered="{!wplan.Status__c == 'Submitted'}">Reject</apex:commandLink>
+          <apex:commandLink action="{!monthtab}" styleClass="btn btn-success">Month Plan</apex:commandLink>
+          <apex:commandLink action="{!pjptab}" styleClass="btn btn-primary">PJP Tab</apex:commandLink></div>
+        </div>
+      </nav>
+      
+      <div id="body" align="center"> 
+        <br/>
+        <br/>
+        <br/>
+        <div id='calendar'></div>
+        <br/>
+        <br/>
+      </div>
+    </apex:form>
+    
+    <apex:relatedList list="ProcessSteps"/>
+  </div>
+</apex:page>

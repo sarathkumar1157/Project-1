@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>GGBS SO</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>GGBS Sales Officer</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>GGBS_Regional_Head</parentRole>
+</Role>

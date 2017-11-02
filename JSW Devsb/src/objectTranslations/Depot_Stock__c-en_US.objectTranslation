@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Depot Stock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Depot Stock</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depot Account Code --></label>
+        <name>Depot_Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depot Code --></label>
+        <name>Depot_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depot Name --></label>
+        <name>Depot_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depot --></label>
+        <name>Depot__c</name>
+        <relationshipLabel><!-- Depot Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Material Description --></label>
+        <name>Material_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opening Stock --></label>
+        <name>Opening_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Type --></label>
+        <name>Packing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Short Form --></label>
+        <name>Plant_Short_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Depot Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Distrcit Name --></label>
+        <name>Sales_Distrcit_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales District --></label>
+        <name>Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Loc --></label>
+        <name>Storage_Loc__c</name>
+    </fields>
+    <layouts>
+        <layout>Depot Stock Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

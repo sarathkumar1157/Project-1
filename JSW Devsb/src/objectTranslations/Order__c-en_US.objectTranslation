@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Orders</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Order</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CO Code --></label>
+        <name>CO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- CO Name --></label>
+        <name>CO_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust.Grp1from Master --></label>
+        <name>Cust_Grp1from_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distri.Chnl --></label>
+        <name>Distri_Chnl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ship To District --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Excise --></label>
+        <name>Excise__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight --></label>
+        <name>Freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Rate (MT) --></label>
+        <name>Gr_Rate_mt__c</name>
+    </fields>
+    <fields>
+        <label><!-- IN Code --></label>
+        <name>IN_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- IN Name --></label>
+        <name>IN_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IN O/P Central GST --></label>
+        <name>IN_O_P_Central_GST__c</name>
+    </fields>
+    <fields>
+        <label><!-- IN O/P Integratd GST --></label>
+        <name>IN_O_P_Integratd_GST__c</name>
+    </fields>
+    <fields>
+        <label><!-- IN O/P State GST --></label>
+        <name>IN_O_P_State_GST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterm --></label>
+        <name>Incoterm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investor Comm --></label>
+        <name>Investor_Comm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Quantity --></label>
+        <name>Invoice_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Desc --></label>
+        <name>Material_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Comm --></label>
+        <name>Middle_Comm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Of STO Date --></label>
+        <name>Month_Of_STO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price --></label>
+        <name>Net_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Booking --></label>
+        <name>Order_Booking__c</name>
+        <relationshipLabel><!-- Sales Order (Order Booking) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Qty --></label>
+        <name>Order_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request No --></label>
+        <name>Order_Request_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Number --></label>
+        <name>Order_Request_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request --></label>
+        <name>Order_Request__c</name>
+        <relationshipLabel><!-- Sales Order (Order Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ordered Quantity --></label>
+        <name>Ordered_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO No --></label>
+        <name>PO_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Qty --></label>
+        <name>Pending_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant GST --></label>
+        <name>Plant_GST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant Master --></label>
+        <name>Plant_Master__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant Name --></label>
+        <name>Plant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remaining Quantity --></label>
+        <name>Remaining_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO/STO Date --></label>
+        <name>SO_STO_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO/STO Date --></label>
+        <name>SO_STO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO/STO Item --></label>
+        <name>SO_STO_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO/STO No --></label>
+        <name>SO_STO_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO Type --></label>
+        <name>SO_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Code --></label>
+        <name>SP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Name --></label>
+        <name>SP_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Emp Name --></label>
+        <name>Sales_Emp_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Emp --></label>
+        <name>Sales_Emp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Employee --></label>
+        <name>Sales_Employee__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Grp Desc --></label>
+        <name>Sales_Grp_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Grp --></label>
+        <name>Sales_Grp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Off Desc --></label>
+        <name>Sales_Off_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Off --></label>
+        <name>Sales_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City Name --></label>
+        <name>Ship_To_City_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party ID --></label>
+        <name>Ship_To_Party_ID__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To Sales District Desc --></label>
+        <name>Ship_To_Sales_District_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Sales District --></label>
+        <name>Ship_To_Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shp To Party Name --></label>
+        <name>Shp_To_Party_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shp To Party --></label>
+        <name>Shp_To_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To District --></label>
+        <name>Sold_To_District__c</name>
+        <relationshipLabel><!-- Sales Order (Sold To District) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sold To Party Name --></label>
+        <name>Sold_To_Party_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Party --></label>
+        <name>Sold_To_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Sales District Desc --></label>
+        <name>Sold_To_Sales_District_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Sales District --></label>
+        <name>Sold_To_Sales_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To State --></label>
+        <name>Sold_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label><!-- Business Partners --></label>
+            <section>Business Partners</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Order Compact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Orders Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

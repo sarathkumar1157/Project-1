@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>District NSR Actual</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>District NSR Actual</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adhoc Incentive Value --></label>
+        <name>Adhoc_Incentive_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF Discount --></label>
+        <name>CF_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercial Invoice Date --></label>
+        <name>Commercial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frieght --></label>
+        <name>Frieght__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMC --></label>
+        <name>MMC__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRM Target --></label>
+        <name>MRM_Targets__c</name>
+        <relationshipLabel><!-- District NSR Actual --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NSR C&amp;F Actuals --></label>
+        <name>NSR_C_F_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Discount Value Actuals --></label>
+        <name>NSR_Disc_Value_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR MMC Actuals --></label>
+        <name>NSR_MMC_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Other Actuals --></label>
+        <name>NSR_Other_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PD+SPL+ADDL Actual --></label>
+        <name>NSR_PD_SPL_ADDL_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PRFT Dump Value Actual --></label>
+        <name>NSR_PRFT_Dump_Value_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Packing Cost Actual --></label>
+        <name>NSR_Packing_Cost_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Qty Actuals --></label>
+        <name>NSR_Qty_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR/T Actuals --></label>
+        <name>NSR_T_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Total Basic Price Actuals --></label>
+        <name>NSR_Total_Basic_Price_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Value Actual --></label>
+        <name>NSR_Value_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Value --></label>
+        <name>NSR_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Discount --></label>
+        <name>Other_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD Values --></label>
+        <name>PD_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRFT Dump Discount --></label>
+        <name>PRFT_Dump_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Cost --></label>
+        <name>Packing_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rake Discount --></label>
+        <name>Rake_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Tax --></label>
+        <name>Total_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value --></label>
+        <name>Total_Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

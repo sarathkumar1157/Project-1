@@ -1,0 +1,1026 @@
+<apex:page sidebar="false" showHeader="false" standardController="Month_Plan__c" extensions="Daily_Visit_Plan_Ctlr1" docType="html-5.0">
+  <html>
+  <head>
+  <link href="{!URLFOR($Resource.fullcalendar1, '/fullcalendar-3.4.0/lib/cupertino/jquery-ui.min.css')}" rel='stylesheet' />
+  <link href="{!URLFOR($Resource.fullcalendar1, '/fullcalendar-3.4.0/fullcalendar.css')}" rel='stylesheet' />
+  <link href="{!URLFOR($Resource.fullcalendar1, '/fullcalendar-3.4.0/fullcalendar.print.css')}" rel='stylesheet' media='print' />
+  <link href="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.css')}" rel='stylesheet' />
+  <link href="{!URLFOR($Resource.Bootstrap, 'font-awesome.min.css')}" rel='stylesheet' />
+  <script src="{!URLFOR($Resource.fullcalendar1, '/fullcalendar-3.4.0/moment.js')}"></script>
+  <script src="{!URLFOR($Resource.jquery4Cal, 'jquery.min.js')}"></script>
+  <script src="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.js')}"></script>
+  <script src="{!URLFOR($Resource.jquery4Cal, 'jquery-ui.custom.min.js')}"></script>
+  <script src="{!URLFOR($Resource.fullcalendar1, '/fullcalendar-3.4.0/fullcalendar.min.js')}"></script>
+  
+  <script src="{!URLFOR($Resource.touchcomp, 'jquery.ui.touch-punch.min.js')}"></script>
+  <script>
+            var jsonArr = [];
+            var visitlist = [];
+            var delvllist = [];
+            var updvlist = [];
+            var objval = "{!vstobj}";
+            var tddt = new Date();
+            
+            $(document).ready(function() {
+                EventJSON();
+                initExternalEvents();
+                initializeFullCal();
+                //redirectpage();
+            });
+            var date = new Date();
+            var d, m, y;
+            
+            function EventJSON(){
+                if({!flag}){
+                    d = {!day};
+                    m = {!month}-1;
+                    y = {!year};
+                }else{
+                <apex:repeat value="{!dailyVsttList}" var="v">
+                    var StartDate = new Date("{!v.Planned_Date__c}");
+                    d = StartDate.getDate();
+                    m = StartDate.getMonth();
+                    y = StartDate.getFullYear();
+                    
+                    if({!manageruser}){
+                        if({!v.Joined__c}){
+                            jsonArr.push({
+                                title: "{!v.Name__c}",
+                                id: "{!v.Id}",
+                                start: new Date(y, m, d),
+                                color: 'grey',
+                                region: "{!v.Region__c}",
+                                type: "{!v.Type__c}"
+                            });
+                        } else {
+                            jsonArr.push({
+                                title: "{!v.Name__c}",
+                                id: "{!v.Id}",
+                                start: new Date(y, m, d),
+                                region: "{!v.Region__c}",
+                                type: "{!v.Type__c}"
+                            });
+                        }
+                    } else {
+                        if({!v.Week_Plan_Submitted__c}){
+                            jsonArr.push({
+                                title: "{!v.Name__c}",
+                                id: "{!v.Id}",
+                                start: new Date(y, m, d),
+                                region: "{!v.Region__c}",
+                                type: "{!v.Type__c}",
+                                wpsub: "sub"
+                            });
+                        } else {
+                            jsonArr.push({
+                                title: "{!v.Name__c}",
+                                id: "{!v.Id}",
+                                start: new Date(y, m, d),
+                                region: "{!v.Region__c}",
+                                type: "{!v.Type__c}",
+                                wpsub: "unsub"
+                            });
+                        }
+                    }                
+                </apex:repeat>
+                }
+            }
+            
+            
+            function initExternalEvents(){
+                /* initialize the external events -----------------------------------------------------------------*/
+                $('#external-events div.external-event').each(function() {
+                    // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+                    // it doesnt need to have a start or end
+                    var eventObject = {
+                        title: $.trim($(this).text()) // use the elements text as the event title
+                        
+                    };
+                    
+                    
+                    // store the Event Object in the DOM element so we can get to it later
+                    $(this).data('eventObject', eventObject);
+                    
+                    // make the event draggable using jQuery UI
+                    $(this).draggable({
+                        scroll: false,
+                        helper: 'clone',
+                        zIndex: 999,
+                        revert: true,      // will cause the event to go back to its
+                        revertDuration: 0  //  original position after the drag
+                    });
+                });
+            }
+            
+            function initializeFullCal(){
+                var copyKey = false;
+                $(document).keydown(function (e) {
+                    copyKey = e.shiftKey;
+                }).keyup(function () {
+                    copyKey = false;
+                });
+                var currentdate = new Date("{!PJP.Start_Date__c}");
+                /* initialize the calendar -----------------------------------------------------------------*/
+                if({!currentuser}){
+                var i = 0;
+                $('#calendar').fullCalendar({
+                    theme: true,
+                    minTime: '09:00am',
+                    maxTime: '8:00pm',
+                    month: m,
+                    //defaultView: 'agendaWeek',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,basicWeek,basicDay'
+                    },
+                    eventDrop: function(event, delta, revert) {
+                        //if(event.id.includes(objval)){
+                        //    updvlist.push(event.id+'@'+event.start);
+                        //} else {
+                            var splitid = event._id.split('$');
+                            var curid = splitid[0];
+                            splitid = splitid[1];
+                            visitlist.splice(splitid-1,1);
+                            visitlist.push(curid+'@'+moment(event.start).toDate());
+                        //}
+                        var eventClone = {
+                             title: event.title,
+                             start: moment(event.start).toDate(),
+                             id: event.id
+                         };
+                        //console.log(eventClone);
+                        console.log(visitlist);
+                         // Render new event with new event object
+                         $('#calendar').fullCalendar('renderEvent', eventClone);
+                    
+                         // Revert the changes in parent event. To move it back to original position
+                         revert();
+                    },
+                    eventClick: function(event){
+                           var curdt = new Date();
+                           curdt = moment(event.start).toDate();
+                           
+                           var diff = curdt.getDate() - tddt.getDate();
+                           var diffm = curdt.getMonth() - tddt.getMonth();
+                           var wnam = tddt.toString().split(" ")[0];
+                           
+                           if(event._id.includes(objval)){
+                               if(curdt >= tddt && event.wpsub == 'unsub'){
+                                   if(diffm == 0 && {!PJP.Status__c == 'Approved'}){
+                                       if((wnam == 'Sun' && diff >= 7) || (wnam == 'Mon' && diff >= 6) || (wnam == 'Tue' && diff >= 5) || (wnam == 'Wed' && diff >= 4) || (wnam == 'Thu' && diff >= 3) || (wnam == 'Fri' && diff >= 2) || (wnam == 'Sat' && diff >= 1)){
+                                           delvllist.push(event._id);
+                                           $('#calendar').fullCalendar('removeEvents',event._id);
+                                       }
+                                   } else {
+                                       delvllist.push(event._id);
+                                       $('#calendar').fullCalendar('removeEvents',event._id);    
+                                   }
+                               }    
+                           }else{
+                               var splitid = event._id.split('$');
+                               splitid = splitid[1];
+                               visitlist.splice(splitid-1,1);
+                               $('#calendar').fullCalendar('removeEvents',event._id);
+                           }
+                    },
+                    allDayDefault: false,
+                    editable: true,
+                    events: jsonArr, 
+                    droppable: true, // this allows things to be dropped onto the calendar !!!
+                    drop: function(date, allDay, id) { // this function is called when something is dropped
+                        i = i + 1;
+                        // retrieve the dropped elements stored Event Object
+                        var originalEventObject = $(this).data('eventObject');
+                        // we need to copy it, so that multiple events dont have a reference to the same object
+                        var copiedEventObject = $.extend({}, originalEventObject);
+                        // assign it the date that was reported
+                        var title = copiedEventObject.title.split("@");
+                        copiedEventObject.title = title[0];
+                        copiedEventObject.id = title[1]+'$'+i;
+                        copiedEventObject.start = date;
+                        copiedEventObject.allDay = allDay;
+                        
+                        date = moment(date).toDate();
+                        var diffm = date.getMonth() - tddt.getMonth();
+                        var diff = date.getDate() - tddt.getDate();
+                        var wnam = tddt.toString().split(" ")[0];
+                        
+                        // render the event on the calendar
+                        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+                        if(date >= tddt){
+                            if(diffm == 0 && {!PJP.Status__c == 'Approved'}){
+                                if((wnam == 'Sun' && diff >= 7) || (wnam == 'Mon' && diff >= 6) || (wnam == 'Tue' && diff >= 5) || (wnam == 'Wed' && diff >= 4) || (wnam == 'Thu' && diff >= 3) || (wnam == 'Fri' && diff >= 2) || (wnam == 'Sat' && diff >= 1)){
+                                    $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+                                    // is the "remove after drop" checkbox checked?
+                                    if ($('#drop-remove').is(':checked')) {
+                                    // if so, remove the element from the "Draggable Events" list
+                                        $(this).remove();
+                                    }
+                                    var visitid = copiedEventObject.id.split("$");
+                                    visitlist.push(visitid[0]+'@'+moment(copiedEventObject.start).toDate());
+                                }
+                           } else {
+                               $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+                               // is the "remove after drop" checkbox checked?
+                               if ($('#drop-remove').is(':checked')) {
+                               // if so, remove the element from the "Draggable Events" list
+                                   $(this).remove();
+                               }
+                               var visitid = copiedEventObject.id.split("$");
+                               visitlist.push(visitid[0]+'@'+copiedEventObject.start);
+                           } 
+                        }
+                        console.log(visitlist);
+                    },
+                    eventMouseover: function (data, event, view) {
+                        var strt = data.start+'';
+                        strt = strt.split(" ");
+                        strt = strt[2] + ' ' + strt[1] + ' ' + strt[3];
+                        tooltip = '<div class="tooltiptopicevent" style="width:auto;height:auto;background:#ccd9ff;position:absolute;z-index:10001;padding:10px 10px 10px 10px ;  line-height: 200%;">' + 
+                                    'Title: ' + data.title + '</br>' + 'Start: ' + strt + '</br>' + 'City: ' + data.region + '</br>' + 'Type: ' + data.type + '</div>';$("body").append(tooltip);
+                        $(this).mouseover(function (e) {
+                            $(this).css('z-index', 10000);
+                            $('.tooltiptopicevent').fadeIn('500');
+                            $('.tooltiptopicevent').fadeTo('10', 1.9);
+                        }).mousemove(function (e) {
+                            $('.tooltiptopicevent').css('top', e.pageY + 10);
+                            $('.tooltiptopicevent').css('left', e.pageX + 20);
+                        });
+                    },
+                    eventMouseout: function (data, event, view) {
+                        $(this).css('z-index', 8);
+                        $('.tooltiptopicevent').remove();                
+                    },
+                    eventResize: function( event, dayDelta, minuteDelta, allDay, revertFunc, jsEvent, ui, view )
+                    {
+                        console.log(event);
+                    }
+                });
+                }else{
+                    $('#calendar').fullCalendar({
+                        theme: true,
+                        minTime: '09:00am',
+                        maxTime: '8:00pm',
+                        month: m,
+                        year: y,
+                        //defaultView: 'agendaWeek',
+                        header: {
+                            left: 'prev,next today',
+                            center: 'title',
+                            right: 'month,basicWeek,basicDay'
+                        },
+                        eventClick: function(event){
+                               var indx = delvllist.indexOf(event._id);
+                               if(indx < 0){
+                                   delvllist.push(event._id);
+                                   event.color = 'grey';
+                                   $('#calendar').fullCalendar( 'rerenderEvents' );
+                               }else{
+                                   event.color = 'undefined';
+                                   $('#calendar').fullCalendar( 'rerenderEvents' );
+                                   delvllist.splice(indx,1);
+                               }
+                               console.log(delvllist);
+                        },
+                        editable: true,
+                        events: jsonArr,
+                        allDayDefault: false,
+                        eventMouseover: function (data, event, view) {
+                            var strt = data.start+'';
+                            strt = strt.split(" ");
+                            strt = strt[2] + ' ' + strt[1] + ' ' + strt[3];
+                            tooltip = '<div class="tooltiptopicevent" style="width:auto;height:auto;background:#ccd9ff;position:absolute;z-index:10001;padding:10px 10px 10px 10px ;  line-height: 200%;">' + 
+                                    'Title: ' + data.title + '</br>' + 'Start: ' + strt + '</br>' + 'City: ' + data.region + '</br>' + 'Type: ' + data.type + '</div>';$("body").append(tooltip);
+                            $(this).mouseover(function (e) {
+                                $(this).css('z-index', 10000);
+                                $('.tooltiptopicevent').fadeIn('500');
+                                $('.tooltiptopicevent').fadeTo('10', 1.9);
+                            }).mousemove(function (e) {
+                                $('.tooltiptopicevent').css('top', e.pageY + 10);
+                                $('.tooltiptopicevent').css('left', e.pageX + 20);
+                            });
+                        },
+                        eventMouseout: function (data, event, view) {
+                            $(this).css('z-index', 8);
+                            $('.tooltiptopicevent').remove();                
+                        }
+    
+                    });
+                }
+                $('#calendar').fullCalendar('gotoDate', currentdate);
+            }
+            
+            function SaveCalendar(){
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.Daily_Visit_Plan_Ctlr1.SaveCal}',delvllist,visitlist,updvlist,"{!PJP.id}",
+                         function(result, event){
+                             if (event.status) {
+                                 window.top.location = "/{!PJP.id}";
+                             } else {        
+                             }
+                          }, 
+                          {escape: true}
+                      );
+                      
+                alert('Calendar is saved');
+            }
+            
+            function mngrJoin(){
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.Daily_Visit_Plan_Ctlr1.managerjoin}',delvllist,"{!PJP.id}",
+                         function(result, event){
+                             if (event.status) {
+                                 window.top.location = "/{!PJP.id}";
+                             } else {        
+                             }
+                          }, 
+                          {escape: true}
+                      );
+            }
+            
+        </script>
+  
+  <style>
+#wrap {
+    /*  width: 1024px; */
+                margin: 0 auto;
+    font-size: 14px;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+.leftPanel {
+    display: inline-block;
+}
+#external-events {
+    display: inline-block;
+    vertical-align: top;
+    width:100%;
+    padding: 0;
+    text-align: left;
+    border-radius:5px 5px 0 0;
+}
+.dataWidgets {
+    background: #14558E;
+    box-shadow: 1px 1px 1px #000672;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.dataWidgets1 {
+    background: #14558E;
+    box-shadow: 1px 1px 1px #000672;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.heading {
+    margin-top: 0;
+    padding-top: 1em;
+    background-color: #15528e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 6px;
+    height:30px;
+    border-radius: 5px 5px 0 0;
+}
+.filterResults .heading table td {
+    color: #fff !important;
+    font-size: 12px;
+    vertical-align: top;
+    text-align: center;
+}
+/*Added */
+   .filterPanel {
+    min-height:350px;
+    background-color: #ededed;
+    border: none;
+    border-radius: 5px;
+}
+label {
+    width: 80px;
+    display: inline-block;
+}
+.external-event-row { /* try to mimick the look of a real event */
+    margin: 0;
+    padding: 10px 4px;
+    font-size: .85em;
+    cursor: pointer;
+}
+.external-event-row:nth-child(odd) {
+    background: #EDEDED;
+}
+.external-event-row:nth-child(even) {
+    background: #D7D7D7;
+}
+#external-events p {
+    margin: 1.5em 0;
+    font-size: 11px;
+    color: #666;
+}
+#external-events p input {
+    margin: 0;
+    vertical-align: middle;
+}
+#calendar {
+    display: inline-block;
+    vertical-align: top;
+    width: 719px;
+}
+.acctName {
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+.aphabeticFilter {
+    width: 100%;
+    overflow-wrap: break-word;
+    padding: 10px 0;
+}
+.aphabeticFilter a {
+    text-decoration: none;
+    color: #2B608B;
+    margin: 2px;
+    font-size: 12px;
+}
+.filterBody {
+    padding: 5px;
+}
+.resultContainer {
+    min-height: 300px;
+}
+.noResults {
+    text-align:center;
+    padding: 5px;
+}
+.contentCls {
+    width: 45px;
+    text-align: center;
+}
+.Dealer {
+    background: #8DBE3D;
+}
+.Customer {
+    background: #4FC7E9;
+}
+.Prospect {
+    background: #EBC13D;
+}
+.LeadStyle {
+    background: #4FC7E9;
+}
+.Inline {
+    display:none;
+}
+.pageTitle {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #000080;
+}
+.mapIt {
+    float: right;
+    display: inline;
+    background-color: #fbfbfb;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #474747;
+    color: #185ea3;
+    font-weight: bold;
+    font-size: 16px;
+    width: 275px;
+    text-align: center;
+    cursor:pointer;
+}
+.hover-end {
+    padding:0;
+    margin:0;
+    font-size:75%;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    opacity:.8
+}
+.fc-time {
+    display : none
+}
+.fc-event-title {
+    padding: 0 1px;
+    white-space: nowrap;
+}
+.fc-event {
+  margin-bottom: 3px;
+}
+#calendar {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.fc-sun {
+    width:14%;
+}
+.fc-mon {
+    width:14%;
+}
+.fc-tue {
+    width:14%;
+}
+.fc-wed {
+    width:14%;
+}
+.fc-thu {
+    width:14%;
+}
+.fc-fri {
+    width:14%;
+}
+.fc-sat {
+    width:14%;
+}
+.fc-grid th {
+    white-space:normal;
+}
+.fc-last {
+    width:80%;
+}
+.fc-event-container {
+    width:auto !important;
+    left:0px !important;
+}
+.btn-primary {
+    color: #fff !important;
+    background: #337ab7 !important;
+    border-color: #2e6da4 !important;
+}
+.btn-success {
+    color: #fff !important;
+    background: #449d44 !important;
+    border-color: #398439 !important;
+}
+.btn-danger {
+    color: #fff !important;
+    background: #d9534f !important;
+    border-color: #d9534f !important;
+}
+.btn-warning {
+    color: #fff !important;
+    background: #f0ad4e !important;
+    border-color: #eea236 !important;
+}
+.btn-danger {
+    color: #fff !important;
+    background: #d9534f !important;
+    border-color: #d9534f !important;
+    padding:5px 0 !important;
+    width:100% !important;
+}
+.rightnav a {
+    padding:5px 15px;
+    margin:8px 0 0 8px;
+}
+.rightnav a {
+    line-height:20px;
+}
+.h2, h2 {
+    font-size: 20px;
+}
+.bPageBlock .pbButton .btn {
+    color: #fff !important;
+    background: #5bc0de !important;
+    border-color: #46b8da !important;
+    padding:5px 15px !important;
+}
+body .bRelatedList .pbTitle h3 {
+    display:none;
+}
+#button {
+    margin-right:0;
+    padding: 0;
+}
+.filterFld select {
+    width:98%;
+    margin: 4px;
+}
+.form-control {
+    width: 98%;
+    margin: 0 0 0 5px;
+}
+.filterFld .btn {
+    width: 97%;
+    margin: 0px 5px 0 5px;
+    border: none;
+    box-shadow: 1px 1px 3px #9C9C9C;
+    line-height: 25px;
+    font-size: 15px;
+}
+.navbar-default {
+    z-index:999;
+}
+ @media only screen and (max-width:767px) {
+.navbar-brand {
+    float: left;
+    height: 50px;
+    font-size:14px;
+    font-weight:bold;
+    line-height: 20px;
+    padding:15px 0;
+}
+.dataWidgets1 {
+    background: #14558E;
+    box-shadow: 1px 1px 1px #000672;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin:15px 0 5px 0;
+}
+}
+</style>
+  </head>
+  <body>
+  <apex:actionStatus id="pageStatus">
+            <apex:facet name="start">
+                <apex:outputPanel >
+                    <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: white;">
+               
+                    </div>
+                    <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index:99999; margin: 15% 45%">
+                            <img src="{!$Resource.Loading1}" width="150px" height="150px"/>
+                    </div>
+                </apex:outputPanel>            
+            </apex:facet>
+        </apex:actionStatus>
+  <div class="container">
+    <apex:form id="formid">
+      <apex:pageMessages />
+          
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pull-left"><a class="navbar-brand" href="#">Create your Personal Journey Plan</a> </div>
+          <div class="rightnav pull-right" id="button">
+            <apex:variable var="mngrjin" value="{!currentuser}" rendered="{!!currentuser}">
+              <apex:commandLink onclick="mngrJoin()" styleClass="btn btn-success" reRender="container">Join</apex:commandLink>
+            </apex:variable>
+            <apex:variable var="mngrsave" value="{!manageruser}" rendered="{!!manageruser && PJP.Status__c != 'Submitted' && currentuser}">
+              <apex:commandLink onclick="SaveCalendar()" status="pageStatus" styleClass="btn btn-success" reRender="formid">Save</apex:commandLink>
+            </apex:variable>
+            <apex:commandLink action="{!pjptab}" styleClass="btn btn-primary">PJP Tab</apex:commandLink>
+          </div>
+        </div>
+      </nav>
+      <br/>
+      <br/>
+      <br/>
+      <div id='wrap'> 
+        <!--   <table width="100%">
+            <tr>
+            <td>
+            <div class="pageTitle">
+                Create your Personal Journey Plan
+            </div>
+            </td>
+            <td>
+            <div id="button">
+                    <ul>
+                        
+                        <apex:variable var="mngrjin" value="{!manageruser}" rendered="{!manageruser}">
+                            <li onclick="mngrJoin()">Join</li>
+                        </apex:variable>
+                        <apex:variable var="mngrsave" value="{!manageruser}" rendered="{!!manageruser}">
+                            <li onclick="SaveCalendar()">Save 1</li>
+                        </apex:variable>
+                        <li> <apex:commandLink action="{!pjptab}">PJP Tab</apex:commandLink></li>
+                    </ul>
+                </div>
+           </td>
+           </tr>    
+           </table>   -->
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">PJP Details</a> </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+            
+                <table class="table table-bordered">
+                  <tr>
+                    <th>Sales Rep Name :</th>
+                    <td><apex:outputField value="{!PJP.User__c}"/></td>
+                    <th>Plan From :</th>
+                    <td><apex:outputField value="{!PJP.Start_Date__c}"/></td>
+                  </tr>
+                  <tr>
+                    <th>Status :</th>
+                    <td><apex:outputField value="{!PJP.Status__c}"/></td>
+                    <th>T0 :</th>
+                    <td><apex:outputField value="{!PJP.End_Date__c}"/></td>
+                  </tr>
+                </table>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div> </div>
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="row dataWid">
+              <div class="col-sm-4">
+                <div class="dataWidgets">Planned Visits:  {!totalVisits}</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="dataWidgets">Visited Count: {!VisitedCount}</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="dataWidgets">Days Planned: {!DayCount}</div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <br/>
+            <div id='calendar'></div>
+          </div>
+          <div class="col-sm-3">
+            <apex:variable var="usr" value="{!currentuser}" rendered="{!currentuser}">
+              <apex:variable var="app" value="{!currentuser}" rendered="{!PJP.Status__c != 'Submitted'}">
+                <div class="panel-group" id="accordion1">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+                        <apex:variable var="usr" value="{!currentuser}" rendered="{!currentuser}">
+                          <apex:variable var="app" value="{!currentuser}" rendered="{!PJP.Status__c != 'Submitted'}">
+                            <div class="dataWidgets1">Filter Custom Data</div>
+                          </apex:variable>
+                        </apex:variable>
+                        </a> </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <!--<div id='external-events'>-->
+                          <div class="filterPanel">
+                            <div class="filterBody">
+                              <div class="filterFld">
+                                <apex:outputLabel rendered="{!hasusers}">Users</apex:outputLabel>
+                                <apex:inputText rendered="{!hasusers}" value="{!subuser}" styleClass="form-control" list="{!subusers}"/>
+                                <label>Filter by</label>
+                                <apex:selectList size="1" value="{!pickval}" styleClass="form-control">
+                                  <apex:actionSupport action="{!filtersearch}" reRender="filter1" event="onchange"/>
+                                  <apex:selectOption itemValue="None" itemLabel="None"/>
+                                  <apex:selectOption itemValue="lead" itemLabel="Lead" rendered="{! $UserRole.Name!='Branding Manager' && $UserRole.Name!='Branding Head'}"/>
+                                  <apex:selectOption itemValue="account" itemLabel="Account"/>
+                                  <apex:selectOption itemValue="bpartner" itemLabel="Business Partner"/>
+                                  <apex:selectOption itemValue="project" itemLabel="Project Sites" rendered="{! $UserRole.Name!='Branding Manager' && $UserRole.Name!='Branding Head'}"/>
+                                  <apex:selectOption itemValue="depot" itemLabel="Depot" rendered="{! $UserRole.Name!='Branding Manager' && $UserRole.Name!='Branding Head'}"/>
+                                  <apex:selectOption itemValue="influencer" itemLabel="Influencer" rendered="{! $UserRole.Name!='Branding Manager' && $UserRole.Name!='Branding Head'}"/>
+                                  <apex:selectOption itemValue="territory" itemLabel="Territory"/>
+                                  <apex:selectOption itemValue="event" itemLabel="Event"/>
+                                  <apex:selectOption itemValue="general" itemLabel="General Visit"/>
+                                </apex:selectList>
+                              </div>
+                              <apex:outputPanel id="filter1" styleClass="filterResults" layout="block">
+                                <div class="filterFld">
+                                  <apex:outputLabel rendered="{!leadflag1}">Type</apex:outputLabel>
+                                  <apex:inputfield value="{!flead.Type__c}" styleClass="form-control" rendered="{!leadflag1}"/>
+                                  <apex:outputLabel rendered="{!subdflag1}">Type</apex:outputLabel>
+                                  <apex:selectList size="1" value="{!bpval}" styleClass="form-control" rendered="{!subdflag1}">
+                                      <apex:selectOption itemValue="none" itemLabel="None"/>
+                                      <apex:selectOption itemValue="mmc" itemLabel="MMC"/>
+                                      <apex:selectOption itemValue="subdealer" itemLabel="Sub Dealer"/>
+                                      <apex:selectOption itemValue="salesprom" itemLabel="Sales Promoter"/>
+                                  </apex:selectList>
+                                  <apex:outputLabel rendered="{!accflag1}">Type</apex:outputLabel>
+                                  <apex:selectList size="1" value="{!trnt}" styleClass="form-control" rendered="{!accflag1}">
+                                      <!--<apex:actionSupport action="{!filterSearch1}" reRender="filter2" event="onchange"/>-->
+                                      <apex:selectOption itemValue="none" itemLabel="None"/>
+                                      <apex:selectOption itemValue="tr" itemLabel="Trade"/>
+                                      <apex:selectOption itemValue="nt" itemLabel="Non Trade"/>
+                                  </apex:selectList>
+                                  <!--<apex:outputPanel id="filter2" styleClass="filterResults" layout="block">
+                                  <apex:outputLabel rendered="{!accflag1 && accflag12}">Sub Type</apex:outputLabel>
+                                  <apex:selectList size="1" value="{!trnt1}" styleClass="form-control" rendered="{!accflag1 && accflag12}">
+                                      <apex:selectOption itemValue="none" itemLabel="None"/>
+                                      <apex:selectOption itemValue="nontrade" itemLabel="Non Trade"/>
+                                      <apex:selectOption itemValue="institute" itemLabel="Instituitional"/>
+                                  </apex:selectList>
+                                  </apex:outputPanel>-->
+                                  <apex:outputLabel rendered="{!infflag1}">Type</apex:outputLabel>
+                                  <apex:inputfield value="{!finf.Type__c}" styleClass="form-control" rendered="{!infflag1}"/>
+                                  <apex:outputLabel rendered="{!evtflag1}">Type</apex:outputLabel>
+                                  <apex:inputfield value="{!fevnt.Type_of_Meet__c}" styleClass="form-control" rendered="{!evtflag1}"/>
+                                  <apex:outputLabel rendered="{! (accflag1 || leadflag1 || subdflag1 || evtflag1) && $Profile.Name != 'JSW SO'}">Territory</apex:outputLabel>
+                                  <apex:inputText value="{!dist}" styleClass="form-control" list="{!districtName}" rendered="{! (accflag1 || leadflag1 || subdflag1 || evtflag1)}"/>
+                                  <apex:outputLabel >Name</apex:outputLabel>
+                                  <apex:inputText value="{!AcctName}" styleClass="form-control" list="{!searchAccountName}"/>
+                                  <br/>
+                                  <apex:commandButton styleClass="btn btn-success" value="Apply Filter" action="{!search}" oncomplete="initExternalEvents()" reRender="FilterResults"/>
+                                  <br/>
+                                  <br/>
+                                </div>
+                              </apex:outputPanel>
+                            </div>
+                          </div>
+                        <!--</div>-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <br/>
+                  <apex:outputPanel id="FilterResults" styleClass="filterResults" layout="block">
+                    <div class="heading">
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="100px" height="30">Name</td>
+                          <!--<td width="55px">Date</td> 
+                          <td width="100px">Category</td>
+                          <td width="100px">Territory</td>-->
+                        </tr>
+                      </table>
+                    </div>
+                    <apex:outputPanel rendered="{!!searchRes}">
+                      <div class="noResults">No results</div>
+                    </apex:outputPanel>
+                    <div class="resultContainer" style="height: 700px;overflow-y: scroll;">
+                    <div id='external-events'>
+                      <apex:repeat value="{!acctList}" var="a" rendered="{!accflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="Prospect acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                              <td width="100px" align="center">{!a.RecordType.Name}</td>
+                              <td width="100px" align="center">{!a.Sales_Office_text__c}</td>
+                              <!--<td width="200px" class="contentCls"><div><apex:inputfield value="{!a.Birthdate__c}"/></div></td>--> 
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!leadList}" var="a" rendered="{!leadflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                              <td align="center" width="100px"> {!a.Type__c} </td>
+                              <td align="center" width="100px"> {!a.District__r.Name} </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!areaList}" var="a" rendered="{!areaflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!evntlist}" var="a" rendered="{!actflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Type_of_Meet__c}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                  </div>
+                             </td>
+                             <td align="center" width="100px">{!a.Name_of_Counter__c}</td>
+                             <td align="center" width="100px"> <apex:outputText value="{0,date,dd/MM/yy}"><apex:param value="{!a.Event__c}"/></apex:outputText> </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!bplist}" var="a" rendered="{!subdflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div>
+                              </td>
+                              <td align="center" width="100px"> {!a.RecordType.Name} </td>
+                              <td align="center" width="100px"> {!a.District__r.Name} </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!pjlist}" var="a" rendered="{!prjflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!acctlist}" var="a" rendered="{!cnfflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                              <td width="100px" align="center">{!a.Account_Category__c}</td>
+                              <td width="100px" align="center">{!a.Sales_Office_text__c}</td>  
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!acctlist}" var="a" rendered="{!wrhflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                              <td width="100px" align="center">{!a.Account_Category__c}</td>
+                              <td width="100px" align="center">{!a.Sales_Office_text__c}</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:repeat value="{!inlist}" var="a" rendered="{!infflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">{!a.Name}
+                                  <div class="Inline acctName external-event">@{!a.Id}</div>
+                                </div></td>
+                               <td width="100px" align="center">{!a.Type__c}</td>
+                              <td width="100px" align="center">{!a.District__r.Name}</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:repeat>
+                      <apex:outputpanel rendered="{!genflag}">
+                        <div class='external-event-row'>
+                          <table cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td width="100px"><div class="LeadStyle acctName external-event">Holiday
+                                  <div class="Inline acctName external-event">@Holiday</div>
+                                </div></td>
+                            </tr>
+                         </table>
+                       </div>
+                       <div class='external-event-row'>  
+                         <table>
+                            <tr>
+                                <td width="100px"><div class="LeadStyle acctName external-event">Leave
+                                  <div class="Inline acctName external-event">@Leave</div>
+                                </div></td>
+                            </tr>
+                         </table>
+                       </div>
+                       <div class='external-event-row'>  
+                         <table>
+                            <tr>
+                                <td width="100px"><div class="LeadStyle acctName external-event">Weekly Review
+                                  <div class="Inline acctName external-event">@Weekly</div>
+                                </div></td>
+                            </tr>
+                         </table>
+                       </div>
+                       <div class='external-event-row'>    
+                         <table>
+                            <tr>    
+                                <td width="100px"><div class="LeadStyle acctName external-event">General Visit
+                                  <div class="Inline acctName external-event">@General</div>
+                                </div></td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class='external-event-row'>    
+                         <table>
+                            <tr>    
+                                <td width="100px"><div class="LeadStyle acctName external-event">Cold Call
+                                  <div class="Inline acctName external-event">@Cold</div>
+                                </div></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </apex:outputpanel>
+                      </div>
+                    </div>
+                  </apex:outputPanel>
+                </div>
+              </apex:variable>
+            </apex:variable>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <br/><br/>
+      </div>
+    </apex:form>
+  </div>
+  </body>
+  </html>
+</apex:page>

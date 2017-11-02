@@ -1,0 +1,50 @@
+<apex:page standardController="Targets__c" extensions="targetClass" docType="html-5.0">
+    <apex:form >
+    <style>
+    .ct{text-align:center;}
+    .tbody{text-align:center}
+    </style>
+      <apex:pageBlock >
+      <!--<apex:outputText >Territory Total : {!avgAmount}</apex:outputText>-->
+          <apex:pageblockSection title="Target" >
+                  <apex:outputField value="{!tgtrec.OwnerId}"/>
+                  <apex:outputField value="{!tgtrec.Product_Group__c}"/>
+                  <apex:outputField value="{!tgtrec.Territory__c}"/>
+                  <apex:outputField value="{!tgtrec.Target_Start_Date__c}"/>
+                  
+          </apex:pageblockSection>
+          <apex:pageBlockSection title="Target Information" columns="1" >
+     
+      
+              <apex:pageblockTable value="{!tgtchdrec}" var="tcr" styleClass="tbody">
+                  <apex:column headerValue="Type" headerClass="ct">
+                      <apex:outputField value="{!tcr.Type__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="Nature" headerClass="ct">
+                  <apex:outputField value="{!tcr.Nature__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="Customer">
+                  <apex:outputField value="{!tcr.Customer_Name__c}"/><!-- list="{!acnames}" rendered="{!if(tc.Type__c=='Trade',false,true)}"-->
+                  </apex:column>
+                  <apex:column headerValue="Sales Promoter" headerClass="ct">
+                  <apex:outputField value="{!tcr.Sales_Promoter__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="Target" headerClass="ct">
+                  <apex:outputField value="{!tcr.Target__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="No. Of New Customers" headerClass="ct">
+                  <apex:outputField value="{!tcr.No_of_Dealers__c}"/>
+                  </apex:column>
+              </apex:pageblockTable>
+                  </apex:pageBlockSection>
+       
+       
+              <!--<apex:commandButton action="{!addrow}" value="Addrow" reRender="pbs"/>-->
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!edit}" value="Edit"/>
+              <apex:commandButton action="{!cloning}" value="Clone"/>
+              <apex:commandButton action="{!cancel}" value="Back"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

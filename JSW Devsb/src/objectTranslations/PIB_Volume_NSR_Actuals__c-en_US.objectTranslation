@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PIB Volume &amp; NSR Actuals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PIB Volume &amp; NSR Actuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cust Grup 1 --></label>
+        <name>Cust_Grup_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- PIB Volume &amp; NSR Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Value --></label>
+        <name>NSR_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIB SO Targets --></label>
+        <name>PIB_SO_Targets__c</name>
+        <relationshipLabel><!-- PIB Volume &amp; NSR Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- QTY --></label>
+        <name>QTY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Code --></label>
+        <name>Territory_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15 Days Checkbox --></label>
+        <name>X15_Days_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

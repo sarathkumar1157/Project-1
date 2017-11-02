@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>SRI VENKATESWARA AGENCIES Customer User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>SRI VENKATESWARA AGENCIES Customer User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>Karnataka_SO_3</parentRole>
+</Role>

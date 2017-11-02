@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MRM Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MRM Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Depot Actuals --></label>
+        <name>Depot_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depot Target --></label>
+        <name>Depot_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Actuals --></label>
+        <name>Direct_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Target --></label>
+        <name>Direct_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- MRM Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Month Depot Actuals --></label>
+        <name>Last_Month_Depot_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Direct Actuals --></label>
+        <name>Last_Month_Direct_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month NSR Qty Actuals --></label>
+        <name>Last_Month_NSR_Qty_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month NSR Value Actuals --></label>
+        <name>Last_Month_NSR_Value_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Non Trade Actuals --></label>
+        <name>Last_Month_Non_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Rail Actuals --></label>
+        <name>Last_Month_Rail_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Road Actuals --></label>
+        <name>Last_Month_Road_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Trade Actuals --></label>
+        <name>Last_Month_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- MH Code --></label>
+        <name>MH_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MH Unique Code --></label>
+        <name>MH_Unique_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NSR Overall QTY Actuals --></label>
+        <name>NSR_Overall_QTY_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Overall Value Actuals --></label>
+        <name>NSR_Overall_Value_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR QTY --></label>
+        <name>NSR_QTY__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Target --></label>
+        <name>NSR_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Total Basic Price --></label>
+        <name>NSR_Total_Basic_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Trade Actuals --></label>
+        <name>Non_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Trade Target --></label>
+        <name>Non_Trade_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>CHD</masterLabel>
+            <translation><!-- CHD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional</masterLabel>
+            <translation><!-- Institutional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rail Actuals --></label>
+        <name>Rail_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rail Target --></label>
+        <name>Rail_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Actuals --></label>
+        <name>Road_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Target --></label>
+        <name>Road_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <relationshipLabel><!-- MRM Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trade Actuals --></label>
+        <name>Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Target --></label>
+        <name>Trade_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Code Last Month --></label>
+        <name>Unique_Code_Last_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Code Next Month --></label>
+        <name>Unique_Code_Next_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Code --></label>
+        <name>Unique_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>District Actuals Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

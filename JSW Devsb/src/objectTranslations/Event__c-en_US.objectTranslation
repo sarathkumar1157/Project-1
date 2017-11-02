@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Counter --></label>
+        <name>Actual_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>District__c</name>
+        <relationshipLabel><!-- Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Districts --></label>
+        <name>Districts__c</name>
+        <relationshipLabel><!-- Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Date --></label>
+        <name>Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event id --></label>
+        <name>Event_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Counter --></label>
+        <name>Name_of_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Invitees --></label>
+        <name>No_Of_Invitees_for_Each_Meet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned --></label>
+        <name>Planned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Concreel HD</masterLabel>
+            <translation><!-- Concreel HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GGBS</masterLabel>
+            <translation><!-- GGBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPC</masterLabel>
+            <translation><!-- OPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSC</masterLabel>
+            <translation><!-- PSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status of the Event --></label>
+        <name>Status_of_the_Event__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postponed</masterLabel>
+            <translation><!-- Postponed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Meet --></label>
+        <name>Type_of_Meet__c</name>
+        <picklistValues>
+            <masterLabel>Builder/Contractors</masterLabel>
+            <translation><!-- Builder/Contractors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canopy based activity</masterLabel>
+            <translation><!-- Canopy based activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete mix design</masterLabel>
+            <translation><!-- Concrete mix design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractors meet</masterLabel>
+            <translation><!-- Contractors meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter meet</masterLabel>
+            <translation><!-- Counter meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer staff training</masterLabel>
+            <translation><!-- Dealer staff training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering college lecture</masterLabel>
+            <translation><!-- Engineering college lecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineers Meet</masterLabel>
+            <translation><!-- Engineers Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Govt &amp; Inst Meets</masterLabel>
+            <translation><!-- Govt &amp; Inst Meets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHB MEET</masterLabel>
+            <translation><!-- IHB MEET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mason meet</masterLabel>
+            <translation><!-- Mason meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mega Mason Meet</masterLabel>
+            <translation><!-- Mega Mason Meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project site meet</masterLabel>
+            <translation><!-- Project site meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SP Meets</masterLabel>
+            <translation><!-- SP Meets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsered Meets</masterLabel>
+            <translation><!-- Sponsered Meets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stationay lab based activity</masterLabel>
+            <translation><!-- Stationay lab based activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub-Dealers meet</masterLabel>
+            <translation><!-- Sub-Dealers meet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>plant visit</masterLabel>
+            <translation><!-- plant visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event Map Info --></label>
+            <section>Event Map Info</section>
+        </sections>
+        <sections>
+            <label><!-- Event Status --></label>
+            <section>Event Status</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a value --></errorMessage>
+        <name>Counter_Mandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

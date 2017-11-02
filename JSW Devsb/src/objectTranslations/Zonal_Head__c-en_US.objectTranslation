@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>State Head</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>State Head</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual --></label>
+        <name>Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Head --></label>
+        <name>State_Head__c</name>
+        <relationshipLabel><!-- State Head --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>Target__c</name>
+    </fields>
+    <layouts>
+        <layout>Zonal Head Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets &amp; Actuals --></label>
+            <section>Targets &amp; Actuals</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

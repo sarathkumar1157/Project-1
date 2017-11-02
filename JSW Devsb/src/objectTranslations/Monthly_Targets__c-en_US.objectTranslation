@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Monthly Targets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Monthly Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Achievement % --></label>
+        <name>Achievement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer(NT/ND) --></label>
+        <name>Dealer_NT_ND__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Name --></label>
+        <name>Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+        <relationshipLabel><!-- Monthly Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month Actual --></label>
+        <name>Last_Month_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year Same Month Actual --></label>
+        <name>Last_Year_Same_Month_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Name --></label>
+        <name>Month_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Actaul --></label>
+        <name>Monthly_Actaul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Dealer Target --></label>
+        <name>Monthly_Dealer_Target__c</name>
+        <relationshipLabel><!-- Monthly Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monthly Target MTD --></label>
+        <name>Monthly_Target_MTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Target --></label>
+        <name>Monthly_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Monthly Target --></label>
+        <name>New_Account_Monthly_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_short__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- TargetDateTime --></label>
+        <name>TargetDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Today Sale --></label>
+        <name>Today_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variance % --></label>
+        <name>Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly Dealer Target --></label>
+        <name>Yearly_Dealer_Target__c</name>
+    </fields>
+    <layouts>
+        <layout>Monthly Targets Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Information --></label>
+            <section>Dealer Information</section>
+        </sections>
+        <sections>
+            <label><!-- New Account Information --></label>
+            <section>New Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- SO Information --></label>
+            <section>SO Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,3212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Visit__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Visit_Reports</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Any_Schemes_Running__c</fullName>
+        <externalId>false</externalId>
+        <label>Any Schemes Running</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Any_image_to_be_captured__c</fullName>
+        <externalId>false</externalId>
+        <label>Any image to be captured</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Branding_Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Branding Activities</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Brief_Details_Of_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>Brief Details Of Call</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Commercial_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Commercial Remarks</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Rate  to be quoted &amp; supply source identified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_Brands__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Brands</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Credit_worthiness__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit worthiness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Current_Average_Monthly_Volume__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Average Monthly Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_influencer_Email_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer/influencer Email ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_influencer_Mobile_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer/influencer  Mobile No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Activity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Communication__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Communication</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Customer_SAP_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer / Customer SAP Code</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District__c</fullName>
+        <externalId>false</externalId>
+        <label>District</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Due_date_committed__c</fullName>
+        <externalId>false</externalId>
+        <label>Due date committed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Volume_Committment_to_JSW__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Volume Committment to JSW</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Influencer_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Influencer Name</label>
+        <referenceTo>Influencer__c</referenceTo>
+        <relationshipName>Visit_Reports</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Issues_faced_service_requests__c</fullName>
+        <externalId>false</externalId>
+        <label>Issues faced/ service requests</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Followup for appointing non JSW dealers;</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>JSW_Bag_Visibility__c</fullName>
+        <externalId>false</externalId>
+        <label>JSW Bag Visibility</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>JSW_Shop_Board__c</fullName>
+        <externalId>false</externalId>
+        <label>JSW Shop Board Condition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Good_Condition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad Condition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>JSW_Supply_Details_MT__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>JSW Supply Details (MT) from System or Dealer</inlineHelpText>
+        <label>JSW Supply Details (MT)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>JSW_share_of_wallet__c</fullName>
+        <externalId>false</externalId>
+        <label>JSW share of wallet</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipName>Visit_Reports</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location_of_TSO__c</fullName>
+        <externalId>false</externalId>
+        <label>Location of TSO</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Month/Year</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Concerned_Marketing_Officer__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of Concerned Marketing Officer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Customer_Influencer__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of  Customer/ Influencer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Dealer_Retailer_to_whom_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Dealer/ Retailer to whom Details Communicated</inlineHelpText>
+        <label>Name of Dealer/ Retailer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_TS_person__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of  TS person</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>POP_material_comments__c</fullName>
+        <externalId>false</externalId>
+        <label>POP material – comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Partners__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partners</label>
+        <referenceTo>Business_Partner__c</referenceTo>
+        <relationshipName>Visit_Reports_Unplanned</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Collected_by_SO__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Collected by SO</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pending_Payment_Amount_Committed__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Payment Amount Committed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Place_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Place/Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Price_WSP_RS__c</fullName>
+        <externalId>false</externalId>
+        <label>Price - WSP, RS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Price_bill_price__c</fullName>
+        <externalId>false</externalId>
+        <label>Price – bill price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <picklist>
+            <picklistValues>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concreel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Project_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project Site</label>
+        <referenceTo>Project_Site__c</referenceTo>
+        <relationshipName>Visit_Reports1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_Visit__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose of Visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Reputation_in_mkt__c</fullName>
+        <externalId>false</externalId>
+        <label>Reputation in mkt</label>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Responsibility__c</fullName>
+        <externalId>false</externalId>
+        <label>Responsibility</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>S_No__c</fullName>
+        <externalId>false</externalId>
+        <label>S.No</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Site</label>
+        <referenceTo>Project_Site__c</referenceTo>
+        <relationshipName>Visit_Reports</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_level_JSW_product_wise__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock level – JSW</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_level__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Technical_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Comments</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Product &amp; service briefing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Timeline__c</fullName>
+        <externalId>false</externalId>
+        <label>Timeline</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Top_3_Brands_Visibility__c</fullName>
+        <externalId>false</externalId>
+        <label>Top 3 Brands Visibility</label>
+        <picklist>
+            <picklistValues>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Top_3_visible_brands__c</fullName>
+        <externalId>false</externalId>
+        <label>Top 3 visible brands</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ACC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ambuja</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kesoram</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orient</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>KCP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Penna</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ramco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zuari</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ICL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bharti Cements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Priya</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maha Cements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dalmia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chettinad</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Birla Shakti</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Total_potential__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Includes all Brands</inlineHelpText>
+        <label>Total potential</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_product_qty_required_MT__c</fullName>
+        <externalId>false</externalId>
+        <label>Total product qty required (MT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_project_duration_Months__c</fullName>
+        <externalId>false</externalId>
+        <label>Total project duration (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Activity</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Slab Casting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Site Plaster Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Godown visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Damage Assesment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plant Visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influencer-Mason</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influencer-Contractor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influencer-Architect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influencer-Engineer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Channel Partner visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mason Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Counter meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IHB Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contractor Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineers Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Govt Off Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Site Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mega Mason Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mason Training Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engg College Lecture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mix Design Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dealer Staff Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lab Based Activity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Site Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gift Transfer for Meet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NDT Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JSW Int Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JSW Ext Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGBS Conclave</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Third Party Cement Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Third Party Concrete Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cement Sample Collection/delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Office Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Head Office Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leave</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Conversion__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Conversion</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Customer_Influencer__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Customer/ Influencer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others ( descriptive)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Material__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Material</label>
+        <picklist>
+            <picklistValues>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPC/OPC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Visit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Visit</label>
+        <referenceTo>Visit__c</referenceTo>
+        <relationshipName>Visit_Reports</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WS_vs_Retail__c</fullName>
+        <externalId>false</externalId>
+        <label>WS vs Retail(%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Wayforward_to_address_these__c</fullName>
+        <externalId>false</externalId>
+        <label>Wayforward to address these</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>DCR</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>1/25/2017 12:00 AM</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>UV-{0000}</displayFormat>
+        <label>Visit Report Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>DCR</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Daily_Call_Report</fullName>
+        <active>false</active>
+        <label>Daily Call Report</label>
+        <picklistValues>
+            <picklist>Any_Schemes_Running__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Branding_Activities__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commercial_Comments__c</picklist>
+            <values>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate  to be quoted %26 supply source identified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credit_worthiness__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issues_faced_service_requests__c</picklist>
+            <values>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup for appointing non JSW dealers%3B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Bag_Visibility__c</picklist>
+            <values>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Shop_Board__c</picklist>
+            <values>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reputation_in_mkt__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Comments__c</picklist>
+            <values>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %26 service briefing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_Brands_Visibility__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_visible_brands__c</picklist>
+            <values>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Activity__c</picklist>
+            <values>
+                <fullName>Cement Sample Collection%2Fdelivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Channel Partner visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Counter meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damage Assesment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Staff Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engg College Lecture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineers Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GGBS Conclave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Transfer for Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Godown visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Govt Off Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head Office Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHB Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JSW Ext Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JSW Int Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab Based Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason Training Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mega Mason Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mix Design Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDT Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plant Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Site Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Plaster Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slab Casting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Cement Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Concrete Testing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Conversion__c</picklist>
+            <values>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Customer_Influencer__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others %28 descriptive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Material__c</picklist>
+            <values>
+                <fullName>PPC%2FOPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Dealer</fullName>
+        <active>true</active>
+        <label>Dealer</label>
+        <picklistValues>
+            <picklist>Any_Schemes_Running__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Branding_Activities__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commercial_Comments__c</picklist>
+            <values>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate  to be quoted %26 supply source identified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credit_worthiness__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issues_faced_service_requests__c</picklist>
+            <values>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup for appointing non JSW dealers%3B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Bag_Visibility__c</picklist>
+            <values>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Shop_Board__c</picklist>
+            <values>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Condition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reputation_in_mkt__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Comments__c</picklist>
+            <values>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %26 service briefing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_Brands_Visibility__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_visible_brands__c</picklist>
+            <values>
+                <fullName>ACC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ambuja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bharti Cements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Birla Shakti</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chettinad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dalmia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kesoram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maha Cements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Priya</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ramco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zuari</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Activity__c</picklist>
+            <values>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Conversion__c</picklist>
+            <values>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Customer_Influencer__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others %28 descriptive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Material__c</picklist>
+            <values>
+                <fullName>PPC%2FOPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Influencers</fullName>
+        <active>true</active>
+        <label>Technical Services Visit Report</label>
+        <picklistValues>
+            <picklist>Any_Schemes_Running__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Branding_Activities__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commercial_Comments__c</picklist>
+            <values>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate  to be quoted %26 supply source identified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credit_worthiness__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issues_faced_service_requests__c</picklist>
+            <values>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup for appointing non JSW dealers%3B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Bag_Visibility__c</picklist>
+            <values>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Shop_Board__c</picklist>
+            <values>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>Concreel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reputation_in_mkt__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Comments__c</picklist>
+            <values>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %26 service briefing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_Brands_Visibility__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_visible_brands__c</picklist>
+            <values>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Activity__c</picklist>
+            <values>
+                <fullName>Cement Sample Collection%2Fdelivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Channel Partner visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Counter meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damage Assesment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Staff Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engg College Lecture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineers Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GGBS Conclave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Transfer for Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Godown visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Govt Off Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head Office Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHB Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JSW Ext Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JSW Int Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab Based Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason Training Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mega Mason Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mix Design Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDT Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plant Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Site Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Plaster Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slab Casting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Cement Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Concrete Testing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Conversion__c</picklist>
+            <values>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Customer_Influencer__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others %28 descriptive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Material__c</picklist>
+            <values>
+                <fullName>PPC%2FOPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Lead</fullName>
+        <active>true</active>
+        <label>Lead</label>
+        <picklistValues>
+            <picklist>Any_Schemes_Running__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Branding_Activities__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commercial_Comments__c</picklist>
+            <values>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate  to be quoted %26 supply source identified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credit_worthiness__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issues_faced_service_requests__c</picklist>
+            <values>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup for appointing non JSW dealers%3B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Bag_Visibility__c</picklist>
+            <values>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Shop_Board__c</picklist>
+            <values>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Condition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reputation_in_mkt__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Comments__c</picklist>
+            <values>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %26 service briefing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_Brands_Visibility__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_visible_brands__c</picklist>
+            <values>
+                <fullName>ACC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ambuja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bharti Cements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Birla Shakti</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chettinad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dalmia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kesoram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maha Cements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Priya</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ramco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zuari</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Activity__c</picklist>
+            <values>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Conversion__c</picklist>
+            <values>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Customer_Influencer__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others %28 descriptive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Material__c</picklist>
+            <values>
+                <fullName>PPC%2FOPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>NT_INST</fullName>
+        <active>true</active>
+        <label>NT INST</label>
+        <picklistValues>
+            <picklist>Any_Schemes_Running__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Branding_Activities__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commercial_Comments__c</picklist>
+            <values>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate  to be quoted %26 supply source identified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credit_worthiness__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issues_faced_service_requests__c</picklist>
+            <values>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup for appointing non JSW dealers%3B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Bag_Visibility__c</picklist>
+            <values>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Shop_Board__c</picklist>
+            <values>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Condition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reputation_in_mkt__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Comments__c</picklist>
+            <values>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %26 service briefing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_Brands_Visibility__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_visible_brands__c</picklist>
+            <values>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Activity__c</picklist>
+            <values>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Conversion__c</picklist>
+            <values>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Customer_Influencer__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others %28 descriptive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Material__c</picklist>
+            <values>
+                <fullName>PPC%2FOPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Project_Sites</fullName>
+        <active>false</active>
+        <label>Project Sites</label>
+        <picklistValues>
+            <picklist>Any_Schemes_Running__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Branding_Activities__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commercial_Comments__c</picklist>
+            <values>
+                <fullName>Material not available at counter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material not supplied on time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price sensitive customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate  to be quoted %26 supply source identified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credit_worthiness__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Issues_faced_service_requests__c</picklist>
+            <values>
+                <fullName>Branding Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup for appointing non JSW dealers%3B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Techinical isues to be resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>meets to be conducted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Bag_Visibility__c</picklist>
+            <values>
+                <fullName>Average</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>JSW_Shop_Board__c</picklist>
+            <values>
+                <fullName>Absent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reputation_in_mkt__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Comments__c</picklist>
+            <values>
+                <fullName>Canopy activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cover block distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %26 service briefing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>slab casting attending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_Brands_Visibility__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Top_3_visible_brands__c</picklist>
+            <values>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Activity__c</picklist>
+            <values>
+                <fullName>Cement Sample Collection%2Fdelivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Channel Partner visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Counter meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damage Assesment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Staff Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engg College Lecture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineers Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GGBS Conclave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Transfer for Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Godown visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Govt Off Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head Office Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHB Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer-Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JSW Ext Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JSW Int Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab Based Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason Training Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mega Mason Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mix Design Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NDT Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plant Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Site Meet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIte Mix Design Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Plaster Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slab Casting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Cement Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Concrete Testing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Conversion__c</picklist>
+            <values>
+                <fullName>New conversion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repeat order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Customer_Influencer__c</picklist>
+            <values>
+                <fullName>Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others %28 descriptive%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing house</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Material__c</picklist>
+            <values>
+                <fullName>PPC%2FOPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unplanned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>New_Visit_Report_Button</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Visit Report Button</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!IF( Visit__c.Type__c  = &apos;Account&apos;, true, false)}</url>
+    </webLinks>
+</CustomObject>

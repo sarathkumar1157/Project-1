@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Targets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Days In Month --></label>
+        <name>Days_In_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jurisdiction --></label>
+        <name>Jurisdiction__c</name>
+    </fields>
+    <fields>
+        <label><!-- MTD Target --></label>
+        <name>MTD_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Role --></label>
+        <name>Manager_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR NT Actuals --></label>
+        <name>NSR_NT_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Trade Actuals --></label>
+        <name>NSR_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Days MTD --></label>
+        <name>No_of_Days_MTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Days in a Month --></label>
+        <name>No_of_Days_in_a_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of New Dealers in this Month --></label>
+        <name>No_of_New_Dealers_in_this_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Start Date --></label>
+        <name>Target_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Percentage --></label>
+        <name>Trade_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- UT Code --></label>
+        <name>UT_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Actuals --></label>
+        <name>User_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Non-Trade Actuals --></label>
+        <name>User_Non_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Pro-Rata Acheivement --></label>
+        <name>User_Pro_Rata_Acheivement__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Pro-Rata Asking Rate --></label>
+        <name>User_Pro_Rata_Asking_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Trade Actuals --></label>
+        <name>User_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Location --></label>
+        <name>Work_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15 Days Actuals --></label>
+        <name>X15_Days_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>User Targets Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

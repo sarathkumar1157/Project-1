@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Ledger</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Ledgers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Customer Ledgers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accounting Doc No. --></label>
+        <name>Accounting_Doc_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance [Rs.] --></label>
+        <name>Balance_Rs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Doc No. --></label>
+        <name>Billing_Doc_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clrg No --></label>
+        <name>Clrg_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit [Rs.] --></label>
+        <name>Credit_Rs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit [Rs.] --></label>
+        <name>Debit_Rs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Doc Type --></label>
+        <name>Doc_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excise no --></label>
+        <name>Excise_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interface Date/Time --></label>
+        <name>Interface_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Date --></label>
+        <name>Last_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month of Year --></label>
+        <name>Month_of_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Particulars --></label>
+        <name>Particulars__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Date --></label>
+        <name>Post_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Date --></label>
+        <name>Post_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity (MT) --></label>
+        <name>Quantity_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref No --></label>
+        <name>Ref_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Emp Name --></label>
+        <name>Sales_Emp_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Employee Code --></label>
+        <name>Sales_Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Employee --></label>
+        <name>Sales_Employee__c</name>
+        <relationshipLabel><!-- Customer Ledgers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter Code --></label>
+        <name>Sales_Promoter_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter Name --></label>
+        <name>Sales_Promoter_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Promoter --></label>
+        <name>Sales_Promoter__c</name>
+        <relationshipLabel><!-- Customer Ledgers (Sales Promoter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Truck No --></label>
+        <name>Truck_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

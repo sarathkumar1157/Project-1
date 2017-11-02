@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cement MRM Volume Actuals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cement MRM Volume Actuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Commercial Invoice Date --></label>
+        <name>Commercial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depot Actuals --></label>
+        <name>Depot_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Actuals --></label>
+        <name>Direct_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Actuals --></label>
+        <name>District_Actuals__c</name>
+        <relationshipLabel><!-- Cement MRM Volume Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- District Rail Actuals --></label>
+        <name>District_Rail_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Road Actuals --></label>
+        <name>District_Road_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR C&amp;F Actuals --></label>
+        <name>NSR_C_F_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Disc Value Actuals --></label>
+        <name>NSR_Disc_value_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR MMC Actuals --></label>
+        <name>NSR_MMC_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Other Actuals --></label>
+        <name>NSR_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PD+SPL+ADDL --></label>
+        <name>NSR_PD__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR PRFT Dump Value Actuals --></label>
+        <name>NSR_PRFT_Dump_Value_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Packing Cost Actuals --></label>
+        <name>NSR_Packing_Cost_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Qty Actuals --></label>
+        <name>NSR_Qty_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR/T Actuals --></label>
+        <name>NSR_T_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Total Basic Price Actuals --></label>
+        <name>NSR_Total_Basic_Price_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- NSR Value Actuals --></label>
+        <name>NSR_Value_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Trade Actuals --></label>
+        <name>Non_Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Actuals --></label>
+        <name>Trade_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Cement MRM Volume Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

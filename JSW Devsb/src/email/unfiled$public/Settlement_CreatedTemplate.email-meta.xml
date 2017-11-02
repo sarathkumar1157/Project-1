@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CCRS</letterhead>
+    <name>Settlement Created Template</name>
+    <style>freeForm</style>
+    <subject>Request to Create New Settlement</subject>
+    <textOnly>Hi Team,
+
+A new case has been assigned to you. Please follow-up.
+
+Link to case: {!Case.Link}
+
+
+Thanks &amp; Regards,
+SFDC</textOnly>
+    <type>html</type>
+</EmailTemplate>

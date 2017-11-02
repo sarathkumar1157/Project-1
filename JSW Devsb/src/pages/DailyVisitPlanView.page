@@ -1,0 +1,869 @@
+<apex:page sidebar="false" showHeader="false" standardController="Month_Plan__c" extensions="Daily_Visit_Plan_Ctlr">
+    <html>
+        <head>
+        <link rel='stylesheet' href="{!URLFOR($Resource.fullcalendar, '/cupertino/jquery-ui.min.css')}" />
+        <link href="{!URLFOR($Resource.fullcalendar, 'fullcalendar.css')}" rel='stylesheet' />
+        <link href="{!URLFOR($Resource.fullcalendar, 'fullcalendar.print.css')}" rel='stylesheet' media='print' />
+        <link href="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.css')}" rel='stylesheet' />
+        <link href="{!URLFOR($Resource.Bootstrap, 'font-awesome.min.css')}" rel='stylesheet' />
+        <script src="{!URLFOR($Resource.jquery4Cal, 'jquery.min.js')}"></script>
+        <script src="{!URLFOR($Resource.Bootstrap, 'bootstrap.min.js')}"></script>
+        <script src="{!URLFOR($Resource.jquery4Cal, 'jquery-ui.custom.min.js')}"></script>
+        <script src="{!URLFOR($Resource.fullcalendar, 'fullcalendar.min.js')}"></script>
+        <script type='text/javascript'  src="/sforce/one/30.0/api.js" />
+        <script type='text/javascript' src='/canvas/sdk/js/publisher.js'></script>
+        <script>
+            var jsonArr = [];
+            var visitlist = [];
+            var delvllist = [];
+            $(document).ready(function() {
+                EventJSON();
+                initializeFullCal();
+            });
+             
+            var date = new Date();
+                var d, m, y, sHours, sMinute, eHours, eMinute;
+                
+            function calcTime(mDate, city, offset) {
+            
+                // create Date object for current location
+                var d = new Date(mDate);
+            
+                // convert to msec
+                // add local time zone offset
+                // get UTC time in msec
+                var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            
+                // create new Date object for different city
+                // using supplied offset
+                var nd = new Date(utc + (3600000*offset));
+            
+                // return time as a string
+                return nd;
+            }
+            
+            function submonth(){
+                var res = confirm("Submit Month Plan for Approval");
+            }
+            
+            function EventJSON(){
+                if({!flag}){
+                    d = {!day};
+                    m = {!month}-1;
+                    y = {!year};
+                }else{
+                <apex:repeat value="{!dailyVsttList}" var="v">
+                var StartDate = new Date("{!v.Planned_Date__c}");
+                    d = StartDate.getDate();
+                    m = StartDate.getMonth();
+                    y = StartDate.getFullYear();
+                    
+                if({!v.Month_Plan__c != null}){
+                    jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}"
+                        });
+                } else if ({!PJP.Status__c != 'Approved'}){
+                    if({!v.General_Visit__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!!v.Planned__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#6A5ACD',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!v.Visit_Checked_In__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#6CBF4A',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!v.Visit_Completed__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#00FF00',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!v.Past__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#F1948A',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!!v.Past__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#ff9900',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else {
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    }
+                } else{
+                    if({!v.General_Visit__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Id}',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}"
+                        });
+                    } else if({!!v.Planned__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#6A5ACD',
+                            url: '/{!v.Id}',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!v.Visit_Checked_In__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Id}',
+                            color: '#6CBF4A',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!v.Visit_Completed__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Id}',
+                            color: '#00FF00',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!v.Past__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            color: '#F1948A',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else if({!!v.Past__c}){
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Id}',
+                            color: '#ff9900',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    } else {
+                        jsonArr.push({
+                            title: "{!v.Name__c}",
+                            start: new Date(y, m, d),
+                            url: '/{!v.Id}',
+                            region: "{!v.Region__c}",
+                            type: "{!v.Type__c}",
+                            attend: "{!v.Attendees__c}"
+                        });
+                    }
+                    }                
+                </apex:repeat>
+                }
+            }
+            
+            
+            function initExternalEvents(){
+               
+                /* initialize the external events -----------------------------------------------------------------*/
+                $('#external-events div.external-event').each(function() {
+                    // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+                    // it doesnt need to have a start or end
+                    var eventObject = {
+                        title: $.trim($(this).text()) // use the elements text as the event title
+                    };
+                    
+                    
+                    // store the Event Object in the DOM element so we can get to it later
+                    $(this).data('eventObject', eventObject);
+                    
+                    // make the event draggable using jQuery UI
+                    $(this).draggable({
+                        zIndex: 999,
+                        revert: true,      // will cause the event to go back to its
+                        revertDuration: 0  //  original position after the drag
+                    });
+                });
+            }
+            
+            function initializeFullCal(){
+                var currentdate = new Date("{!PJP.Start_Date__c}");
+                /* initialize the calendar -----------------------------------------------------------------*/
+                $('#calendar').fullCalendar({
+                    theme: true,
+                    minTime: '09:00am',
+                    maxTime: '8:00pm',
+                    month: m,
+                    //defaultView: 'agendaWeek',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,basicWeek,basicDay'
+                    },
+                    events: jsonArr,
+                    allDayDefault: true, 
+                    eventClick: function(event) {
+                        if (event.url) {
+                            sforce.one.navigateToSObject(event.url);
+                            //window.open(event.url);
+                            //return false;
+                        }
+                    },
+                    dayClick: function (date) {
+                        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.Daily_Visit_Plan_Ctlr.dayPlanUrl}',date,"{!PJP.id}",
+                        function(result, event){
+                            window.top.location = "/"+result;
+                            if (event.status) {
+                             } else {        
+                             }
+                          }, 
+                          {escape: true} 
+                      );
+                    },
+                    eventMouseover: function (data, event, view) {
+                        var strt = data.start+'';
+                        strt = strt.split(" ");
+                        strt = strt[2] + ' ' + strt[1] + ' ' + strt[3];
+                        tooltip = '<div class="tooltiptopicevent" style="width:auto;height:auto;background:#ccd9ff;position:absolute;z-index:10001;padding:10px 10px 10px 10px ;  line-height: 200%;">' + 
+                                    'Title: ' + data.title + '</br>Start: ' + strt + '</br>City: ' + data.region + '</br>Type: ' + data.type + '<br/>Attendees: ' + data.attend +'</div>';
+                        $("body").append(tooltip);
+                        $(this).mouseover(function (e) {
+                            $(this).css('z-index', 10000);
+                            $('.tooltiptopicevent').fadeIn('500');
+                            $('.tooltiptopicevent').fadeTo('10', 1.9);
+                        }).mousemove(function (e) {
+                            $('.tooltiptopicevent').css('top', e.pageY + 10);
+                            $('.tooltiptopicevent').css('left', e.pageX + 20);
+                        });
+                    },
+                    eventMouseout: function (data, event, view) {
+                        $(this).css('z-index', 8);
+                        $('.tooltiptopicevent').remove();                
+                    }
+                });
+                $('#calendar').fullCalendar('gotoDate', currentdate);
+            }
+              $(document).on('show','.accordion', function (e) {
+                 //$('.accordion-heading i').toggleClass(' ');
+                 $(e.target).prev('.accordion-heading').addClass('accordion-opened');
+                });
+    
+                $(document).on('hide','.accordion', function (e) {
+                    $(this).find('.accordion-heading').not($(e.target)).removeClass('accordion-opened');
+                    //$('.accordion-heading i').toggleClass('fa-chevron-right fa-chevron-down');
+                });         
+        </script>
+        <apex:include pageName="CSS_Daily_Visit_Plan"/>
+        <style>
+        
+                
+            #wrap {
+              /*  width: 1024px; */
+                margin: 0 auto;
+                font-size: 14px;
+                font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+            }
+            
+            .leftPanel{
+                display: inline-block;
+            } 
+            #external-events {
+                display: inline-block;
+                vertical-align: top;
+                width: 300px;
+                padding: 0;
+                text-align: left;
+                border-radius:5px 5px 0 0;
+            }
+            .dataWidgets{
+                background: #14558E;
+                box-shadow: 1px 1px 1px #000672;
+                color: #fff;
+                padding: 5px;
+                border-radius: 5px;
+                text-align:center;
+                margin:0 0 5px 0;
+            }
+            .heading {
+                margin-top: 0;
+                padding-top: 1em;
+                background-color: #15528e;
+                color: #fff;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 6px;
+                height: 21px;
+                border-radius: 5px 5px 0 0;
+            }
+            .filterResults .heading table td {
+                color: #fff !important;
+                font-size: 12px;
+                vertical-align: top;
+                text-align: center;
+            }
+            /*Added */
+           .filterPanel {
+                height: 175px;
+                background-color: #ededed;
+                border: none;
+                border-radius: 5px;
+            } 
+            label {
+                width: 80px;
+                display: inline-block;
+            }
+            .external-event-row { /* try to mimick the look of a real event */
+                margin: 0;
+                padding: 10px 4px;
+                font-size: .85em;
+                cursor: pointer;
+            }
+            .external-event-row:nth-child(odd) {
+                background: #EDEDED;
+            }
+            .external-event-row:nth-child(even) {
+                background: #D7D7D7;
+            }    
+            
+            #external-events p {
+                margin: 1.5em 0;
+                font-size: 11px;
+                color: #666;
+            }
+                
+            #external-events p input {
+                margin: 0;
+                vertical-align: middle;
+            }
+            
+            .fc-event {
+                  margin-bottom: 3px;
+            }
+        
+            #calendar {
+                display: inline-block;
+                vertical-align: top;
+                width: 719px;
+            }
+            .acctName {
+                width: 100px;
+                border-radius: 5px;
+                text-align: center;
+                padding: 2px;
+            }
+            .aphabeticFilter {
+                width: 100%;
+                overflow-wrap: break-word;
+                padding: 10px 0;
+            }
+            .aphabeticFilter a {
+                text-decoration: none;
+                color: #2B608B;
+                margin: 2px;
+                font-size: 12px;
+            }
+            .filterBody{
+                padding: 5px;
+            }
+            .resultContainer {
+                min-height: 300px;
+                /*overflow-x: hidden;
+                overflow-y: auto;*/
+            }
+            .noResults{
+                text-align:center;
+                padding: 5px;
+            }
+            .contentCls{
+                width: 45px;
+                text-align: center;
+            }
+            .Dealer{
+                background: #8DBE3D;
+            }
+            .Customer{
+                background: #4FC7E9;
+            }
+            .Prospect{
+                background: #EBC13D;
+            }
+            .LeadStyle{
+                background: #4FC7E9;
+            }
+            .pageTitle{
+                font-size: 20px;
+                padding-bottom: 20px;
+                color: #000080;
+            }
+            .mapIt{
+                float: right;
+                display: inline;
+                background-color: #fbfbfb;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px #474747;
+                color: #185ea3;
+                font-weight: bold;
+                font-size: 16px;
+                width: 275px;
+                text-align: center;
+                cursor:pointer;
+            }
+            .fc-event-time {
+                display : none
+            }
+            .fc-event-title {
+                padding: 0 1px;
+                white-space: nowrap;
+            }
+            .info, .success, .warning, .error, .validation {
+        border: 1px solid;
+        margin: 10px 0px;
+        padding:15px 10px 15px 50px;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        }
+        .info {
+        color: #00529B;
+        background-color: #BDE5F8;
+        }
+        .success {
+        color: #4F8A10;
+        background-color: #DFF2BF;
+        }
+        .warning {
+        color: #9F6000;
+        background-color: #FEEFB3;
+        }
+        .error {
+        color: #D8000C;
+        background-color: #FFBABA;
+        }
+#calendar {
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+            }
+            .fc-sun {
+                width:14%;
+            }
+            .fc-mon {
+                width:14%;
+            }
+            .fc-tue {
+                width:14%;
+            }
+            .fc-wed {
+                width:14%;
+            }
+            .fc-thu {
+                width:14%;
+            }
+            .fc-fri {
+                width:14%;
+            }
+            .fc-sat {
+                width:14%;
+            }
+            .fc-grid th {
+                white-space:normal;
+            }
+            .fc-last {
+                width:80%;
+            }
+            .fc-event-container {
+            width:auto !important;
+            left:0px !important;
+            }
+            .btn-primary {
+                color: #fff !important;
+                background: #337ab7 !important;
+                border-color: #2e6da4 !important;
+            }
+            .btn-success {
+                color: #fff !important;
+                background: #449d44 !important;
+                border-color: #398439 !important;
+            }
+            .btn-danger {
+                color: #fff !important;
+                background: #d9534f !important;
+                border-color: #d9534f !important;
+            }
+            .btn-warning {
+            color: #fff !important;
+            background: #f0ad4e !important;
+            border-color: #eea236 !important;
+            }
+            
+            .btn-danger1 {
+            color: #fff !important;
+            background: #d9534f !important;
+            border-color: #d9534f !important;
+            padding:5px 0 !important;
+            width:100% !important;
+
+            }
+            
+            .rightnav a {
+                padding:5px 15px;
+                margin:8px 0 0 8px;
+            }
+            .rightnav a {
+                line-height:20px;
+            }
+            
+            .h2, h2 {
+                font-size: 20px;
+            }
+            .bPageBlock .pbButton .btn {
+            color: #fff !important;
+            background: #5bc0de !important;
+            border-color: #46b8da !important;
+            padding:5px 15px !important;
+            }
+            
+            body .bRelatedList .pbTitle h3 {
+            display:none;
+            }
+            
+            @media all and (min-width:0px) and (max-width:480px) {
+              .custTableTop {
+    margin:85px 0 0 0;
+   
+    }
+    .navbar-brand {
+   
+    padding: 15px 0px;
+    
+}
+.navbar-default {
+   
+    padding: 0 0 10px 0;
+  
+}
+.rightnav {
+padding: 0 20px 0 0;
+}
+.custTableTop table {
+font-size:12px;
+}
+.rightnav a {
+    padding:3px 5px;
+    margin: 8px 0 0 8px;
+}
+.table {
+  
+    margin-bottom:10px;
+}
+.table td th {
+  
+   padding: 5px;
+}
+.fc-button {
+   font-size:12px;
+    padding:0px;
+   
+}
+.fc-header-title h2 {
+    font-size:12px;font-weight:bold;
+}
+.legendsize {
+font-size:14px;
+}
+.padLR {
+padding:0 10px;
+}
+            }
+            
+            @media all and (min-width:421px) and (max-width:768px) {
+             .custTableTop {
+    margin:60px 0 0 0;
+   
+    }
+    .navbar-default {
+   
+    padding: 0 0 10px 0;
+  
+}
+            }
+           
+        </style>
+        </head>
+        <body>
+         <div class="container">
+        <apex:form >
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="pull-left"><a class="navbar-brand" href="#">Create your Personal Journey Plan</a> </div>
+          <div class="rightnav pull-right">
+                        <apex:commandLink action="{!join}" rendered="{!currentuser && PJP.Status__c != 'Submitted'}" styleClass="btn btn-warning">Edit</apex:commandLink>
+                        <apex:variable var="mgusr" value="{!currentuser}" rendered="{!!currentuser && PJP.Status__c == 'Approved'}">
+                           <apex:commandLink action="{!join}" styleClass="btn btn-success">Join</apex:commandLink>
+                        </apex:variable>
+                        <apex:variable var="mgusr" value="{!manageruser}" rendered="{!manageruser}">
+                           <apex:commandLink action="{!directApprove}" styleClass="btn btn-warning" rendered="{!PJP.Status__c == 'Submitted'}">Approve</apex:commandLink>
+                           <apex:commandLink action="{!directReject}" styleClass="btn btn-danger" rendered="{!PJP.Status__c == 'Submitted'}">Reject</apex:commandLink>
+                        </apex:variable>
+                        <apex:variable var="usr" value="{!currentuser}" rendered="{!currentuser && !tmptype}">
+                              <apex:variable var="subweek" rendered="{! PJP.Status__c == 'Approved'}" value="{!PJP.Status__c}">
+                                  <apex:commandLink action="{!submitforapproval}" styleClass="btn btn-success">Submit Week</apex:commandLink>
+                              </apex:variable>
+                              <apex:variable var="submonth" rendered="{! PJP.Status__c == 'New Request' || PJP.Status__c == 'Pending' || PJP.Status__c == 'Rejected'}" value="{!PJP.Status__c}">
+                                  <apex:commandLink action="{!submitmonth}" styleClass="btn btn-success" onclick="submonth()">Submit Month</apex:commandLink>
+                              </apex:variable>
+                              <apex:commandLink action="{!cloning}" rendered="{!currentuser}" styleClass="btn btn-danger">Clone</apex:commandLink>
+                        </apex:variable>
+                        <apex:commandLink action="{!summarytab}" styleClass="btn btn-primary">Summary</apex:commandLink>
+                        <apex:commandLink action="{!pjptab}" styleClass="btn btn-primary">PJP Tab</apex:commandLink>
+                        <apex:commandLink action="{!createRecs}" styleClass="btn btn-primary" rendered="{!tmptype}">Create PJP</apex:commandLink>
+          
+          </div>
+        </div>
+      </nav>
+        <div id='wrap'>
+           <!-- <table width="100%">
+            <tr>
+            <td>
+            <div class="pageTitle">
+                Create your Personal Journey Plan
+            </div>
+            </td>
+            <td>
+            <div id="button">
+            
+                    <ul>
+                        <apex:variable var="mgusr" value="{!manageruser}" rendered="{!manageruser}">
+                            <li><apex:commandLink action="{!join}">Join</apex:commandLink></li>
+                        </apex:variable>
+                        <apex:variable var="usr" value="{!currentuser}" rendered="{!currentuser}">
+                        <li> 
+                            <apex:commandLink action="{!join}" rendered="{!currentuser}">Edit</apex:commandLink>
+                        </li>
+                        <apex:variable var="subweek" rendered="{!PJP.Status__c != 'Submitted'} || {!PJP.Status__c != 'Approved'}" value="{!PJP.Status__c}">
+                        <li> 
+                            <apex:commandLink action="{!submitforapproval}">Submit Week</apex:commandLink>
+                        </li>
+                        </apex:variable>
+                        <apex:variable var="submonth" value="{!PJP.Status__c == 'Submitted'} || {!PJP.Status__c =='Approved'}" rendered="{!currentuser}">
+                        <li>
+                            <apex:commandLink action="{!submitmonth}">Submit Month</apex:commandLink>
+                        </li>
+                        </apex:variable>
+                        </apex:variable>
+                        <li> <apex:commandLink action="{!pjptab}">PJP Tab</apex:commandLink></li>
+                        
+                    </ul>
+            </div>
+            </td>
+            </tr>
+            </table> -->
+            <br/><br/><br/>
+            <apex:messages styleClass="info"/>
+             <div class="clearfix"></div>
+            <div class="custTableTop">
+            <table class="table table-bordered">
+              <tr>
+                <th>Sales Rep Name :</th>
+                <td><apex:outputField value="{!PJP.User__c}"/></td>
+                <apex:variable rendered="{!!tmptype}" value="{!tmptype}" var="t1">
+                <th>Plan From :</th>
+                <td><apex:outputField value="{!PJP.Start_Date__c}"/></td>
+                </apex:variable>
+                <apex:variable rendered="{!tmptype}" value="{!tmptype}" var="t2">
+                <th>Plan For Month :</th>
+                <td>
+                    <apex:selectList id="chooseMonth" value="{!month1}" size="1" styleClass="form-control">
+                        <apex:selectOption itemValue="1" itemLabel="January"/>
+                        <apex:selectOption itemValue="2" itemLabel="February"/>
+                        <apex:selectOption itemValue="3" itemLabel="March"/>
+                        <apex:selectOption itemValue="4" itemLabel="April"/>
+                        <apex:selectOption itemValue="5" itemLabel="May"/>
+                        <apex:selectOption itemValue="6" itemLabel="June"/>
+                        <apex:selectOption itemValue="7" itemLabel="July"/>
+                        <apex:selectOption itemValue="8" itemLabel="August"/>
+                        <apex:selectOption itemValue="9" itemLabel="September"/>
+                        <apex:selectOption itemValue="10" itemLabel="October"/>
+                        <apex:selectOption itemValue="11" itemLabel="November"/>
+                        <apex:selectOption itemValue="12" itemLabel="December"/>
+                    </apex:selectList>
+                </td>
+                </apex:variable>
+              </tr>
+              <tr>
+                <th>Status :</th>
+                <td><apex:outputField value="{!PJP.Status__c}"/></td>
+                <apex:variable rendered="{!!tmptype}" value="{!tmptype}" var="t">
+                <th>T0 :</th>
+                <td><apex:outputField value="{!PJP.End_Date__c}"/></td>
+                </apex:variable>
+                <apex:variable rendered="{!tmptype}" value="{!tmptype}" var="t2">
+                <th>Plan For Year :</th>
+                <td>
+                    <apex:selectList id="chooseYear" value="{!year1}" size="1" styleClass="form-control">
+                        <apex:selectOption itemValue="2017" itemLabel="2017"/>
+                        <apex:selectOption itemValue="2018" itemLabel="2018"/>
+                        <apex:selectOption itemValue="2019" itemLabel="2019"/>
+                        <apex:selectOption itemValue="2020" itemLabel="2020"/>
+                  </apex:selectlist>
+                </td>
+                </apex:variable>
+              </tr>
+            </table>
+            </div>
+            <div class="clearfix"></div>
+            <apex:variable rendered="{!!tmptype}" value="{!tmptype}" var="t">
+            <div class="row dataWid">
+            <div class="col-sm-3">
+            <div class="dataWidgets">Planned Visits:  {!totalVisits}</div>
+            </div>
+            <div class="col-sm-3">
+            <div class="dataWidgets">Visited Count: {!VisitedCount}</div>
+            </div>
+            <div class="col-sm-6">
+            <div class="dataWidgets">Days Planned: {!DayCount}</div>
+            </div>
+            <!--<div class="col-sm-1 text-right">
+            <apex:commandButton styleClass="btn btn-danger1" value="Add" action="{!newVisit}" rendered="{!currentuser}"/>
+            </div>-->
+            </div>
+            </apex:variable>
+            <div class="clearfix"></div>
+            <br/>
+            <div id='calendar'></div>
+            <div class="clearfix"></div>
+            <apex:outputPanel rendered="{!newvisit}">
+                <apex:outputText >Date</apex:outputText>
+                <apex:inputfield value="{!vst.Planned_Date__c}"/><br/>
+                <apex:outputText >Type</apex:outputText>
+                <apex:selectList value="{!vstype}" size="1">
+                    <apex:selectOption itemValue="lead" itemLabel="Lead"/>
+                    <apex:selectOption itemValue="account" itemLabel="Account"/>
+                    <apex:selectOption itemValue="subdealer" itemLabel="Sub Dealer"/>
+                    <apex:selectOption itemValue="mmc" itemLabel="MMC"/>
+                    <apex:selectOption itemValue="salesprom" itemLabel="Sales Promoter"/>
+                    <apex:selectOption itemValue="project" itemLabel="Project Sites"/>
+                    <apex:selectOption itemValue="candf" itemLabel="C & F"/>
+                    <apex:selectOption itemValue="warehouse" itemLabel="Warehouse"/>
+                    <apex:selectOption itemValue="engineer" itemLabel="Engineer"/>
+                    <apex:selectOption itemValue="consultant" itemLabel="Consultant"/>
+                    <apex:selectOption itemValue="area" itemLabel="Area"/>
+                    <apex:selectOption itemValue="event" itemLabel="Event"/>
+                    <apex:selectOption itemValue="general" itemLabel="General Visit"/>
+                </apex:selectList><br/>
+                <apex:outputText >Account</apex:outputText>
+                <apex:inputfield value="{!vst.Account__c}"/><br/>
+                <apex:outputText >Lead</apex:outputText>
+                <apex:inputfield value="{!vst.Lead__c}"/><br/>
+                <apex:outputText >Area</apex:outputText>
+                <apex:inputfield value="{!vst.Area__c}"/><br/>
+                <apex:outputText >Event</apex:outputText>
+                <apex:inputfield value="{!vst.Event__c}"/><br/>
+                <apex:outputText >Influencer</apex:outputText>
+                <apex:inputfield value="{!vst.Influencer__c}"/><br/>
+                <apex:outputText >Depot</apex:outputText>
+                <apex:inputfield value="{!vst.Business_Partner__c}"/><br/>
+            </apex:outputPanel>
+           
+            <div style='clear:both'></div>
+        </div>
+        <br/>
+
+    <div class="col-sm-2 col-xs-6 padLR">
+      <div style="background:#6A5ACD;width:18px;height:18px;margin:0 5px 10px 5px;" class="pull-right">&nbsp;</div>
+      <span class="pull-right legendsize">Unplanned</span> 
+      </div>
+      
+    <div class="col-sm-2 col-xs-6 padLR">
+      <div style="background:#f1948a;width:18px;height:18px;margin:0 5px 10px 5px;" class="pull-right">&nbsp;</div>
+      <span class="pull-right legendsize">Unvisited</span> 
+      </div>
+     
+     <div class="col-sm-2 col-xs-6 padLR">
+      <div style="background:#00FF00;width:18px;height:18px;margin:0 5px 10px 5px;" class="pull-right">&nbsp;</div>
+      <span class="pull-right legendsize">Visited</span>
+       </div>
+      
+     <!--<div class="col-sm-2 col-xs-6 padLR">
+      <div style="background:#6cbf4a;width:18px;height:18px;margin:0 5px 10px 5px;" class="pull-right">&nbsp;</div>
+      <span class="pull-right legendsize">Visit Completed</span>
+       </div>-->
+   
+    <div class="col-sm-2 col-xs-6 padLR">
+      <div style="background:#ff9900;width:18px;height:18px;margin:0 5px 10px 5px;" class="pull-right">&nbsp;</div>
+      <span class="pull-right legendsize">Pending Visits</span>
+       </div>
+    <div class="col-sm-2 col-xs-6 padLR">
+      <div style="background:#3a87ad;width:18px;height:18px;margin:0 5px 10px 5px;" class="pull-right">&nbsp;</div>
+      <span class="pull-right legendsize">General Visits</span> 
+      </div>
+   <div style='clear:both'></div>
+
+        <br/>
+        </apex:form>
+        <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Approval History</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body"><apex:relatedList list="ProcessSteps"/></div>
+          </div>
+        </div>
+        <br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Week Plan</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body"><apex:relatedList list="Week_Plan__r"/></div>
+          </div>
+        </div>
+        </div> 
+        </div> 
+        </body>
+    </html>
+</apex:page>
