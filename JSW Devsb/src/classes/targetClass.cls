@@ -56,6 +56,7 @@ Public class targetClass
     
     public void deleteRow() 
     {
+        System.debug('TESTing BItBucket');
         system.debug('------IN Deleterow');
         rowIndex1 = Integer.valueOf(ApexPages.currentPage().getParameters().get('rowIndex1'));
         system.debug('------IN rowIndex1 '+rowIndex1 );
