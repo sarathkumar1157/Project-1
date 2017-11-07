@@ -10,7 +10,7 @@ global class ASMNotifClass implements Database.batchable<sObject>{
     public User pjpusr {get; set;}
     public String qry {get; set;}
      
-        public ASMNotifClass(){
+    public ASMNotifClass(){
         solist = new List<User>();
         soids = new Set<Id>();
         pjplist = new List<Month_Plan__c>();
